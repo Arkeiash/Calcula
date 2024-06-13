@@ -91,3 +91,4 @@ class GameObject {
     this.doBehaviorEvent(map);
   }
 }
+//Can you see me?
