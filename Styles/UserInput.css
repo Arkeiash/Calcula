@@ -1,0 +1,29 @@
+.User-input-checkButton {
+  margin-left: 10px;
+  margin-top: 11px;
+}
+.optionA-button, .optionB-button, .optionC-button, .optionD-button {
+                
+    color: blue;
+    border-radius: 50%;
+    height: 16px;
+    position: absolute;
+    
+}
+.optionA-button:focus, .optionB-button:focus, .optionC-button:focus, .optionD-button:focus {
+    background: rgb(0,0,0);
+    outline: 2px solid #000000;
+}
+.optionA, .optionB, .optionC, .optionD {
+    position: relative;
+    border: solid 2px;
+    margin-right: 20%;
+    margin-top: 11px;
+    padding-top: 13px;
+    padding-left: 11px;
+}
+.optionA p, .optionB p, .optionC p, .optionD p{
+    margin-left: 35%;
+    margin-top: 0;
+    
+}

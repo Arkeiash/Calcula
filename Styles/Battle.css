@@ -1,0 +1,108 @@
+.Battle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom:0;
+  background-image: url(/Images/Battle/BattleArea.png);
+  background-size: cover;
+  image-rendering: pixelated;
+}
+.Battle_hero_div, .Battle_enemy_div {
+  position: absolute;
+  transform: scale(2);
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  background: url(/Images/Characters/Shadow.png) no-repeat no-repeat;
+}
+.Battle_hero_img, .Battle_enemy_img {
+  pointer-events: none;
+}
+.Battle_hero_div {
+  top: 90px;
+  left: 18px;
+}
+.Battle_hero_img {
+  transform: translateX(-896px);
+}
+.Battle_enemy_img {
+  transform: translateX(-768px);
+  
+}
+.Battle_enemy_div {
+  top: 90px;
+  right: 18px;
+}
+.Spell_div {
+  position: absolute;
+  transform: scale(2);
+  left:280px;
+  top:50px;
+  width:64px;
+  height: 64px;
+  overflow:hidden;
+}
+.Spell_img {
+  position:absolute;
+  left: 0;
+}
+
+
+
+
+@keyframes battle-damage-blink {
+  to {
+    visibility: hidden;
+  }
+}
+.battle-damage-blink {
+  animation: battle-damage-blink 0.3s steps(2, start) infinite;
+}
+
+
+@keyframes spell-animation {
+  from {
+    transform: translate3d(0px, 0,0);
+  }
+  to {
+    transform: translate3d(-100%, 0,0);
+  }
+}
+.animating-spell {
+  animation: spell-animation 1s steps(10) infinite;
+}
+@keyframes hero-animation {
+  from {
+    transform: translate3d(-896px, 0,0);
+  }
+  to {
+    transform: translate3d(-1024px, 0,0);
+  }
+}
+.animating-hero {
+  animation: hero-animation 1s steps(4) infinite;
+}
+
+@keyframes hero-animation {
+  from {
+    transform: translate3d(-896px, 0,0);
+  }
+  to {
+    transform: translate3d(-1024px, 0,0);
+  }
+}
+.animating-hero {
+  animation: hero-animation 1s steps(4) infinite;
+}
+@keyframes enemy-animation {
+  from {
+    transform: translate3d(-768px, 0,0);
+  }
+  to {
+    transform: translate3d(-896px, 0,0);
+  }
+}
+.animating-enemy {
+  animation: enemy-animation 1s steps(4) infinite;
+}

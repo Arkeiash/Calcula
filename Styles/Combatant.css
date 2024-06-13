@@ -1,0 +1,122 @@
+.Combatant {
+  width: 70px;
+  height: 20px;
+  
+  position: absolute;
+
+}
+
+.Battle .Combatant {
+  transform: scale(1.3);
+}
+
+.Battle .Combatant[data-active="false"] {
+  opacity: 0;
+}
+.Battle .Combatant[data-active="true"] {
+  opacity: 1;
+}
+
+.Combatant[data-team="player"] {
+  left: 20px;
+  top: 28px;
+}
+.Combatant[data-team="enemy"] {
+  right: 40px;
+  top: 28px;
+}
+
+
+.Combatant_type {
+  position: absolute;
+  left:3px;
+  top:-2px;
+  width: 16px;
+  height: 16px;
+}
+.Combatant_info {
+    transform-origin: top left;
+    transform: scale(1);
+  }
+  .Combatant_name {
+      position: absolute;
+      font-size:9px;
+      left:0px;
+  }
+  .Combatant_name p {
+     position: absolute;
+      font-size:10px;
+      left:7px;
+      top: -4px;
+  }
+  .base1 {
+      position: absolute;
+      left:0px;
+      top:20px;
+  }
+  .Combatant_life-container_base {
+      position: absolute;
+  }
+  .Combatant_barrier-container_base {
+      position: absolute;
+  }
+  .Combatant_life-container {
+      position: absolute;
+  }
+  .Combatant_barrier-container {
+      position: absolute;
+  }
+  .Combatant_stats_box {
+      position: absolute;
+      top:0px;
+  }
+  .Combatant_stats_box #hpDisplay {
+      position: absolute;
+      font-size: 6px;
+      left:7px;
+      top:17px;
+  }
+  .Combatant_stats_box #barrierDisplay {
+      position: absolute;
+      font-size: 6px;
+      left:7px;
+      top:26px;
+  }
+  .Combatant_amplifying_box p {
+      position: absolute;
+      font-size: 6px;
+      left:73px;
+      top:16px;
+  }
+  .Combatant_fortifying_box {
+      position: absolute;
+      font-size: 6px;
+      left:-12px;
+      top:11px;
+  }
+  .Combatant_fortifying_box p {
+      position: absolute;
+      font-size: 6px;
+      left:85px;
+      top:16px;
+  }
+  
+.Combatant_fortifying_box[data-fortified="true"] {
+  opacity: 1;
+}
+.Combatant_fortifying_box[data-fortified="false"] {
+  opacity: 0;
+}
+.Combatant_amplifying_box[data-amplified="true"] {
+  opacity: 1;
+}
+.Combatant_amplifying_box[data-amplified="false"] {
+  opacity: 0;
+}
+.Combatant_life-container > rect{
+  transition: width 0.2s;
+}
+.Combatant_barrier-container > rect{
+  transition: width 0.2s;
+}
+

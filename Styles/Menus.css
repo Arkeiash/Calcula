@@ -1,0 +1,27 @@
+.PauseMenu {
+  background: rgb(205, 204, 232);
+  position: absolute;
+  left: 6em;
+  top: 1em;
+  right: 6em;
+  border: 1px solid;
+  z-index: 2;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  overflow-x: hidden
+  
+}
+.PauseMenu .KeyboardMenu {
+  position: relative;
+  border: 0;
+  margin-left: 60px;
+  margin-top: 5px;
+}
+.PauseMenu h2 {
+  font-size: 10px;
+  margin: 0;
+  padding: 2px 0;
+  text-align: center;
+  border-bottom: 1px solid;
+}

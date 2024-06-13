@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styls.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <h1>Tile Map Editor</h1>
+        <div>
+          <button class="button-as-link" onclick="clearCanvas()">Clear Canvas</button>
+          <button class="primary-button" onclick="exportImage()">Export Image</button>
+        </div>
+      </header>
+      <div class="card_body">
+        <aside>
+          <label>Tiles</label>
+          <div class="tileset-container">
+            <img id="tileset-source" width="32" crossorigin />
+            <div class="tileset-container_selection"></div>
+          </div>
+        </aside>
+        <div card_right-column>
+          
+          <canvas width="784" height="784">
+            
+          </canvas>
+          <div>
+            <label>Editing Layer:</label>
+            <ul>
+              <li><button onclick="setLayer(2)" class="layer" tile-layer="2">Top Layer</button></li>
+              <li><button onclick="setLayer(1)" class="layer" tile-layer="1">Middle Layer</button></li>
+              <li><button onclick="setLayer(0)" class="layer" tile-layer="0">Bottom Layer</button></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
