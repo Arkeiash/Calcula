@@ -15,7 +15,7 @@ class GameObject {
     this.currentAnimation = config.currentAnimation,
     this.sprite = new Sprite({
       gameObject: this,
-      src: config.src || "/Images/Characters/Hero Sprite Sheet.png",
+      src: config.src || "Images/Characters/Hero Sprite Sheet.png",
       size: this.size,
       currentAnimation: this.currentAnimation,
       useShadow: this.useShadow,
