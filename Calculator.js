@@ -347,7 +347,7 @@ class Calculator {
             console.log("Listeners Called");
             this.inputElement.addEventListener("click", event => {
                 const target_btn = event.target;
-                console.log(target_btn);
+                console.log(target_btn.id);
                 calculator_buttons.forEach(button => {
                     if(button.name == target_btn.id) {
                         this.calculator(button);
