@@ -329,7 +329,14 @@ class Calculator {
         } else if(button.type === "math_function") {
         
         } else if(button.type === "key") {
-        
+            if(button.name == "clear") {
+                data.operation = [];
+                data.formula = [];
+                updateOutputResult(0);
+            } else if (button.name == "delete") {
+                data.operation.pop();
+                data.formula.pop();
+            } 
         } else if(button.type === "calculate") {
             let formula_str = data.formula.join('');
             let result = eval(formula_str);
