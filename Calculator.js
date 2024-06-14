@@ -244,9 +244,7 @@ class Calculator {
         this.operationElement.classList.add("operation");
 
         this.operationValueElement = document.createElement("div");
-        this.operationValueElement.classList.add("value");
-        this.operationValueElement.innerText = "Testing testing 123"
-        
+        this.operationValueElement.classList.add("value");        
 
         this.resultValueElement = document.createElement("div");
         this.resultValueElement.classList.add("value");
@@ -333,7 +331,7 @@ class Calculator {
         } else if(button.type === "key") {
         
         } else if(button.type === "calculate") {
-            formula_str = data.formula.join('');
+            let formula_str = data.formula.join('');
             let result = eval(formula_str);
                 this.updateOutputResult(result);
         }
