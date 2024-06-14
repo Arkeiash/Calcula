@@ -332,7 +332,7 @@ class Calculator {
             if(button.name == "clear") {
                 data.operation = [];
                 data.formula = [];
-                updateOutputResult(0);
+                this.updateOutputResult(0);
             } else if (button.name == "delete") {
                 data.operation.pop();
                 data.formula.pop();
