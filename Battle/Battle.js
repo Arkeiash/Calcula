@@ -60,7 +60,7 @@ class Battle {
     this.heroElement = document.createElement("div");
     this.heroElement.classList.add("Battle_hero_div");
     this.heroImageElement = document.createElement("img");
-    this.heroImageElement.src = "/Images/Characters/Hero Sprite Sheet.png";
+    this.heroImageElement.src = "../Images/Characters/Hero Sprite Sheet.png";
     this.heroImageElement.classList.add("Battle_hero_img")
     this.element.appendChild(this.heroElement);
     this.heroElement.appendChild(this.heroImageElement);
@@ -78,7 +78,7 @@ class Battle {
     /*this.enemyElement = document.createElement("div");
     this.enemyElement.classList.add("Battle_enemy");
     this.enemyElement.innerHTML = (`
-      <img src="${'/Images/Characters/Raider Sprite Sheet.png'}" alt="Enemy" />
+      <img src="${'../Images/Characters/Raider Sprite Sheet.png'}" alt="Enemy" />
     `);
     this.element.appendChild(this.enemyElement);
   }*/
