@@ -327,7 +327,35 @@ class Calculator {
         }  else if(button.type === "trigo_function") {
         
         } else if(button.type === "math_function") {
-        
+            let symbol, formula;
+
+            if(button.name == "factorial") {
+                symbol = "!";
+                formula = button.formula;
+
+                data.operation.push(symbol);
+                data.formula.push(formula);
+            } else if(button.name == "power") {
+                symbol = "^(";
+                formula = button.formula;
+
+                data.operation.push(symbol);
+                data.formula.push(formula);
+            } else if(button.name == "square") {
+                symbol = "^(";
+                formula = button.formula;
+
+                data.operation.push(symbol);
+                data.formula.push(formula);
+
+                data.operation.push("2)");
+                data.formula.push("2)");
+            } else {
+                symbol = button.symbol + "(";
+                formula = button.formula + "(";
+                data.operation.push(symbol);
+                data.formula.push(formula);
+            }
         } else if(button.type === "key") {
             if(button.name == "clear") {
                 data.operation = [];
