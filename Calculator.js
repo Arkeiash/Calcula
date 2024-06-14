@@ -349,7 +349,10 @@ class Calculator {
                 const target_btn = event.target;
                 
                 calculator_buttons.forEach(button => {
-                    if(button.name == target_btn.id) this.calculator(button);
+                    if(button.name == target_btn.id) {
+                        this.calculator(button);
+                        console.log(button.name);
+                    }
                 })
             })
         }
