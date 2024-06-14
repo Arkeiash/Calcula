@@ -333,15 +333,15 @@ class Calculator {
         
         
         updateOutputOperation = function(operation) {
-        this.output_operation_element.innerHTML = operation;
+        this.operationValueElement.innerHTML = operation;
         }
         
         updateOutputResult = function(result) {
-        this.output_result_element.innerHTML = result;
+        this.resultValueElement.innerHTML = result;
         }
         
         addTheEventListeners = function() {
-            this.input_element.addEventListener("click", event => {
+            this.inputElement.addEventListener("click", event => {
                 const target_btn = event.target;
                 
                 calculator_buttons.forEach(button => {
