@@ -245,7 +245,7 @@ class Calculator {
 
         this.operationValueElement = document.createElement("div");
         this.operationValueElement.classList.add("value");
-        
+        this.operationValueElement.innerText = "Testing testing 123"
         
 
         this.resultValueElement = document.createElement("div");
