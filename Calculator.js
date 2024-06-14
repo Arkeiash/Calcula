@@ -340,16 +340,22 @@ class Calculator {
         this.output_result_element.innerHTML = result;
         }
         
-
-
-
-
+        addTheEventListeners = function() {
+            this.input_element.addEventListener("click", event => {
+                const target_btn = event.target;
+                
+                calculator_buttons.forEach(button => {
+                    if(button.name == target_btn.id) this.calculator(button);
+                })
+            })
+        }
 
 
       async init(container) {
         this.createElement();
         container.appendChild(this.calculatorElement);
         this.createCalculatorButtons();
+        this.addTheEventListeners();
 
         utils.wait(200);
         this.esc = new KeyPressListener("KeyC", () => {
@@ -362,10 +368,3 @@ class Calculator {
     
 }
 
-this.input_element.addEventListener("click", event => {
-    const target_btn = event.target;
-    
-        calculator_buttons.forEach(button => {
-            if(button.name == target_btn.id) this.calculator(button);
-        })
-    })
