@@ -245,12 +245,12 @@ class Calculator {
 
         this.operationValueElement = document.createElement("div");
         this.operationValueElement.classList.add("value");
-        this.operationValueElement.innerText = "This is a Test";
+        
         
 
         this.resultValueElement = document.createElement("div");
         this.resultValueElement.classList.add("value");
-        this.resultValueElement.innerText = "This is a Test";
+    
 
         this.resultElement.appendChild(this.resultValueElement);
         this.operationElement.appendChild(this.operationValueElement);
@@ -309,18 +309,24 @@ class Calculator {
         this.onComplete();
       }
 
-      
+      updateOutputOperation = function(operation) {
+        this.operationValueElement.innerHTML = operation;
+        }
+        
+        updateOutputResult = function(result) {
+        this.resultValueElement.innerHTML = result;
+        }
         
         calculator = function(button) {
+            console.log("Calculator");
         if(button.type === "operator") {
         data.operation.push(button.symbol);
         data.formula.push(button.formula);
         } else if(button.type === "number") {
         data.operation.push(button.symbol);
         data.formula.push(button.formula);
-        } else if(button.type === "number") {
-        
-        } else if(button.type === "trigo_function") {
+            
+        }  else if(button.type === "trigo_function") {
         
         } else if(button.type === "math_function") {
         
@@ -335,13 +341,7 @@ class Calculator {
         }
         
         
-        updateOutputOperation = function(operation) {
-        this.operationValueElement.innerHTML = operation;
-        }
         
-        updateOutputResult = function(result) {
-        this.resultValueElement.innerHTML = result;
-        }
         
         addTheEventListeners = function() {
             this.inputElement.addEventListener("click", event => {
