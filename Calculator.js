@@ -336,8 +336,9 @@ class Calculator {
             formula_str = data.formula.join('');
             let result = eval(formula_str);
                 this.updateOutputResult(result);
-            }
+        }
             this.updateOutputOperation(data.operation.join(''));
+            console.log(data.operation.join(''));
         }
         
         
