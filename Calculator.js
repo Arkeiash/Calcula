@@ -344,6 +344,7 @@ class Calculator {
         
         
         addTheEventListeners = function() {
+            console.log("Listeners Called");
             this.inputElement.addEventListener("click", event => {
                 const target_btn = event.target;
                 
