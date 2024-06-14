@@ -245,9 +245,12 @@ class Calculator {
 
         this.operationValueElement = document.createElement("div");
         this.operationValueElement.classList.add("value");
+        this.operationValueElement.innerText = "This is a Test";
+        
 
         this.resultValueElement = document.createElement("div");
         this.resultValueElement.classList.add("value");
+        this.resultValueElement.innerText = "This is a Test";
 
         this.resultElement.appendChild(this.resultValueElement);
         this.operationElement.appendChild(this.operationValueElement);
