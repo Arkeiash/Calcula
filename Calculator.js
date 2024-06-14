@@ -265,7 +265,7 @@ class Calculator {
     }
     createButton = function(name, symbol, container) {
         const button = document.createElement("button");
-        button.classList.add(`${name}`);
+        button.id=`${name}`;
         button.innerHTML = `${symbol}`;
         container.appendChild(button);
     }
