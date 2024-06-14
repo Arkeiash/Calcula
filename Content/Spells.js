@@ -13,7 +13,7 @@ window.Spells = {
     description: "Does 80 damage",
     required: window.Problems.sweep1,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{ACTION}"},
       { type: "combatantAnimation"},
@@ -27,7 +27,7 @@ window.Spells = {
     description: "Does 50 damage",
     required: window.Problems.sweep1,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{ACTION}"},
       { type: "combatantAnimation"},
@@ -41,7 +41,7 @@ window.Spells = {
     description: "Does 50 damage",
     required: window.Problems.sweep1,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{ACTION}"},
       { type: "combatantAnimation"},
@@ -55,7 +55,7 @@ window.Spells = {
     description: "Does 50 damage",
     required: window.Problems.sweep1,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{ACTION}"},
       { type: "combatantAnimation"},
@@ -68,7 +68,7 @@ window.Spells = {
     description: "Does 120 damage",
     required: window.Problems.sweep1,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{ACTION}"},
       { type: "combatantAnimation"},
@@ -81,7 +81,7 @@ window.Spells = {
     description: "Does 120 damage",
     required: window.Problems.sweep1,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "Please! Don't hurt me!"},
       
@@ -93,7 +93,7 @@ window.Spells = {
     description: "Does 120 damage",
     required: window.Problems.sweep1,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "Spare my life! I beg you!"},
       
@@ -105,11 +105,11 @@ window.Spells = {
     description: "Does 10 damage",
     required: window.Problems.sweep1,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 10},
     ]
   },
@@ -119,11 +119,11 @@ window.Spells = {
     description: "Does 15 damage",
     required: window.Problems.sweep2,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 15},
     ]
   },
@@ -133,11 +133,11 @@ window.Spells = {
     description: "Does 20 damage",
     required: window.Problems.sweep3,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 20},
     ]
   },
@@ -147,11 +147,11 @@ window.Spells = {
     description: "Does 45 damage",
     required: window.Problems.sweep4,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 45},
     ]
   },
@@ -161,11 +161,11 @@ window.Spells = {
     description: "Does 50 damage",
     required: window.Problems.sweep5,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 50},
     ]
   },
@@ -175,11 +175,11 @@ window.Spells = {
     description: "Does 55 damage",
     required: window.Problems.sweep6,
     
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 55},
     ]
   },
@@ -187,11 +187,11 @@ window.Spells = {
     name: "Blast 1",
     type: SpellTypes.Attacking,
     description: "Does 40 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 40},
     ]
   },
@@ -199,11 +199,11 @@ window.Spells = {
     name: "Blast 2",
     type: SpellTypes.Attacking,
     description: "Does 50 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 50},
     ]
   },
@@ -211,11 +211,11 @@ window.Spells = {
     name: "Blast 3",
     type: SpellTypes.Attacking,
     description: "Does 60 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 60},
     ]
   },
@@ -223,11 +223,11 @@ window.Spells = {
     name: "Blast 4",
     type: SpellTypes.Attacking,
     description: "Does 70 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 70},
     ]
   },
@@ -235,11 +235,11 @@ window.Spells = {
     name: "Flare 1",
     type: SpellTypes.Attacking,
     description: "Does 50 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 50},
     ]
   },
@@ -247,11 +247,11 @@ window.Spells = {
     name: "Flare 2",
     type: SpellTypes.Attacking,
     description: "Does 60 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 60},
     ]
   },
@@ -259,11 +259,11 @@ window.Spells = {
     name: "Flare 3",
     type: SpellTypes.Attacking,
     description: "Does 70 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 70},
     ]
   },
@@ -271,11 +271,11 @@ window.Spells = {
     name: "Flare 4",
     type: SpellTypes.Attacking,
     description: "Does 80 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 80},
     ]
   },
@@ -283,11 +283,11 @@ window.Spells = {
     name: "Flare 5",
     type: SpellTypes.Attacking,
     description: "Does 90 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 90},
     ]
   },
@@ -295,11 +295,11 @@ window.Spells = {
     name: "Flare 6",
     type: SpellTypes.Attacking,
     description: "Does 100 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 100},
     ]
   },
@@ -307,11 +307,11 @@ window.Spells = {
     name: "Scar 1",
     type: SpellTypes.Attacking,
     description: "Does 60 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 60},
     ]
   },
@@ -319,11 +319,11 @@ window.Spells = {
     name: "Scar 2",
     type: SpellTypes.Attacking,
     description: "Does 80 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 80},
     ]
   },
@@ -331,11 +331,11 @@ window.Spells = {
     name: "Scar 3",
     type: SpellTypes.Attacking,
     description: "Does 100 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 100},
     ]
   },
@@ -343,11 +343,11 @@ window.Spells = {
     name: "Scar 4",
     type: SpellTypes.Attacking,
     description: "Does 150 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 150},
     ]
   },
@@ -355,11 +355,11 @@ window.Spells = {
     name: "Singe 1",
     type: SpellTypes.Attacking,
     description: "Does 80 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 80},
     ]
   },
@@ -367,11 +367,11 @@ window.Spells = {
     name: "Singe 2",
     type: SpellTypes.Attacking,
     description: "Does 90 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 90},
     ]
   },
@@ -379,11 +379,11 @@ window.Spells = {
     name: "Singe 3",
     type: SpellTypes.Attacking,
     description: "Does 100 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 100},
     ]
   },
@@ -391,11 +391,11 @@ window.Spells = {
     name: "Singe 4",
     type: SpellTypes.Attacking,
     description: "Does 120 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 120},
     ]
   },
@@ -403,11 +403,11 @@ window.Spells = {
     name: "Singe 5",
     type: SpellTypes.Attacking,
     description: "Does 150 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 150},
     ]
   },
@@ -415,11 +415,11 @@ window.Spells = {
     name: "Scorch 1",
     type: SpellTypes.Attacking,
     description: "Does 160 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 160},
     ]
   },
@@ -427,11 +427,11 @@ window.Spells = {
     name: "Scorch 2",
     type: SpellTypes.Attacking,
     description: "Does 180 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 180},
     ]
   },
@@ -439,11 +439,11 @@ window.Spells = {
     name: "Scorch 3",
     type: SpellTypes.Attacking,
     description: "Does 200 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 200},
     ]
   },
@@ -451,11 +451,11 @@ window.Spells = {
     name: "Scorch 4",
     type: SpellTypes.Attacking,
     description: "Does 240 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 240},
     ]
   },
@@ -463,11 +463,11 @@ window.Spells = {
     name: "Raze 1",
     type: SpellTypes.Attacking,
     description: "Does 260 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 260},
     ]
   },
@@ -475,11 +475,11 @@ window.Spells = {
     name: "Raze 2",
     type: SpellTypes.Attacking,
     description: "Does 280 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 280},
     ]
   },
@@ -487,11 +487,11 @@ window.Spells = {
     name: "Raze 3",
     type: SpellTypes.Attacking,
     description: "Does 300 damage",
-    icon: "/Images/Battle/attackingIcon.png",
+    icon: "Images/Battle/attackingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", damage: 300},
     ]
   },
@@ -499,11 +499,11 @@ window.Spells = {
     name: "Aid 1",
     type: SpellTypes.Healing,
     description: "Restores 5 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 5},
     ]
   },
@@ -511,11 +511,11 @@ window.Spells = {
     name: "Aid 2",
     type: SpellTypes.Healing,
     description: "Restores 10 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 10},
     ]
   },
@@ -523,11 +523,11 @@ window.Spells = {
     name: "Aid 3",
     type: SpellTypes.Healing,
     description: "Restores 10 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 10},
     ]
   },
@@ -535,11 +535,11 @@ window.Spells = {
     name: "Aid 4",
     type: SpellTypes.Healing,
     description: "Restores 12 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 12},
     ]
   },
@@ -547,11 +547,11 @@ window.Spells = {
     name: "Aid 5",
     type: SpellTypes.Healing,
     description: "Restores 15 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 15},
     ]
   },
@@ -559,11 +559,11 @@ window.Spells = {
     name: "Aid 6",
     type: SpellTypes.Healing,
     description: "Restores 16 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 16},
     ]
   },
@@ -571,11 +571,11 @@ window.Spells = {
     name: "Vive 1",
     type: SpellTypes.Healing,
     description: "Restores 7 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 1},
     ]
   },
@@ -583,11 +583,11 @@ window.Spells = {
     name: "Vive 2",
     type: SpellTypes.Healing,
     description: "Restores 9 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 9},
     ]
   },
@@ -595,11 +595,11 @@ window.Spells = {
     name: "Vive 3",
     type: SpellTypes.Healing,
     description: "Restores 11 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 11},
     ]
   },
@@ -607,11 +607,11 @@ window.Spells = {
     name: "Heal 1",
     type: SpellTypes.Healing,
     description: "Restores 8 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 8},
     ]
   },
@@ -619,11 +619,11 @@ window.Spells = {
     name: "Heal 2",
     type: SpellTypes.Healing,
     description: "Restores 9 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 9},
     ]
   },
@@ -631,11 +631,11 @@ window.Spells = {
     name: "Heal 3",
     type: SpellTypes.Healing,
     description: "Restores 10 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 10},
     ]
   },
@@ -643,11 +643,11 @@ window.Spells = {
     name: "Heal 4",
     type: SpellTypes.Healing,
     description: "Restores 12 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 12},
     ]
   },
@@ -655,11 +655,11 @@ window.Spells = {
     name: "Heal 5",
     type: SpellTypes.Healing,
     description: "Restores 20 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 20},
     ]
   },
@@ -667,11 +667,11 @@ window.Spells = {
     name: "Rush 1",
     type: SpellTypes.Healing,
     description: "Restores 20 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 20},
     ]
   },
@@ -679,11 +679,11 @@ window.Spells = {
     name: "Rush 2",
     type: SpellTypes.Healing,
     description: "Restores 25 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 25},
     ]
   },
@@ -691,11 +691,11 @@ window.Spells = {
     name: "Rush 3",
     type: SpellTypes.Healing,
     description: "Restores 30 health",
-    icon: "/Images/Battle/healingIcon.png",
+    icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Aid Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Aid Sprite Sheet.png"},
       { type: "stateChange", recover: 30},
     ]
   },
@@ -703,10 +703,10 @@ window.Spells = {
     name: "Flect 1",
     type: SpellTypes.Protecting,
     description: "Generates 10 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 10},
     ]
   },
@@ -714,10 +714,10 @@ window.Spells = {
     name: "Flect 2",
     type: SpellTypes.Protecting,
     description: "Generates 12 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 12},
     ]
   },
@@ -725,10 +725,10 @@ window.Spells = {
     name: "Flect 3",
     type: SpellTypes.Protecting,
     description: "Generates 20 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 20},
     ]
   },
@@ -736,10 +736,10 @@ window.Spells = {
     name: "Flect 4",
     type: SpellTypes.Protecting,
     description: "Generates 22 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 22},
     ]
   },
@@ -747,10 +747,10 @@ window.Spells = {
     name: "Flect 5",
     type: SpellTypes.Protecting,
     description: "Generates 25 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 25},
     ]
   },
@@ -758,10 +758,10 @@ window.Spells = {
     name: "Block 1",
     type: SpellTypes.Protecting,
     description: "Generates 12 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 12},
     ]
   },
@@ -769,10 +769,10 @@ window.Spells = {
     name: "Block 2",
     type: SpellTypes.Protecting,
     description: "Generates 15 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 15},
     ]
   },
@@ -780,10 +780,10 @@ window.Spells = {
     name: "Vert 1",
     type: SpellTypes.Protecting,
     description: "Generates 10 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 10},
     ]
   },
@@ -791,10 +791,10 @@ window.Spells = {
     name: "Vert 2",
     type: SpellTypes.Protecting,
     description: "Generates 12 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 12},
     ]
   },
@@ -802,10 +802,10 @@ window.Spells = {
     name: "Vert 3",
     type: SpellTypes.Protecting,
     description: "Generates 15 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 15},
     ]
   },
@@ -813,10 +813,10 @@ window.Spells = {
     name: "Vert 4",
     type: SpellTypes.Protecting,
     description: "Generates 18 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 18},
     ]
   },
@@ -824,10 +824,10 @@ window.Spells = {
     name: "Vert 5",
     type: SpellTypes.Protecting,
     description: "Generates 25 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 25},
     ]
   },
@@ -835,10 +835,10 @@ window.Spells = {
     name: "Fract 1",
     type: SpellTypes.Protecting,
     description: "Generates 25 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 25},
     ]
   },
@@ -846,10 +846,10 @@ window.Spells = {
     name: "Fract 2",
     type: SpellTypes.Protecting,
     description: "Generates 30 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 30},
     ]
   },
@@ -857,10 +857,10 @@ window.Spells = {
     name: "Fract 3",
     type: SpellTypes.Protecting,
     description: "Generates 45 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 45},
     ]
   },
@@ -868,10 +868,10 @@ window.Spells = {
     name: "Guard 1",
     type: SpellTypes.Protecting,
     description: "Generates 30 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 30},
     ]
   },
@@ -879,10 +879,10 @@ window.Spells = {
     name: "Guard 2",
     type: SpellTypes.Protecting,
     description: "Generates 40 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 40},
     ]
   },
@@ -890,10 +890,10 @@ window.Spells = {
     name: "Guard 3",
     type: SpellTypes.Protecting,
     description: "Generates 50 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 50},
     ]
   },
@@ -901,10 +901,10 @@ window.Spells = {
     name: "Guard 3",
     type: SpellTypes.Protecting,
     description: "Generates 60 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 60},
     ]
   },
@@ -912,10 +912,10 @@ window.Spells = {
     name: "Sheild 1",
     type: SpellTypes.Protecting,
     description: "Generates 60 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 60},
     ]
   },
@@ -923,10 +923,10 @@ window.Spells = {
     name: "Sheild 2",
     type: SpellTypes.Protecting,
     description: "Generates 70 sheild points",
-    icon: "/Images/Battle/protectingIcon.png",
+    icon: "Images/Battle/protectingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Flect Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Flect Sprite Sheet.png"},
       { type: "stateChange", barrier: 70},
     ]
   },
@@ -934,11 +934,11 @@ window.Spells = {
     name: "Maim 1",
     type: SpellTypes.Destroying,
     description: "Does 250 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 250},
     ]
   },
@@ -946,11 +946,11 @@ window.Spells = {
     name: "Maim 2",
     type: SpellTypes.Destroying,
     description: "Does 300 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 250},
     ]
   },
@@ -958,11 +958,11 @@ window.Spells = {
     name: "Maim 3",
     type: SpellTypes.Destroying,
     description: "Does 350 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 350},
     ]
   },
@@ -970,11 +970,11 @@ window.Spells = {
     name: "Gore 1",
     type: SpellTypes.Destroying,
     description: "Does 400 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 400},
     ]
   },
@@ -982,11 +982,11 @@ window.Spells = {
     name: "Gore 2",
     type: SpellTypes.Destroying,
     description: "Does 450 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 450},
     ]
   },
@@ -994,11 +994,11 @@ window.Spells = {
     name: "Gore 3",
     type: SpellTypes.Destroying,
     description: "Does 500 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 500},
     ]
   },
@@ -1006,11 +1006,11 @@ window.Spells = {
     name: "Gore 4",
     type: SpellTypes.Destroying,
     description: "Does 600 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 600},
     ]
   },
@@ -1018,11 +1018,11 @@ window.Spells = {
     name: "Gore 5",
     type: SpellTypes.Destroying,
     description: "Does 650 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 650},
     ]
   },
@@ -1030,11 +1030,11 @@ window.Spells = {
     name: "Gore 6",
     type: SpellTypes.Destroying,
     description: "Does 700 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 700},
     ]
   },
@@ -1042,11 +1042,11 @@ window.Spells = {
     name: "Scald 1",
     type: SpellTypes.Destroying,
     description: "Does 500 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 500},
     ]
   },
@@ -1054,11 +1054,11 @@ window.Spells = {
     name: "Scald 2",
     type: SpellTypes.Destroying,
     description: "Does 600 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 600},
     ]
   },
@@ -1066,11 +1066,11 @@ window.Spells = {
     name: "Scald 3",
     type: SpellTypes.Destroying,
     description: "Does 750 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 750},
     ]
   },
@@ -1078,11 +1078,11 @@ window.Spells = {
     name: "Scald 4",
     type: SpellTypes.Destroying,
     description: "Does 800 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 800},
     ]
   },
@@ -1090,11 +1090,11 @@ window.Spells = {
     name: "Scald 5",
     type: SpellTypes.Destroying,
     description: "Does 850 damage",
-    icon: "/Images/Battle/destroyingIcon.png",
+    icon: "Images/Battle/destroyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
       { type: "combatantAnimation"},
-      { type: "spellAnimation", src: "/Images/Battle/Spells/Maim Sprite Sheet.png"},
+      { type: "spellAnimation", src: "Images/Battle/Spells/Maim Sprite Sheet.png"},
       { type: "stateChange", damage: 850},
     ]
   },
@@ -1102,10 +1102,10 @@ window.Spells = {
     name: "Barr 1",
     type: SpellTypes.Fortifying,
     description: "Reduces incoming damage by 2%",
-    icon: "/Images/Battle/fortifyingIcon.png",
+    icon: "Images/Battle/fortifyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", fortify: 2},
     ]
   },
@@ -1113,10 +1113,10 @@ window.Spells = {
     name: "Hinde 1",
     type: SpellTypes.Fortifying,
     description: "Reduces incoming damage by 15%",
-    icon: "/Images/Battle/fortifyingIcon.png",
+    icon: "Images/Battle/fortifyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Hinde Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Hinde Sprite Sheet.png"},
       { type: "stateChange", fortify: 15},
     ]
   },
@@ -1125,10 +1125,10 @@ window.Spells = {
     name: "Boost 1",
     type: SpellTypes.Amplifying,
     description: "Increases outgoing damage by 2%",
-    icon: "/Images/Battle/fortifyingIcon.png",
+    icon: "Images/Battle/fortifyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", amplify: 2},
     ]
   },
@@ -1136,10 +1136,10 @@ window.Spells = {
     name: "Boost 2",
     type: SpellTypes.Amplifying,
     description: "Increases outgoing damage by 2%",
-    icon: "/Images/Battle/fortifyingIcon.png",
+    icon: "Images/Battle/fortifyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", amplify: 2},
     ]
   },
@@ -1147,10 +1147,10 @@ window.Spells = {
     name: "Boost 3",
     type: SpellTypes.Amplifying,
     description: "Increases outgoing damage by 3%",
-    icon: "/Images/Battle/fortifyingIcon.png",
+    icon: "Images/Battle/fortifyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", amplify: 3},
     ]
   },
@@ -1158,10 +1158,10 @@ window.Spells = {
     name: "Boost 4",
     type: SpellTypes.Amplifying,
     description: "Increases outgoing damage by 5%",
-    icon: "/Images/Battle/fortifyingIcon.png",
+    icon: "Images/Battle/fortifyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", amplify: 5},
     ]
   },
@@ -1169,10 +1169,10 @@ window.Spells = {
     name: "Boost 5",
     type: SpellTypes.Amplifying,
     description: "Increases outgoing damage by 10%",
-    icon: "/Images/Battle/fortifyingIcon.png",
+    icon: "Images/Battle/fortifyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", amplify: 10},
     ]
   },
@@ -1180,10 +1180,10 @@ window.Spells = {
     name: "Boost 6",
     type: SpellTypes.Amplifying,
     description: "Increases outgoing damage by 8%",
-    icon: "/Images/Battle/fortifyingIcon.png",
+    icon: "Images/Battle/fortifyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", amplify: 8},
     ]
   },
@@ -1191,10 +1191,10 @@ window.Spells = {
     name: "Boost 7",
     type: SpellTypes.Amplifying,
     description: "Increases outgoing damage by 9%",
-    icon: "/Images/Battle/fortifyingIcon.png",
+    icon: "Images/Battle/fortifyingIcon.png",
     success: [
       { type: "textMessage", text: "{CASTER} casted {ACTION}"},
-      { type: "spellAnimation", friendly: true, src: "/Images/Battle/Spells/Sweep Sprite Sheet.png"},
+      { type: "spellAnimation", friendly: true, src: "Images/Battle/Spells/Sweep Sprite Sheet.png"},
       { type: "stateChange", amplify: 9},
     ]
   },
