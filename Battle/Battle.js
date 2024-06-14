@@ -60,7 +60,7 @@ class Battle {
     this.heroElement = document.createElement("div");
     this.heroElement.classList.add("Battle_hero_div");
     this.heroImageElement = document.createElement("img");
-    this.heroImageElement.src = "../Images/Characters/Hero Sprite Sheet.png";
+    this.heroImageElement.src = "Images/Characters/Hero Sprite Sheet.png";
     this.heroImageElement.classList.add("Battle_hero_img")
     this.element.appendChild(this.heroElement);
     this.heroElement.appendChild(this.heroImageElement);
