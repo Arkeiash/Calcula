@@ -4,7 +4,7 @@
   right: 0;
   top:0;
   bottom:0;
-  background-image: url(/Images/Battle/BattleArea.png);
+  background-image: url(../Images/Battle/BattleArea.png);
   background-size: cover;
   image-rendering: pixelated;
 }
@@ -14,7 +14,7 @@
   width: 32px;
   height: 32px;
   overflow: hidden;
-  background: url(/Images/Characters/Shadow.png) no-repeat no-repeat;
+  background: url(../Images/Characters/Shadow.png) no-repeat no-repeat;
 }
 .Battle_hero_img, .Battle_enemy_img {
   pointer-events: none;
