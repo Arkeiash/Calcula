@@ -64,17 +64,17 @@ let calculator_buttons = [
     {
         name : "cos",
         symbol : "cos",
-        formula : "trigo(Math.cos,",
+        formula : "this.trigo(Math.cos,",
         type : "trigo_function"
     },{
         name : "sin",
         symbol : "sin",
-        formula : "trigo(Math.sin,",
+        formula : "this.trigo(Math.sin,",
         type : "trigo_function"
     },{
         name : "tan",
         symbol : "tan",
-        formula : "trigo(Math.tan,",
+        formula : "this.trigo(Math.tan,",
         type : "trigo_function"
     },{
         name : "7",
@@ -107,17 +107,17 @@ let calculator_buttons = [
     {
         name : "acos",
         symbol : "acos",
-        formula : "inv_trigo(Math.acos,",
+        formula : "this.inv_trigo(Math.acos,",
         type : "trigo_function"
     },{
         name : "asin",
         symbol : "asin",
-        formula : "inv_trigo(Math.asin,",
+        formula : "this.inv_trigo(Math.asin,",
         type : "trigo_function"
     },{
         name : "atan",
         symbol : "atan",
-        formula : "inv_trigo(Math.atan,",
+        formula : "this.inv_trigo(Math.atan,",
         type : "trigo_function"
     },
     {
@@ -329,7 +329,8 @@ class Calculator {
         data.formula.push(button.formula);
             
         }  else if(button.type === "trigo_function") {
-        
+            data.operation.push(button.symbol + "(");
+            data.formula.push(button.formula);
         } else if(button.type === "math_function") {
             let symbol, formula;
 
@@ -401,7 +402,7 @@ class Calculator {
             if(!this.RADIAN) {
                 angle = angle * Math.PI/180
             }
-            return callback(angle)
+            return callback(angle);
         }
         inv_trigo = function(callback, value) {
             let angle = callback(value);
