@@ -396,7 +396,18 @@ class Calculator {
             } 
         } else if(button.type === "calculate") {
             let formula_str = data.formula.join('');
-            let result = eval(formula_str);
+            let result;
+            try{result = eval(formula_str);
+               }catch( error ) {
+                if(error instanceof SyntaxError) {
+                    result = "Syntax Error!";
+                    this.updateOutputResult(result);
+                    return;
+                }
+               }
+
+            
+            
                 this.updateOutputResult(result);
         }
             this.updateOutputOperation(data.operation.join(''));
