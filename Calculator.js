@@ -4,6 +4,8 @@ let data = {
     operation: [],
     formula: [],
 }
+
+
 let calculator_buttons = [
     {
         name : "rad",
@@ -223,6 +225,8 @@ let calculator_buttons = [
 class Calculator {
     constructor({onComplete}) {
         this.onComplete = onComplete;
+        this.RADIAN = true;
+        
     }
     createElement = function() {
 
@@ -350,6 +354,9 @@ class Calculator {
 
                 data.operation.push("2)");
                 data.formula.push("2)");
+            } else if(button.name == "trigo_function") {
+                data.operation.push(button.symbol + "(");
+                data.formula.push(button.formula);
             } else {
                 symbol = button.symbol + "(";
                 formula = button.formula + "(";
@@ -364,6 +371,12 @@ class Calculator {
             } else if (button.name == "delete") {
                 data.operation.pop();
                 data.formula.pop();
+            } else if (button.name == "rad") {
+                this.RADIAN = true;
+                this.angleToggler();
+            } else if (button.name == "deg") {
+                this.RADIAN = false;
+                this.angleToggler();
             } 
         } else if(button.type === "calculate") {
             let formula_str = data.formula.join('');
@@ -373,7 +386,16 @@ class Calculator {
             this.updateOutputOperation(data.operation.join(''));
             console.log(data.operation.join(''));
         }
-        
+
+        getTrigVars = function() {
+            this.rad_btn = document.getElementById("rad");
+            this.deg_btn = document.getElementById("deg");
+            this.rad_btn.classList.add("active-angle");
+        }
+        angleToggler = function() {
+            this.rad_btn.classList.toggle("active-angle");
+            this.deg_btn.classList.toggle("active-angle");
+        }
         
         
         
@@ -391,12 +413,15 @@ class Calculator {
             })
         }
 
+        
+
 
       async init(container) {
         this.createElement();
         container.appendChild(this.calculatorElement);
         this.createCalculatorButtons();
         this.addTheEventListeners();
+        this.getTrigVars();
 
         utils.wait(200);
         this.esc = new KeyPressListener("KeyC", () => {
