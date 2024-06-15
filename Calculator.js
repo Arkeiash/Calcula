@@ -396,6 +396,20 @@ class Calculator {
             this.rad_btn.classList.toggle("active-angle");
             this.deg_btn.classList.toggle("active-angle");
         }
+
+        trigo = function(callback, angle) {
+            if(!this.RADIAN) {
+                angle = angle * Math.PI/180
+            }
+            return callback(angle)
+        }
+        inv_trigo = function(callback, value) {
+            let angle = callback(value);
+            if(!this.RADIAN) {
+                angle = angle * Math.PI/180
+            }
+            return angle;
+        }
         
         
         
