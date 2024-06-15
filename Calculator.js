@@ -289,6 +289,21 @@ class Calculator {
 
         })
     }
+
+    factorial = function(number) {
+        if(number === 0 || number === 1) {
+            return 1;
+        }
+        let result = 1;
+        for(let i = 0; i<= number; i++ ) {
+            result *= i;
+            if(result === Infinity) {
+                return Infinity;
+            }
+            return result;
+            
+        }
+    }
     gamma = function(n) {  // accurate to about 15 decimal places
         //some magic constants 
         var g = 7, // g represents the precision desired, p is the values of p[i] to plug into Lanczos' formula
