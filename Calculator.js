@@ -291,6 +291,7 @@ class Calculator {
     }
 
     factorial = function(number) {
+        if(number % 1 != 0) {return gamma(number +1);}
         if(number === 0 || number === 1) {
             return 1;
         }
@@ -300,9 +301,8 @@ class Calculator {
             if(result === Infinity) {
                 return Infinity;
             }
-            return result;
-            
         }
+        return result;
     }
     gamma = function(n) {  // accurate to about 15 decimal places
         //some magic constants 
