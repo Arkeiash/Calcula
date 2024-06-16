@@ -291,7 +291,7 @@ class Calculator {
     }
 
     factorial = function(number) {
-        if(number % 1 != 0) {return gamma(number +1);}
+        if(number % 1 != 0) {return this.gamma(number +1);}
         if(number === 0 || number === 1) {
             return 1;
         }
@@ -413,7 +413,7 @@ class Calculator {
         // Evaluate factorial functions before the final eval
         const factorialRegex = /factorial\((\d+)\)/g;
         formula_str = formula_str.replace(factorialRegex, (match, p1) => {
-            return factorial(parseInt(p1));
+            return this.factorial(parseInt(p1));
         });
 
         console.log(formula_str);
