@@ -395,7 +395,24 @@ class Calculator {
                 this.angleToggler();
             } 
         } else if(button.type === "calculate") {
+            //Factorial Fix
             let formula_str = data.formula.join('');
+            //Find Powers and Factorials
+            let POWER_SEARCH_RESULT = this.search(data.formula, POWER);
+            let FACTORIAL_SEARCH_RESULT = this.search(data.formula, FACTORIAL);
+            //Find bases and exponents
+            const BASES = this.powerBaseGetter(data.formula, POWER_SEARCH_RESULT);
+            BASES.forEach(base => {
+               let to_replace = base + POWER;
+                let replacement = "Math.pow("+base+",";
+                formula_str = formula_str.replace(to_replace, replacement);
+            });
+            const NUMBERS = this.factorialGetter(data.formula, FACTORIAL_SEARCH_RESULT);
+            NUMBERS.forEach(factorial => {
+                formula_str = formula_str.replace(factorial.toReplace, factorial.replacement);
+            })
+            
+            //Calculate
             let result;
             try{result = eval(formula_str);
                }catch( error ) {
@@ -405,8 +422,10 @@ class Calculator {
                     return;
                 }
                }
-
-            
+            //Saving Answer
+            ans = result;
+            data.operation = [ result ];
+            data.formula = [ result ];
             
                 this.updateOutputResult(result);
         }
@@ -437,8 +456,88 @@ class Calculator {
             }
             return angle;
         }
-        
-        
+
+
+        search = function(array, keyword) {
+            let search_result = [];
+            array.forEach((element, index) => {
+                if(element == keyword) {
+                    search_result.push(index);
+                }
+            })
+            return search_result;
+        }
+
+        powerBaseGetter = function(formula, POWER_SEARCH_RESULT) {
+            let powers_bases = [];
+            POWER_SEARCH_RESULT.forEach(power_index => {
+                let base = [];
+                let parentheses_count = 0;
+                let previous_index = power_index -1;
+                while(previous_index >= 0) {
+                    if(formula[previous_index] = "(") {parentheses_count --;}
+                    if(formula[previous_index] = ")") {parentheses_count ++;}
+                    
+                    let is_operator = false;
+                    OPERATORS.forEach(OPERATOR => {
+                        if(formula[previous_index] = OPERATOR) {is_operator = true}
+                    })
+                    let is_power = formula[previous_index] == POWER;
+                    if(is_operator && paranteses_count === 0 || is_power) break;
+
+                    base.unshift(formula[previous_index]);
+                    previous_index --;               
+                }
+                powers_bases.push(bases.join(''));
+            })
+            return powers_bases;
+        }
+
+        factorialNumberGetter = function(formula, FACTORIAL_SEARCH_RESULT) {
+            let numbers = [];
+            let factorial_sequence = 0;
+            FACTORIAL_SEARCH_RESULT.forEach(factorial_index => {
+                let number = [];
+                let next_index = factorial_index +1;
+                let next_input = formula[next_index];
+                if(next_input == FACTORIAL) {
+                    factorial_sequence += 1;
+                    return
+                }
+                let first_factorial_index = factorial_index - factorial_sequence;
+                let previous_index - first_factorial_index - 1;
+                let parentheses_count = 1;
+                while(previous_index >= 0) {
+                    if(formula[previous_index] = "(") {parentheses_count --;}
+                    if(formula[previous_index] = ")") {parentheses_count ++;}
+                    
+                    let is_operator = false;
+                    OPERATORS.forEach(OPERATOR => {
+                        if(formula[previous_index] = OPERATOR) {is_operator = true}
+                    })
+                    if(is_operator && paranteses_count === 0) break;
+
+                    number.unshift(formula[previous_index]);
+                    previous_index --;               
+                }
+                let number_str = number.join('');
+                const factorial = "factorial(", close_parentheses = ")";
+                let times = factorial_sequence + 1;
+                let toReplace = number_str + factorial.repeat(times);
+                let replacement = factorial.repeat(times) + number_str + close_parentheses.repeat(times);
+
+                numbers.push({
+                    toReplace: toReplace;
+                    replacement: replacement;
+                });
+                factorial_sequence = 0;
+            
+                
+            });
+            return numbers;
+
+            
+        }
         
         addTheEventListeners = function() {
             console.log("Listeners Called");
