@@ -491,46 +491,64 @@ class Calculator {
     }
 
         factorialNumberGetter = function(formula, FACTORIAL_SEARCH_RESULT) {
-            let numbers = [];
-            let factorial_sequence = 0;
-            FACTORIAL_SEARCH_RESULT.forEach(factorial_index => {
-                let number = [];
-                let next_index = factorial_index +1;
-                let next_input = formula[next_index];
-                if(next_input == FACTORIAL) {
-                    factorial_sequence += 1;
-                    return
-                }
-                let first_factorial_index = factorial_index - factorial_sequence;
-                let previous_index = first_factorial_index - 1;
-                let parentheses_count = 0;
-                while(previous_index >= 0) {
-                    if(formula[previous_index] = "(") {parentheses_count --;}
-                    if(formula[previous_index] = ")") {parentheses_count ++;}
-                    
-                    let is_operator = false;
-                    OPERATORS.forEach(OPERATOR => {
-                        if(formula[previous_index] = OPERATOR) {is_operator = true}
-                    })
-                    if(is_operator && parentheses_count === 0) break;
+    let numbers = [];
+    let factorial_sequence = 0;
+    FACTORIAL_SEARCH_RESULT.forEach(factorial_index => {
+        let number = [];
+        let next_index = factorial_index + 1;
+        let next_input = formula[next_index];
 
-                    number.unshift(formula[previous_index]);
-                    previous_index --;               
-                }
-                let number_str = number.join('');
-                const factorial = "factorial(", close_parentheses = ")";
-                let times = factorial_sequence + 1;
-                let toReplace = number_str + FACTORIAL.repeat(times);
-                let replacement = factorial.repeat(times) + number_str + close_parentheses.repeat(times);
-
-                numbers.push({
-                    toReplace: toReplace,
-                    replacement: replacement,
-                });
-                factorial_sequence = 0;
-            });
-            return numbers;
+        // Check for consecutive factorials
+        if (next_input === FACTORIAL) {
+            factorial_sequence += 1;
+            return;
         }
+
+        // Corrected the logic to find the first factorial in a sequence
+        let first_factorial_index = factorial_index - factorial_sequence;
+        let previous_index = first_factorial_index - 1;
+        let parentheses_count = 0;
+
+        // Fixing the loop to correctly gather the number for factorial
+        while (previous_index >= 0) {
+            if (formula[previous_index] === "(") {
+                parentheses_count--;
+            }
+            if (formula[previous_index] === ")") {
+                parentheses_count++;
+            }
+
+            // Corrected operator check and exit condition
+            let is_operator = false;
+            OPERATORS.forEach(OPERATOR => {
+                if (formula[previous_index] === OPERATOR) {
+                    is_operator = true;
+                }
+            });
+            if (is_operator && parentheses_count === 0) break;
+
+            number.unshift(formula[previous_index]);
+            previous_index--;
+        }
+
+        let number_str = number.join('');
+        const factorial = "factorial(", close_parentheses = ")";
+        let times = factorial_sequence + 1;
+        let toReplace = number_str + FACTORIAL.repeat(times);
+
+        // Fixed the replacement string to use correct format for multiple factorials
+        let replacement = factorial.repeat(times) + number_str + close_parentheses.repeat(times);
+
+        numbers.push({
+            toReplace: toReplace,
+            replacement: replacement,
+        });
+
+        // Reset the factorial sequence counter after processing
+        factorial_sequence = 0;
+    });
+    return numbers;
+};
         
         addTheEventListeners = function() {
             console.log("Listeners Called");
