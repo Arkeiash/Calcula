@@ -408,7 +408,7 @@ class Calculator {
             NUMBERS.forEach(factorial => {
                 formula_str = formula_str.replace(factorial.toReplace, factorial.replacement);
             })
-            
+            console.log(formula_str);
             //Calculate
             let result;
             try{result = eval(formula_str);
