@@ -520,7 +520,7 @@ class Calculator {
                 let number_str = number.join('');
                 const factorial = "factorial(", close_parentheses = ")";
                 let times = factorial_sequence + 1;
-                let toReplace = number_str + factorial.repeat(times);
+                let toReplace = number_str + FACTORIAL.repeat(times);
                 let replacement = factorial.repeat(times) + number_str + close_parentheses.repeat(times);
 
                 numbers.push({
