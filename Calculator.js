@@ -427,7 +427,7 @@ class Calculator {
                 this.updateOutputResult(result);
         }
             this.updateOutputOperation(data.operation.join(''));
-            console.log(data.formula.join('');
+            console.log(data.formula.join(''));
         }
 
         getTrigVars = function() {
