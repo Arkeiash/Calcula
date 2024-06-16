@@ -178,12 +178,13 @@ class OverworldEvent {
   }
   
   problem(resolve) {
+    this.map.isCutscenePlaying = false;
     const problem = new Problem({
       problem: Problems[this.event.problem],
       onComplete: () => {
         resolve();
         this.map.isPaused = false;
-        this.map.isCutscenePlaying = false;
+        
       }
     })
     problem.init(document.querySelector(".game-container"));
