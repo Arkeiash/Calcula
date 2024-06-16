@@ -32,7 +32,7 @@ html{
     height: 70px;
 
     color: #878787;
-
+    font-family: 'Cinzel', serif;
     font-size: 1.9em;
     font-weight: bold;
 
@@ -54,7 +54,7 @@ html{
     height: 140px;
 
     color: #FFF;
-
+    font-family: 'Cinzel', serif;
     font-size: 2.6em;
     font-weight: bold;
    
@@ -64,7 +64,7 @@ html{
 
 .result .value{
     position: absolute;
-
+    
     top: 50%;
     transform: translateY(-50%);
     right : 10px;
@@ -91,7 +91,7 @@ html{
 .row button{
     width: 50px;
     height: 50px;
-
+    font-family: 'Cinzel', serif;
     font-size: 1.5em;
 
     border: none;
@@ -109,13 +109,13 @@ html{
 
 .row #calculate{
     color: #FFF;
-    background-color: #46e0bc;
+    background-color: #00cc00;
     width : 121px;
     border-radius: 50px;
 }
 .row #delete{
     color: #FFF;
-    background-color: #e05046;
+    background-color: #ff0000;
 }
 
 #division, #multiplication, #subtraction, #addition {
