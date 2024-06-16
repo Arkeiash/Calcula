@@ -421,7 +421,7 @@ class Calculator {
                 }
                }
             //Saving Answer
-            ans = result;
+            let ans = result;
             data.operation = [ result ];
             data.formula = [ result ];
             
