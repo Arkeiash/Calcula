@@ -503,7 +503,7 @@ class Calculator {
                     return
                 }
                 let first_factorial_index = factorial_index - factorial_sequence;
-                let previous_index - first_factorial_index - 1;
+                let previous_index = first_factorial_index - 1;
                 let parentheses_count = 0;
                 while(previous_index >= 0) {
                     if(formula[previous_index] = "(") {parentheses_count --;}
