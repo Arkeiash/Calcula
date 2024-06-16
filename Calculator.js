@@ -525,8 +525,8 @@ class Calculator {
                 let replacement = factorial.repeat(times) + number_str + close_parentheses.repeat(times);
 
                 numbers.push({
-                    toReplace: toReplace;
-                    replacement: replacement;
+                    toReplace: toReplace,
+                    replacement: replacement,
                 });
                 factorial_sequence = 0;
             });
