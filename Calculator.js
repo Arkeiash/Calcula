@@ -20,7 +20,7 @@ let gamma = function(n) {
         }
     }
 let factorial = function(number) {
-        if(number % 1 != 0) {return this.gamma(number +1);}
+        if(number % 1 != 1) {return this.gamma(number +1);}
         if(number === 0 || number === 1) {
             return 1;
         }
