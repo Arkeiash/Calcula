@@ -513,7 +513,7 @@ class Calculator {
                     OPERATORS.forEach(OPERATOR => {
                         if(formula[previous_index] = OPERATOR) {is_operator = true}
                     })
-                    if(is_operator && paranteses_count === 0) break;
+                    if(is_operator && parantheses_count === 0) break;
 
                     number.unshift(formula[previous_index]);
                     previous_index --;               
