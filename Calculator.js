@@ -333,7 +333,6 @@ class Calculator {
         }
         
         calculator = function(button) {
-            console.log("Calculator");
         if(button.type === "operator") {
         data.operation.push(button.symbol);
         data.formula.push(button.formula);
@@ -428,7 +427,7 @@ class Calculator {
                 this.updateOutputResult(result);
         }
             this.updateOutputOperation(data.operation.join(''));
-            console.log(data.operation.join(''));
+            console.log(data.formula.join('');
         }
 
         getTrigVars = function() {
