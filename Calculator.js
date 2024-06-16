@@ -423,7 +423,7 @@ class Calculator {
             console.log(formula_str);
             //Calculate
             let result;
-            try{result = eval(formula_str);
+            try{result = Math.round(10000000000*eval(formula_str)/10000000000);
                }catch( error ) {
                 if(error instanceof SyntaxError) {
                     result = "Syntax Error!";
