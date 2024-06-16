@@ -304,23 +304,21 @@ class Calculator {
         }
         return result;
     }
-    gamma = function(n) {  // accurate to about 15 decimal places
-        //some magic constants 
+    gamma = function(n) {
         var g = 7, // g represents the precision desired, p is the values of p[i] to plug into Lanczos' formula
             p = [0.99999999999980993, 676.5203681218851, -1259.1392167224028, 771.32342877765313, -176.61502916214059, 12.507343278686905, -0.13857109526572012, 9.9843695780195716e-6, 1.5056327351493116e-7];
-        if(n < 0.5) {
-          return Math.PI / Math.sin(n * Math.PI) / gamma(1 - n);
+        if (n < 0.5) {
+            return Math.PI / Math.sin(n * Math.PI) / this.gamma(1 - n); // Added 'this' to gamma call
+        } else {
+            n--;
+            var x = p[0];
+            for (var i = 1; i < g + 2; i++) {
+                x += p[i] / (n + i);
+            }
+            var t = n + g + 0.5;
+            return Math.sqrt(2 * Math.PI) * Math.pow(t, (n + 0.5)) * Math.exp(-t) * x;
         }
-        else {
-          n--;
-          var x = p[0];
-          for(var i = 1; i < g + 2; i++) {
-            x += p[i] / (n + i);
-          }
-          var t = n + g + 0.5;
-          return Math.sqrt(2 * Math.PI) * Math.pow(t, (n + 0.5)) * Math.exp(-t) * x;
-        }
-      }
+    }
       close() {
         this.calculatorElement.remove();
         this.onComplete();
@@ -450,48 +448,48 @@ class Calculator {
             return callback(angle);
         }
         inv_trigo = function(callback, value) {
-            let angle = callback(value);
-            if(!this.RADIAN) {
-                angle = angle * Math.PI/180
+        let angle = callback(value);
+        if (!this.RADIAN) {
+            angle = angle * 180 / Math.PI; // Fixed angle conversion to degrees
+        }
+        return angle;
+    }
+
+
+       search = function(array, keyword) {
+        let search_result = [];
+        array.forEach((element, index) => {
+            if (element === keyword) { // Fixed comparison
+                search_result.push(index);
             }
-            return angle;
-        }
-
-
-        search = function(array, keyword) {
-            let search_result = [];
-            array.forEach((element, index) => {
-                if(element == keyword) {
-                    search_result.push(index);
-                }
-            })
-            return search_result;
-        }
+        });
+        return search_result;
+    }
 
         powerBaseGetter = function(formula, POWER_SEARCH_RESULT) {
-            let powers_bases = [];
-            POWER_SEARCH_RESULT.forEach(power_index => {
-                let base = [];
-                let parentheses_count = 0;
-                let previous_index = power_index -1;
-                while(previous_index >= 0) {
-                    if(formula[previous_index] = "(") {parentheses_count --;}
-                    if(formula[previous_index] = ")") {parentheses_count ++;}
-                    
-                    let is_operator = false;
-                    OPERATORS.forEach(OPERATOR => {
-                        if(formula[previous_index] = OPERATOR) {is_operator = true}
-                    })
-                    let is_power = formula[previous_index] == POWER;
-                    if(is_operator && paranteses_count === 0 || is_power) break;
+        let power_bases = [];
+        POWER_SEARCH_RESULT.forEach(power_index => {
+            let base = [];
+            let parentheses_count = 0;
+            let previous_index = power_index - 1;
+            while (previous_index >= 0) {
+                if (formula[previous_index] === "(") { parentheses_count--; } // Fixed comparison
+                if (formula[previous_index] === ")") { parentheses_count++; } // Fixed comparison
 
-                    base.unshift(formula[previous_index]);
-                    previous_index --;               
-                }
-                powers_bases.push(bases.join(''));
-            })
-            return powers_bases;
-        }
+                let is_operator = false;
+                OPERATORS.forEach(OPERATOR => {
+                    if (formula[previous_index] === OPERATOR) { is_operator = true; } // Fixed comparison
+                });
+                let is_power = formula[previous_index] === POWER; // Fixed comparison
+                if ((is_operator && parentheses_count === 0) || is_power) break;
+
+                base.unshift(formula[previous_index]);
+                previous_index--;
+            }
+            power_bases.push(base.join('')); // Fixed variable name to 'base'
+        });
+        return power_bases;
+    }
 
         factorialNumberGetter = function(formula, FACTORIAL_SEARCH_RESULT) {
             let numbers = [];
@@ -506,7 +504,7 @@ class Calculator {
                 }
                 let first_factorial_index = factorial_index - factorial_sequence;
                 let previous_index - first_factorial_index - 1;
-                let parentheses_count = 1;
+                let parentheses_count = 0;
                 while(previous_index >= 0) {
                     if(formula[previous_index] = "(") {parentheses_count --;}
                     if(formula[previous_index] = ")") {parentheses_count ++;}
@@ -531,12 +529,8 @@ class Calculator {
                     replacement: replacement;
                 });
                 factorial_sequence = 0;
-            
-                
             });
             return numbers;
-
-            
         }
         
         addTheEventListeners = function() {
@@ -552,9 +546,6 @@ class Calculator {
                 })
             })
         }
-
-        
-
 
       async init(container) {
         this.createElement();
