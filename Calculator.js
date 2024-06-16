@@ -405,9 +405,18 @@ class Calculator {
                 formula_str = formula_str.replace(to_replace, replacement);
             });
             const NUMBERS = this.factorialNumberGetter(data.formula, FACTORIAL_SEARCH_RESULT);
-            NUMBERS.forEach(factorial => {
-                formula_str = formula_str.replace(factorial.toReplace, factorial.replacement);
-            })
+           NUMBERS.forEach(factorial => {
+            let regex = new RegExp(factorial.toReplace.replace(/\(/g, "\\(").replace(/\)/g, "\\)"), 'g');
+            formula_str = formula_str.replace(regex, factorial.replacement);
+        });
+
+        // Evaluate factorial functions before the final eval
+        const factorialRegex = /factorial\((\d+)\)/g;
+        formula_str = formula_str.replace(factorialRegex, (match, p1) => {
+            return factorial(parseInt(p1));
+        });
+
+        console.log(formula_str);
             console.log(formula_str);
             //Calculate
             let result;
