@@ -405,7 +405,7 @@ class Calculator {
                 let replacement = "Math.pow("+base+",";
                 formula_str = formula_str.replace(to_replace, replacement);
             });
-            const NUMBERS = this.factorialGetter(data.formula, FACTORIAL_SEARCH_RESULT);
+            const NUMBERS = this.factorialNumberGetter(data.formula, FACTORIAL_SEARCH_RESULT);
             NUMBERS.forEach(factorial => {
                 formula_str = formula_str.replace(factorial.toReplace, factorial.replacement);
             })
