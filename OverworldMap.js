@@ -459,7 +459,7 @@ window.OverworldMaps = {
       }),
       raider4: new Person({
         x: utils.withGrid(166),
-        y: utils.withGrid(-74),
+        y: utils.withGrid(-70),
         useShadow: true,
         canBattle: true,
         alive: false,
