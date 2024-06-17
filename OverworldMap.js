@@ -1318,13 +1318,13 @@ window.OverworldMaps = {
         coords: [utils.withChunk(6), utils.withChunk(0)],
         Gsrc: "Images/Maps/C9-5-G.png",
         Wsrc: "Images/Maps/C9-5-W.png",
-        Usrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/C9-5-U.png",
       },
       "6-1": {
         coords: [utils.withChunk(6), utils.withChunk(1)],
         Gsrc: "Images/Maps/C9-6-G.png",
         Wsrc: "Images/Maps/C9-6-W.png",
-        Usrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/C9-6-U.png",
       },
       "6-2": {
         coords: [utils.withChunk(6), utils.withChunk(2)],
@@ -1342,7 +1342,7 @@ window.OverworldMaps = {
         coords: [utils.withChunk(5), utils.withChunk(0)],
         Gsrc: "Images/Maps/C8-5-G.png",
         Wsrc: "Images/Maps/emptyChunk.png",
-        Usrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/C8-5-U.png",
       },
       "5-1": {
         coords: [utils.withChunk(5), utils.withChunk(1)],
@@ -1366,7 +1366,7 @@ window.OverworldMaps = {
         coords: [utils.withChunk(4), utils.withChunk(-1)],
         Gsrc: "Images/Maps/C7-4-G.png",
         Wsrc: "Images/Maps/C7-4-W.png",
-        Usrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/C7-4-U.png",
       },
       "4-0": {
         coords: [utils.withChunk(4), utils.withChunk(0)],
@@ -1384,7 +1384,7 @@ window.OverworldMaps = {
         coords: [utils.withChunk(4), utils.withChunk(2)],
         Gsrc: "Images/Maps/C7-7-G.png",
         Wsrc: "Images/Maps/C7-7-W.png",
-        Usrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/C7-7-U.png",
       },
       "3-2": {
         coords: [utils.withChunk(3), utils.withChunk(2)],
