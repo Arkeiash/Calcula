@@ -417,9 +417,249 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider1"},
+              {type: "textMessage", text: "Who are you?", faceHero: "raider2"},
               {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
               {type: "battle", enemyId: "raider2"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+            ]
+          }
+        ],
+      }),
+      raider3: new Person({
+        x: utils.withGrid(162),
+        y: utils.withGrid(-73),
+        useShadow: true,
+        canBattle: true,
+        alive: false,
+        src: "Images/Characters/Raider Sprite Sheet.png",
+        behaviorLoop: [
+          {type: "stand", direction: "down", time: 2000},
+          {type: "stand", direction: "left", time: 1300},
+          {type: "walk", direction: "up",},
+          {type: "stand", direction: "left", time: 2100},
+          {type: "stand", direction: "right", time: 6200},
+          {type: "stand", direction: "up", time: 3000},
+          {type: "walk", direction: "down",},
+          {type: "stand", direction: "right", time: 3100},
+        ],
+        talking: [
+          {
+            events: [
+              {type: "textMessage", text: "Who are you?", faceHero: "raider3"},
+              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "battle", enemyId: "raider3"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+            ]
+          }
+        ],
+      }),
+      raider4: new Person({
+        x: utils.withGrid(166),
+        y: utils.withGrid(-74),
+        useShadow: true,
+        canBattle: true,
+        alive: false,
+        src: "Images/Characters/Raider Sprite Sheet.png",
+        behaviorLoop: [
+          {type: "stand", direction: "down", time: 2000},
+          {type: "stand", direction: "left", time: 2300},
+          {type: "walk", direction: "up",},
+          {type: "stand", direction: "left", time: 2100},
+          {type: "stand", direction: "right", time: 3100},
+          {type: "stand", direction: "up", time: 3050},
+          {type: "walk", direction: "down",},
+          {type: "stand", direction: "right", time: 3100},
+        ],
+        talking: [
+          {
+            events: [
+              {type: "textMessage", text: "Who are you?", faceHero: "raider4"},
+              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "battle", enemyId: "raider4"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+            ]
+          }
+        ],
+      }),
+      raider5: new Person({
+        x: utils.withGrid(167),
+        y: utils.withGrid(-78),
+        useShadow: true,
+        canBattle: true,
+        alive: false,
+        src: "Images/Characters/Raider Sprite Sheet.png",
+        behaviorLoop: [
+          {type: "stand", direction: "down", time: 2000},
+          {type: "stand", direction: "left", time: 2000},
+          {type: "walk", direction: "up",},
+          {type: "stand", direction: "left", time: 2100},
+          {type: "stand", direction: "right", time: 2200},
+          {type: "stand", direction: "up", time: 3600},
+          {type: "walk", direction: "down",},
+          {type: "stand", direction: "right", time: 3900},
+        ],
+        talking: [
+          {
+            events: [
+              {type: "textMessage", text: "Who are you?", faceHero: "raider5"},
+              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "battle", enemyId: "raider5"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+            ]
+          }
+        ],
+      }),
+      raider6: new Person({
+        x: utils.withGrid(170),
+        y: utils.withGrid(-78),
+        useShadow: true,
+        canBattle: true,
+        alive: false,
+        src: "Images/Characters/Raider Sprite Sheet.png",
+        behaviorLoop: [
+          {type: "stand", direction: "down", time: 2000},
+          {type: "stand", direction: "left", time: 2300},
+          {type: "walk", direction: "up",},
+          {type: "stand", direction: "left", time: 2100},
+          {type: "stand", direction: "right", time: 3200},
+          {type: "stand", direction: "up", time: 4000},
+          {type: "walk", direction: "down",},
+          {type: "stand", direction: "right", time: 3100},
+        ],
+        talking: [
+          {
+            events: [
+              {type: "textMessage", text: "Who are you?", faceHero: "raider6"},
+              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "battle", enemyId: "raider6"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+            ]
+          }
+        ],
+      }),
+      raider7: new Person({
+        x: utils.withGrid(178),
+        y: utils.withGrid(-74),
+        useShadow: true,
+        canBattle: true,
+        alive: false,
+        src: "Images/Characters/Raider Sprite Sheet.png",
+        behaviorLoop: [
+          {type: "stand", direction: "down", time: 2000},
+          {type: "stand", direction: "left", time: 2600},
+          {type: "walk", direction: "up",},
+          {type: "stand", direction: "left", time: 2100},
+          {type: "stand", direction: "right", time: 3200},
+          {type: "stand", direction: "up", time: 1000},
+          {type: "walk", direction: "down",},
+          {type: "stand", direction: "right", time: 3100},
+        ],
+        talking: [
+          {
+            events: [
+              {type: "textMessage", text: "Who are you?", faceHero: "raider7"},
+              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "battle", enemyId: "raider7"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+            ]
+          }
+        ],
+      }),
+      raider8: new Person({
+        x: utils.withGrid(173),
+        y: utils.withGrid(-61),
+        useShadow: true,
+        canBattle: true,
+        alive: false,
+        src: "Images/Characters/Raider Sprite Sheet.png",
+        behaviorLoop: [
+          {type: "stand", direction: "down", time: 2000},
+          {type: "stand", direction: "left", time: 2900},
+          {type: "walk", direction: "up",},
+          {type: "stand", direction: "left", time: 2100},
+          {type: "stand", direction: "right", time: 3200},
+          {type: "stand", direction: "up", time: 5000},
+          {type: "walk", direction: "down",},
+          {type: "stand", direction: "right", time: 3100},
+        ],
+        talking: [
+          {
+            events: [
+              {type: "textMessage", text: "Who are you?", faceHero: "raider8"},
+              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "battle", enemyId: "raider8"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+            ]
+          }
+        ],
+      }),
+      raider9: new Person({
+        x: utils.withGrid(169),
+        y: utils.withGrid(-61),
+        useShadow: true,
+        canBattle: true,
+        alive: false,
+        src: "Images/Characters/Raider Sprite Sheet.png",
+        behaviorLoop: [
+          {type: "stand", direction: "down", time: 2000},
+          {type: "stand", direction: "left", time: 2300},
+          {type: "walk", direction: "up",},
+          {type: "stand", direction: "left", time: 2100},
+          {type: "stand", direction: "right", time: 3200},
+          {type: "stand", direction: "up", time: 3000},
+          {type: "walk", direction: "down",},
+          {type: "stand", direction: "right", time: 3100},
+        ],
+        talking: [
+          {
+            events: [
+              {type: "textMessage", text: "Who are you?", faceHero: "raider9"},
+              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "battle", enemyId: "raider9"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+            ]
+          }
+        ],
+      }),
+      raider10: new Person({
+        x: utils.withGrid(168),
+        y: utils.withGrid(-69),
+        useShadow: true,
+        canBattle: true,
+        alive: false,
+        src: "Images/Characters/Raider Sprite Sheet.png",
+        behaviorLoop: [
+          {type: "stand", direction: "down", time: 2000},
+          {type: "stand", direction: "left", time: 2300},
+          {type: "walk", direction: "up",},
+          {type: "stand", direction: "left", time: 2100},
+          {type: "stand", direction: "right", time: 3200},
+          {type: "stand", direction: "up", time: 3000},
+          {type: "walk", direction: "down",},
+          {type: "stand", direction: "right", time: 3100},
+        ],
+        talking: [
+          {
+            events: [
+              {type: "textMessage", text: "Who are you?", faceHero: "raider10"},
+              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "battle", enemyId: "raider10"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
