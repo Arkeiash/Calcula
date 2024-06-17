@@ -2,7 +2,7 @@
 const howToPlayButtonElement = document.getElementById("howToPlayButton");
 const spellGuideButtonElement = document.getElementById("spellGuideButton");
 const commentsButtonElement = document.getElementById("commentsButton");
-const aboutUsButtonElement = document.getElementById("aboutUsButton");
+const teacherStuffButtonElement = document.getElementById("teacherStuffButton");
 const popUpContainerElement = document.getElementById("popUpContainer");
 const exitButtonElement = document.createElement("button");
 exitButtonElement.classList.add("button");
@@ -78,8 +78,8 @@ spellGuidePopUpElement.innerHTML = `<h1>Spell Guide</h1>
 </ul>`;
 
 var teacherStuffPopUpElement = document.createElement("div");
-spellGuidePopUpElement.classList.add("popUp");
-spellGuidePopUpElement.innerHTML = `<h1>Alignment with California Common Core Standards</h1>
+teacherStuffPopUpElement.classList.add("popUp");
+teacherStuffPopUpElement.innerHTML = `<h1>Alignment with California Common Core Standards</h1>
 <h2>Algebra</h2>
 <p>Sweep 1: K.OA.2: Solve addition and subtraction word problems within 10, using objects or drawings to represent the problem.</p>
 
@@ -237,11 +237,11 @@ var onHowToPlay = function() {
  };
 
 var onTeacherStuff = function() {
-    if(currentPopUp !== commentPopUpElement) {
+    if(currentPopUp !== teacherStuffPopUpElement) {
         popUpContainerElement.innerHTML = "";
-        commentPopUpElement.appendChild(exitButtonElement);
-        popUpContainerElement.appendChild(commentPopUpElement);
-        currentPopUp = commentPopUpElement;
+        teacherStuffPopUpElement.appendChild(exitButtonElement);
+        popUpContainerElement.appendChild(teacherStuffPopUpElement);
+        currentPopUp = teacherStuffPopUpElement;
     }
    else {
        console.log("popDown")
@@ -257,5 +257,5 @@ var onTeacherStuff = function() {
 howToPlayButtonElement.addEventListener("click", onHowToPlay);
 spellGuideButtonElement.addEventListener("click", onSpellGuide);
 commentsButtonElement.addEventListener("click", onComment);
-aboutUsButtonElement.addEventListener("click", onAboutUs);
+teacherStuffButtonElement.addEventListener("click", onTeacherStuff);
 
