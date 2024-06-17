@@ -1670,6 +1670,13 @@ window.OverworldMaps = {
           ],
         },
       ],
+       [utils.asGridCoord(-7,-121)]: [
+        {
+          events: [
+            {type: "changeMap", map: "demoRoom1", x: 168*16, y: -69*16, direction: "down",},
+          ],
+        },
+      ],
       [utils.asGridCoord(22,26)]: [
         {
           events: [
