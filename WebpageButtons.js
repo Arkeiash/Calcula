@@ -142,7 +142,7 @@ and equations with a symbol for the unknown number to represent the problem.</p>
 
 <p>Raze 2: A.REI.2 Solve simple rational and radical equations in one variable, and give examples showing how extraneous solutions may arise. </p>
 
-<p>Raze 3: F.TF.5 Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.</p>
+<p>Raze 3: F.TF.5 Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.</p>`
 
 
 var commentPopUpElement = document.createElement("div");
