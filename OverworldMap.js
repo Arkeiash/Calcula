@@ -1144,19 +1144,19 @@ window.OverworldMaps = {
         coords: [utils.withChunk(0), utils.withChunk(-1)],
         Gsrc: "Images/Maps/C3-4-G.png",
         Wsrc: "Images/Maps/emptyChunk.png",
-        Usrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/C3-4-U.png",
       },
       "0--2": {
         coords: [utils.withChunk(0), utils.withChunk(-2)],
         Gsrc: "Images/Maps/C3-3-G.png",
         Wsrc: "Images/Maps/emptyChunk.png",
-        Usrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/C3-3-U.png",
       },
       "0--3": {
         coords: [utils.withChunk(0), utils.withChunk(-3)],
         Gsrc: "Images/Maps/C3-2-G.png",
         Wsrc: "Images/Maps/C3-2-W.png",
-        Usrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/C3-2-U.png",
       },
       "-1--3": {
         coords: [utils.withChunk(-1), utils.withChunk(-3)],
@@ -1204,7 +1204,7 @@ window.OverworldMaps = {
         coords: [utils.withChunk(0), utils.withChunk(1)],
         Gsrc: "Images/Maps/C3-6-G.png",
         Wsrc: "Images/Maps/C3-6-W.png",
-        Usrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/C3-6-U.png",
       },
       "1-1": {
         coords: [utils.withChunk(1), utils.withChunk(1)],
