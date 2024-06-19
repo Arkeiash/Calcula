@@ -68,6 +68,7 @@ class OverworldEvent {
         y: this.event.y,
         direction: this.event.direction,
       });
+      this.map.updateChunks(this.event.x, this.event.y);
       resolve();
       
       sceneTransition.fadeOut();
