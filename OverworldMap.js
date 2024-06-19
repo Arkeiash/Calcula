@@ -1129,6 +1129,30 @@ window.OverworldMaps = {
         size: 896,
         src: "Images/Objects/Village Row.png",
       }),
+      raiderHouseRow1: new Person({
+        x: utils.withGrid(162),
+        y: utils.withGrid(-73),
+        class: "object",
+        useShadow: false,
+        size: 896,
+        src: "Images/Objects/Raider Row 1.png",
+      }),
+      raiderHouseRow2: new Person({
+        x: utils.withGrid(158),
+        y: utils.withGrid(-68),
+        class: "object",
+        useShadow: false,
+        size: 896,
+        src: "Images/Objects/Raider Row 2.png",
+      }),
+      raiderHouseRow3: new Person({
+        x: utils.withGrid(161),
+        y: utils.withGrid(-63),
+        class: "object",
+        useShadow: false,
+        size: 896,
+        src: "Images/Objects/Raider Row 1.png",
+      }),
 
 
       
