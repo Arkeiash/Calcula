@@ -80,6 +80,7 @@ spellGuidePopUpElement.innerHTML = `<h1>Spell Guide</h1>
 var teacherStuffPopUpElement = document.createElement("div");
 teacherStuffPopUpElement.classList.add("popUp");
 teacherStuffPopUpElement.innerHTML = `<h1>Alignment with California Common Core Standards</h1>
+<p>We work hard to ensure the math in this game reflects Common Core content standards. The following is a list of each spell and its associated Common Core standard.</p>
 <h2>Number System, Operations, and Algebra</h2>
 <p>Sweep 1: K.OA.2: Solve addition and subtraction word problems within 10, using objects or drawings to represent the problem.</p>
 
