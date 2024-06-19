@@ -1131,15 +1131,15 @@ window.OverworldMaps = {
       }),
       raiderHouseRow1: new Person({
         x: utils.withGrid(162),
-        y: utils.withGrid(-71),
+        y: utils.withGrid(-73),
         class: "object",
         useShadow: false,
-        size: 896,
+        size: 256,
         src: "Images/Objects/Raider Row 1.png",
       }),
       raiderHouseRow2: new Person({
         x: utils.withGrid(158),
-        y: utils.withGrid(-65),
+        y: utils.withGrid(-68),
         class: "object",
         useShadow: false,
         size: 896,
@@ -1147,10 +1147,10 @@ window.OverworldMaps = {
       }),
       raiderHouseRow3: new Person({
         x: utils.withGrid(161),
-        y: utils.withGrid(-60),
+        y: utils.withGrid(-57),
         class: "object",
         useShadow: false,
-        size: 896,
+        size: 256,
         src: "Images/Objects/Raider Row 1.png",
       }),
 
