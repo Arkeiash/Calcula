@@ -47,7 +47,7 @@ class GameObject {
 
   checkForClose(heroX, heroY) {
     if(Math.abs(this.x/16 - heroX/16) <= 1 && Math.abs(this.y/16 - heroY/16) <= 1 && this.id !== "hero" && this.heroIsClose === false
-     && this.id !== "gate" && this.class !== "house") { 
+     && this.id !== "gate" && this.class !== "object") { 
       this.heroIsClose = true; 
       console.log("Hero is close");
       const container = document.querySelector(".game-container");
