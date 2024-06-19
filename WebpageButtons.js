@@ -142,7 +142,43 @@ and equations with a symbol for the unknown number to represent the problem.</p>
 
 <p>Raze 2: A.REI.2 Solve simple rational and radical equations in one variable, and give examples showing how extraneous solutions may arise. </p>
 
-<p>Raze 3: F.TF.5 Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.</p>`
+<p>Raze 3: F.TF.5 Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.</p>
+
+<h2>Geometry</h2>
+
+<p>Aid 1: K.G.2 Correctly name shapes regardless of their orientations or overall size.</p>
+
+<p>Aid 2: K.G.4 Analyze and compare two- and three-dimensional shapes, in different sizes and orientations, using informal language to describe their similarities, differences, parts (e.g., number of sides and vertices/“corners”) and other attributes (e.g., having sides of equal length).</p>
+
+<p>Aid 3: 3.G.1 Understand that shapes in different categories (e.g., rhombuses, rectangles, and others) may share attributes (e.g., having four sides), and that the shared attributes can define a larger category (e.g., quadrilaterals). Recognize rhombuses, rectangles, and squares as examples of quadrilaterals, and draw examples of quadrilaterals that do not belong to any of these subcategories.</p>
+
+<p>Aid 4: 4.G.1 Draw points, lines, line segments, rays, angles (right, acute, obtuse), and perpendicular and parallel lines. Identify these in two-dimensional figures.</p>
+
+<p>Aid 5: G.CO.5  Given a geometric figure and a rotation, reflection, or translation, draw the transformed figure using, e.g., graph paper, tracing paper, or geometry software. Specify a sequence of transformations that will carry a given figure onto another.</p>
+
+<p>Aid 6: G.CO.2 . Compare transformations that preserve distance and angle to those that do not (e.g., translation versus horizontal stretch).</p>
+
+<p>Vive 1: 4.MD.6 Measure angles in whole-number degrees using a protractor. Sketch angles of specified measure.</p>
+
+<p>Vive 2: 7.G.5 Use facts about supplementary, complementary, vertical, and adjacent angles in a multi-step problem to write and solve simple equations for an unknown angle in a figure.</p>
+
+<p>Vive 3: 8.G.7 Apply the Pythagorean Theorem to determine unknown side lengths in right triangles in real-world and mathematical problems in two and three dimensions.</p>
+
+<p>Heal 1: 3.MD.7 Relate area to the operations of multiplication and addition.</p>
+
+<p>Heal 2: 5.MD.5 Relate volume to the operations of multiplication and addition and solve real-world and mathematical problems involving volume.</p>
+
+<p>Heal 3: 7.G.4 Know the formulas for the area and circumference of a circle and use them to solve problems; give an informal derivation of the relationship between the circumference and area of a circle.</p>
+
+<p>Heal 4: G.C.5 Derive using similarity the fact that the length of the arc intercepted by an angle is proportional to the radius, and define the radian measure of the angle as the constant of proportionality; derive the formula for the area of a sector. </p>
+
+<p>Heal 5: G.GPE.3 Derive the equations of ellipses and hyperbolas given the foci, using the fact that the sum or difference of distances from the foci is constant.</p>
+
+<p>Rush 1: G.SRT.6 Understand that by similarity, side ratios in right triangles are properties of the angles in the triangle, leading to definitions of trigonometric ratios for acute angles. </p>
+
+<p>Rush 2: G.SRT.8 Use trigonometric ratios and the Pythagorean Theorem to solve right triangles in applied problems.</p>
+
+<p>Rush 3: G.SRT.11 Understand and apply the Law of Sines and the Law of Cosines to find unknown measurements in right and non-right triangles (e.g., surveying problems, resultant forces).</p>`
 
 
 var commentPopUpElement = document.createElement("div");
