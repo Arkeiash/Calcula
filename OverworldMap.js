@@ -1131,7 +1131,7 @@ window.OverworldMaps = {
       }),
       raiderHouseRow1: new Person({
         x: utils.withGrid(162),
-        y: utils.withGrid(-73),
+        y: utils.withGrid(-74),
         class: "object",
         type: "RaiderRow",
         useShadow: false,
@@ -1149,7 +1149,7 @@ window.OverworldMaps = {
       }),
       raiderHouseRow3: new Person({
         x: utils.withGrid(161),
-        y: utils.withGrid(-57),
+        y: utils.withGrid(-63),
         class: "object",
         type: "RaiderRow",
         useShadow: false,
