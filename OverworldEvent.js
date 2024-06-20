@@ -27,6 +27,7 @@ class OverworldEvent {
   walk(resolve) {
     const who = this.map.gameObjects[ this.event.who ];
     who.startBehavior({
+      who: who,
       map: this.map,
     }, {
       type: "walk",
@@ -74,124 +75,7 @@ class OverworldEvent {
       
       sceneTransition.fadeOut();
     });
-    var chunkX = Math.floor(this.event.x/16/49);
-    var chunkY = Math.floor(this.event.y/16/49);
-    var relXPos = this.event.x - chunkX*16*49;
-    var relYPos = this.event.y - chunkY*16*49;
-    if(relXPos >= 392 && relYPos >= 392 && this.map.inWhichChunk !== "A") {
-      console.log(this.map.chunks[`${chunkX+1}-${chunkY+1}`])
-      if(this.map.chunks[`${chunkX}-${chunkY}`]) {
-        this.map.inWhichChunk = "A";
-        this.map.lowerImageA.src = this.map.chunks[`${chunkX}-${chunkY}`].Gsrc || null
-        this.map.waterImageA.src = this.map.chunks[`${chunkX}-${chunkY}`].Wsrc || null
-        this.map.upperImageA.src = this.map.chunks[`${chunkX}-${chunkY}`].Usrc || null
-        this.map.AChunk = this.map.chunks[`${chunkX}-${chunkY}`] || null
-      }
-      if(this.map.chunks[`${chunkX+1}-${chunkY+1}`]) {
-        this.map.lowerImageD.src = this.map.chunks[`${chunkX+1}-${chunkY+1}`].Gsrc || null
-        this.map.waterImageD.src = this.map.chunks[`${chunkX+1}-${chunkY+1}`].Wsrc || null
-        this.map.upperImageD.src = this.map.chunks[`${chunkX+1}-${chunkY+1}`].Usrc || null
-        this.map.DChunk = this.map.chunks[`${chunkX+1}-${chunkY+1}`] || null
-      }
-      if(this.map.chunks[`${chunkX}-${chunkY+1}`]) {
-        this.map.lowerImageC.src = this.map.chunks[`${chunkX}-${chunkY+1}`].Gsrc || null
-        this.map.waterImageC.src = this.map.chunks[`${chunkX}-${chunkY+1}`].Wsrc || null
-        this.map.upperImageC.src = this.map.chunks[`${chunkX}-${chunkY+1}`].Usrc || null
-        this.map.CChunk = this.map.chunks[`${chunkX}-${chunkY+1}`] || null
-      }
-      if(this.chunks[`${chunkX+1}-${chunkY}`]) {
-        this.map.lowerImageB.src = this.map.chunks[`${chunkX+1}-${chunkY}`].Gsrc || null
-        this.map.waterImageB.src = this.map.chunks[`${chunkX+1}-${chunkY}`].Wsrc || null
-        this.map.upperImageB.src = this.map.chunks[`${chunkX+1}-${chunkY}`].Usrc || null
-        this.map.BChunk = this.map.chunks[`${chunkX+1}-${chunkY}`] || null
-      }
     
-    }
-    if(relXPos < 392 && relYPos < 392 && this.map.inWhichChunk !== "D") {
-      this.map.inWhichChunk = "D";
-      if(this.map.chunks[`${chunkX-1}-${chunkY-1}`]) {
-        this.map.lowerImageA.src = this.map.chunks[`${chunkX-1}-${chunkY-1}`].Gsrc || null
-        this.map.waterImageA.src = this.map.chunks[`${chunkX-1}-${chunkY-1}`].Wsrc || null
-        this.map.upperImageA.src = this.map.chunks[`${chunkX-1}-${chunkY-1}`].Usrc || null
-        this.map.AChunk = this.map.chunks[`${chunkX-1}-${chunkY-1}`] || null
-      }
-      if(this.map.chunks[`${chunkX}-${chunkY}`]) {
-        this.map.lowerImageD.src = this.map.chunks[`${chunkX}-${chunkY}`].Gsrc || null
-        this.map.waterImageD.src = this.map.chunks[`${chunkX}-${chunkY}`].Wsrc || null
-        this.map.upperImageD.src = this.map.chunks[`${chunkX}-${chunkY}`].Usrc || null
-        this.map.DChunk = this.map.chunks[`${chunkX}-${chunkY}`] || null
-      }
-      if(this.map.chunks[`${chunkX-1}-${chunkY}`]) {
-        this.map.lowerImageC.src = this.map.chunks[`${chunkX-1}-${chunkY}`].Gsrc
-        this.map.waterImageC.src = this.map.chunks[`${chunkX-1}-${chunkY}`].Wsrc
-        this.map.upperImageC.src = this.map.chunks[`${chunkX-1}-${chunkY}`].Usrc
-        this.map.CChunk = this.map.chunks[`${chunkX-1}-${chunkY}`] || null
-      }
-      if(this.map.chunks[`${chunkX}-${chunkY-1}`]) {
-        this.map.lowerImageB.src = this.map.chunks[`${chunkX}-${chunkY-1}`].Gsrc || null
-        this.map.waterImageB.src = this.map.chunks[`${chunkX}-${chunkY-1}`].Wsrc || null
-        this.map.upperImageB.src = this.map.chunks[`${chunkX}-${chunkY-1}`].Usrc || null
-        this.map.BChunk = this.map.chunks[`${chunkX}-${chunkY-1}`] || null
-      }
-
-    }
-    if(relXPos >= 392 && relYPos < 392 && this.map.inWhichChunk !== "C") {
-      this.map.inWhichChunk = "C";
-      if(this.map.chunks[`${chunkX}-${chunkY-1}`]) {
-        this.map.lowerImageA.src = this.map.chunks[`${chunkX}-${chunkY-1}`].Gsrc || null
-        this.map.waterImageA.src = this.map.chunks[`${chunkX}-${chunkY-1}`].Wsrc || null
-        this.map.upperImageA.src = this.map.chunks[`${chunkX}-${chunkY-1}`].Usrc || null
-        this.map.AChunk = this.map.chunks[`${chunkX}-${chunkY-1}`] || null
-      }
-      if(this.map.chunks[`${chunkX+1}-${chunkY}`]) {
-        this.map.lowerImageD.src = this.map.chunks[`${chunkX+1}-${chunkY}`].Gsrc || null
-        this.map.waterImageD.src = this.map.chunks[`${chunkX+1}-${chunkY}`].Wsrc || null
-        this.map.upperImageD.src = this.map.chunks[`${chunkX+1}-${chunkY}`].Usrc || null
-        this.map.DChunk = this.map.chunks[`${chunkX+1}-${chunkY}`] || null
-      }
-      if(this.map.chunks[`${chunkX}-${chunkY}`]) {
-        this.map.lowerImageC.src = this.map.chunks[`${chunkX}-${chunkY}`].Gsrc || null
-        this.map.waterImageC.src = this.map.chunks[`${chunkX}-${chunkY}`].Wsrc || null
-        this.map.upperImageC.src = this.map.chunks[`${chunkX}-${chunkY}`].Usrc || null
-        this.map.CChunk = this.map.chunks[`${chunkX}-${chunkY}`] || null
-      }
-      if(this.map.chunks[`${chunkX+1}-${chunkY-1}`]) {
-        this.map.lowerImageB.src = this.map.chunks[`${chunkX+1}-${chunkY-1}`].Gsrc || null
-        this.map.waterImageB.src = this.map.chunks[`${chunkX+1}-${chunkY-1}`].Wsrc || null
-        this.map.upperImageB.src = this.map.chunks[`${chunkX+1}-${chunkY-1}`].Usrc || null
-        this.map.BChunk = this.map.chunks[`${chunkX+1}-${chunkY-1}`] || null
-      }
-   
-    }
-    if(relXPos < 392 && relYPos >= 392 && this.map.inWhichChunk !== "B") {
-      
-      this.map.inWhichChunk = "B";
-      if(this.map.chunks[`${chunkX-1}-${chunkY}`]) {
-        this.map.lowerImageA.src = this.map.chunks[`${chunkX-1}-${chunkY}`].Gsrc || null
-        this.map.waterImageA.src = this.map.chunks[`${chunkX-1}-${chunkY}`].Wsrc || null
-        this.map.upperImageA.src = this.chunks[`${chunkX-1}-${chunkY}`].Usrc || null
-        this.map.AChunk = this.map.chunks[`${chunkX-1}-${chunkY}`] || null
-      }
-      if(this.map.chunks[`${chunkX}-${chunkY+1}`]) {
-        this.map.lowerImageD.src = this.map.chunks[`${chunkX}-${chunkY+1}`].Gsrc || null
-        this.map.waterImageD.src = this.map.chunks[`${chunkX}-${chunkY+1}`].Wsrc || null
-        this.map.upperImageD.src = this.map.chunks[`${chunkX}-${chunkY+1}`].Usrc || null
-        this.map.DChunk = this.map.chunks[`${chunkX}-${chunkY+1}`] || null
-      }
-      if(this.map.chunks[`${chunkX-1}-${chunkY+1}`]) {
-        this.map.lowerImageC.src = this.map.chunks[`${chunkX-1}-${chunkY+1}`].Gsrc || null
-        this.map.waterImageC.src = this.map.chunks[`${chunkX-1}-${chunkY+1}`].Wsrc || null
-        this.map.upperImageC.src = this.map.chunks[`${chunkX-1}-${chunkY+1}`].Usrc || null
-        this.map.CChunk = this.map.chunks[`${chunkX-1}-${chunkY+1}`] || null
-      }
-      if(this.map.chunks[`${chunkX}-${chunkY}`]) {
-        this.map.lowerImageB.src = this.map.chunks[`${chunkX}-${chunkY}`].Gsrc  || null
-        this.map.waterImageB.src = this.map.chunks[`${chunkX}-${chunkY}`].Wsrc  || null
-        this.map.upperImageB.src = this.map.chunks[`${chunkX}-${chunkY}`].Usrc  || null
-        this.map.BChunk = this.map.chunks[`${chunkX}-${chunkY}`] || null
-      }
-
-    }
   }
   workGateH(resolve) {
     const who = this.map.gameObjects[ this.event.who ];
