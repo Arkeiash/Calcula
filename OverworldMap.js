@@ -1726,13 +1726,22 @@ window.OverworldMaps = {
           ],
         },
       ],
+      //The raider portal
        [utils.asGridCoord(-7,-121)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 168*16, y: -69*16, direction: "down",},
+            {type: "changeMap", map: "DemoRoom1", x: 165*16, y: -68*16, direction: "down",},
           ],
         },
       ],
+      [utils.asGridCoord(165,-67)]: [
+        {
+          events: [
+            {type: "changeMap", map: "DemoRoom1", x: -7*16, y: -122*16, direction: "down",},
+          ],
+        },
+      ],
+      //Castle
       [utils.asGridCoord(22,26)]: [
         {
           events: [
