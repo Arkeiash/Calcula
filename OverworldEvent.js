@@ -60,8 +60,15 @@ class OverworldEvent {
   }
   
   changeMap(resolve) {
-    
-    var chunkX = Math.floor(this.event.x/16/49);
+    const sceneTransition = new SceneTransition();
+    sceneTransition.init(document.querySelector(".game-container"), () => {
+      this.map.overworld.startMap(window.OverworldMaps[this.event.map], {
+        x: this.event.x,
+        y: this.event.y,
+        direction: this.event.direction,
+      });
+
+       var chunkX = Math.floor(this.event.x/16/49);
     var chunkY = Math.floor(this.event.y/16/49);
     var relXPos = this.event.x - chunkX*16*49;
     var relYPos = this.event.y - chunkY*16*49;
@@ -179,16 +186,6 @@ class OverworldEvent {
       }
 
     }
-
-    
-    console.log(this.map.map);
-    const sceneTransition = new SceneTransition();
-    sceneTransition.init(document.querySelector(".game-container"), () => {
-      this.map.overworld.startMap(window.OverworldMaps[this.event.map], {
-        x: this.event.x,
-        y: this.event.y,
-        direction: this.event.direction,
-      });
       
       resolve();
       
