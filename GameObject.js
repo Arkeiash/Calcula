@@ -3,6 +3,7 @@ class GameObject {
     this.size = config.size || 32;
     this.id = null;
     this.class = config.class;
+    this.type = config.type;
     this.alive = true;
     this.statDisplay = false;
     this.isMounted = false;
@@ -17,7 +18,7 @@ class GameObject {
       gameObject: this,
       src: config.src || "Images/Characters/Hero Sprite Sheet.png",
       size: this.size,
-      class: this.class || null,
+      type: this.type || null,
       currentAnimation: this.currentAnimation,
       useShadow: this.useShadow,
     });
