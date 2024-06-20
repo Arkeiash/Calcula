@@ -60,7 +60,7 @@ class OverworldEvent {
   }
   
   changeMap(resolve) {
-    console.log(`${this.map}, ${this.event}`);
+    console.log(`${this.map.id}, ${this.event.x}, ${this.event.y}`);
     const sceneTransition = new SceneTransition();
     sceneTransition.init(document.querySelector(".game-container"), () => {
       this.map.overworld.startMap(window.OverworldMaps[this.event.map], {
@@ -68,7 +68,7 @@ class OverworldEvent {
         y: this.event.y,
         direction: this.event.direction,
       });
-      this.map.updateChunks(this.event.x, this.event.y);
+      
       resolve();
       
       sceneTransition.fadeOut();
