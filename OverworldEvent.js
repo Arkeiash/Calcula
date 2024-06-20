@@ -26,7 +26,7 @@ class OverworldEvent {
   
   walk(resolve) {
     const who = this.map.gameObjects[ this.event.who ];
-    console.log(who);
+   
     who.startBehavior({
       who: who,
       map: this.map,
