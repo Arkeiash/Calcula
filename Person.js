@@ -43,7 +43,8 @@ class Person extends GameObject {
       state.map.moveWall(this.x, this.y, this.direction);
       this.movingProgressRemaining = 16;
       this.updateSprite(state);
-      if(state.who.id === "hero") {
+      
+      if(this.id === "hero") {
         state.map.updateChunks(this.x, this.y);
       }
     
