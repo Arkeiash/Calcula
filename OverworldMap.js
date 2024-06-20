@@ -1732,6 +1732,10 @@ window.OverworldMaps = {
           events: [
             {type: "changeMap", map: "DemoRoom1", x: 175*16, y: -68*16, direction: "up",},
             {who: "hero", type: "walk", direction: "up"},
+            {who: "hero", type: "walk", direction: "up"},
+            {who: "hero", type: "walk", direction: "up"},
+            {who: "hero", type: "walk", direction: "left"},
+            {who: "hero", type: "walk", direction: "left"},
           ],
         },
       ],
@@ -1740,6 +1744,10 @@ window.OverworldMaps = {
           events: [
             {type: "changeMap", map: "DemoRoom1", x: -7*16, y: -122*16, direction: "up",},
             {who: "hero", type: "walk", direction: "up"},
+            {who: "hero", type: "walk", direction: "up"},
+            {who: "hero", type: "walk", direction: "up"},
+            {who: "hero", type: "walk", direction: "left"},
+            {who: "hero", type: "walk", direction: "left"},
           ],
         },
       ],
