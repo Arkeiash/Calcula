@@ -60,11 +60,11 @@ class OverworldEvent {
   }
   
   changeMap(resolve) {
-
-    var chunkX = Math.floor(x/16/49);
-    var chunkY = Math.floor(y/16/49);
-    var relXPos = x - chunkX*16*49;
-    var relYPos = y - chunkY*16*49;
+    
+    var chunkX = Math.floor(this.event.x/16/49);
+    var chunkY = Math.floor(this.event.y/16/49);
+    var relXPos = this.event.x - chunkX*16*49;
+    var relYPos = this.event.y - chunkY*16*49;
     if(relXPos >= 392 && relYPos >= 392 && this.map.inWhichChunk !== "A") {
       console.log(this.map.chunks[`${chunkX+1}-${chunkY+1}`])
       if(this.map.chunks[`${chunkX}-${chunkY}`]) {
