@@ -60,7 +60,7 @@ class OverworldEvent {
   }
   
   changeMap(resolve) {
-    console.log(`${this.map.id}, ${this.event.x}, ${this.event.y}`);
+    console.log(this.map);
     const sceneTransition = new SceneTransition();
     sceneTransition.init(document.querySelector(".game-container"), () => {
       this.map.overworld.startMap(window.OverworldMaps[this.event.map], {
