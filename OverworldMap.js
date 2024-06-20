@@ -1731,6 +1731,7 @@ window.OverworldMaps = {
         {
           events: [
             {type: "changeMap", map: "DemoRoom1", x: 175*16, y: -68*16, direction: "down",},
+            {who: "hero", type: "stand", direction: "down", time: 1000},
           ],
         },
       ],
@@ -1738,6 +1739,7 @@ window.OverworldMaps = {
         {
           events: [
             {type: "changeMap", map: "DemoRoom1", x: -7*16, y: -122*16, direction: "down",},
+            {who: "hero", type: "stand", direction: "down", time: 1000},
           ],
         },
       ],
