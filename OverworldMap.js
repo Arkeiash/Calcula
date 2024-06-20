@@ -1730,16 +1730,16 @@ window.OverworldMaps = {
        [utils.asGridCoord(-7,-121)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 175*16, y: -68*16, direction: "down",},
-            {who: "hero", type: "stand", direction: "down", time: 1000},
+            {type: "changeMap", map: "DemoRoom1", x: 175*16, y: -68*16, direction: "up",},
+            {who: "hero", type: "walk", direction: "up"},
           ],
         },
       ],
       [utils.asGridCoord(175,-67)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: -7*16, y: -122*16, direction: "down",},
-            {who: "hero", type: "stand", direction: "down", time: 1000},
+            {type: "changeMap", map: "DemoRoom1", x: -7*16, y: -122*16, direction: "up",},
+            {who: "hero", type: "walk", direction: "up"},
           ],
         },
       ],
