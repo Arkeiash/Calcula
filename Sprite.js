@@ -87,7 +87,7 @@ class Sprite {
     var y = this.gameObject.y-18 + utils.withGrid(6) - cameraPerson.y;
     
     
-    if(this.size !== 32 && this.type !== "RaiderRow") {
+    if(this.size !== 32 this.type !== "RaiderRow") {
       x = this.gameObject.x + utils.withGrid(10.5) - cameraPerson.x;
       y = this.gameObject.y-128 + utils.withGrid(6) - cameraPerson.y;
     } else {
