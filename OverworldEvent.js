@@ -92,8 +92,7 @@ class OverworldEvent {
         this.map.upperImageB.src = this.map.chunks[`${chunkX+1}-${chunkY}`].Usrc || null
         this.map.BChunk = this.map.chunks[`${chunkX+1}-${chunkY}`] || null
       }
-      console.log("You are in Chunk A")
-      console.log(this.map.upperImageA.src)
+    
     }
     if(relXPos < 392 && relYPos < 392 && this.map.inWhichChunk !== "D") {
       this.map.inWhichChunk = "D";
@@ -121,8 +120,7 @@ class OverworldEvent {
         this.map.upperImageB.src = this.map.chunks[`${chunkX}-${chunkY-1}`].Usrc || null
         this.map.BChunk = this.map.chunks[`${chunkX}-${chunkY-1}`] || null
       }
-      console.log("You are in Chunk D")
-      console.log(this.upperImageD.src)
+
     }
     if(relXPos >= 392 && relYPos < 392 && this.map.inWhichChunk !== "C") {
       this.map.inWhichChunk = "C";
@@ -150,8 +148,7 @@ class OverworldEvent {
         this.map.upperImageB.src = this.map.chunks[`${chunkX+1}-${chunkY-1}`].Usrc || null
         this.map.BChunk = this.map.chunks[`${chunkX+1}-${chunkY-1}`] || null
       }
-      console.log("You are in Chunk C")
-      console.log(this.map.upperImageC.src)
+   
     }
     if(relXPos < 392 && relYPos >= 392 && this.map.inWhichChunk !== "B") {
       
@@ -180,8 +177,7 @@ class OverworldEvent {
         this.map.upperImageB.src = this.map.chunks[`${chunkX}-${chunkY}`].Usrc  || null
         this.map.BChunk = this.map.chunks[`${chunkX}-${chunkY}`] || null
       }
-      console.log("You are in Chunk B")
-      console.log(this.map.upperImageB.src)
+
     }
 
     
