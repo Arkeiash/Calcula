@@ -68,7 +68,13 @@ class OverworldEvent {
         direction: this.event.direction,
       });
 
-       var chunkX = Math.floor(this.event.x/16/49);
+       
+      
+      resolve();
+      
+      sceneTransition.fadeOut();
+    });
+    var chunkX = Math.floor(this.event.x/16/49);
     var chunkY = Math.floor(this.event.y/16/49);
     var relXPos = this.event.x - chunkX*16*49;
     var relYPos = this.event.y - chunkY*16*49;
@@ -186,11 +192,6 @@ class OverworldEvent {
       }
 
     }
-      
-      resolve();
-      
-      sceneTransition.fadeOut();
-    });
   }
   workGateH(resolve) {
     const who = this.map.gameObjects[ this.event.who ];
