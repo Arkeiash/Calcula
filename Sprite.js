@@ -1,7 +1,7 @@
 class Sprite {
   constructor(config) {
     this.size = config.size || 32;
-    this.class = config.class;
+    this.type = config.type;
     this.image = new Image();
     this.image.src = config.src;
     this.image.onload = () => {
@@ -87,12 +87,12 @@ class Sprite {
     var y = this.gameObject.y-18 + utils.withGrid(6) - cameraPerson.y;
     
     
-    if(this.size !== 32 && this.class !== "object") {
+    if(this.size !== 32 && this.type !== "RaiderRow") {
       x = this.gameObject.x + utils.withGrid(10.5) - cameraPerson.x;
       y = this.gameObject.y-128 + utils.withGrid(6) - cameraPerson.y;
     } else {
       x = this.gameObject.x + utils.withGrid(10.5) - cameraPerson.x;
-      y = this.gameObject.y + utils.withGrid(6) - cameraPerson.y;
+      y = this.gameObject.y-80 + utils.withGrid(6) - cameraPerson.y;
     }
     if (this.isShadowLoaded && this.useShadow) {
       ctx.drawImage(this.shadow, x-0.5, y+1);
