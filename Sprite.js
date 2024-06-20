@@ -90,7 +90,7 @@ class Sprite {
     if(this.size !== 32 && this.type !== "RaiderRow") {
       x = this.gameObject.x + utils.withGrid(10.5) - cameraPerson.x;
       y = this.gameObject.y-128 + utils.withGrid(6) - cameraPerson.y;
-    } else {
+    } else if (this.type === "RaiderRow") {
       x = this.gameObject.x + utils.withGrid(10.5) - cameraPerson.x;
       y = this.gameObject.y-80 + utils.withGrid(6) - cameraPerson.y;
     }
