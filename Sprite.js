@@ -90,7 +90,10 @@ class Sprite {
     if(this.size !== 32 && this.type !== "RaiderRow") {
       x = this.gameObject.x + utils.withGrid(10.5) - cameraPerson.x;
       y = this.gameObject.y-128 + utils.withGrid(6) - cameraPerson.y;
-    } else if (this.type === "RaiderRow") {
+    } else if (this.src === "Images/Objects/Raider Row 1.png") {
+      x = this.gameObject.x + utils.withGrid(10.5) - cameraPerson.x;
+      y = this.gameObject.y-96 + utils.withGrid(6) - cameraPerson.y;
+    } else if (this.src === "Images/Objects/Raider Row 2.png") {
       x = this.gameObject.x + utils.withGrid(10.5) - cameraPerson.x;
       y = this.gameObject.y-80 + utils.withGrid(6) - cameraPerson.y;
     }
