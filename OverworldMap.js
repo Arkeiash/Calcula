@@ -49,6 +49,7 @@ class OverworldMap {
   
   drawLowerImage(ctx, cameraPerson) {
     if(this.lowerImageA.src) {
+      console.log(utils.withGrid(10.5) - cameraPerson.x + this.AChunk.coords[0]),
       ctx.drawImage(
             this.lowerImageA,
             utils.withGrid(10.5) - cameraPerson.x + this.AChunk.coords[0],
