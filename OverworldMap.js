@@ -158,7 +158,7 @@ class OverworldMap {
   
   async startCutscene(events) {
     this.isCutscenePlaying = true;
-    
+    const hero = this.gameObjects["hero"];
     for (let i = 0; i<events.length; i++) {
       const eventHandler = new OverworldEvent({
         event: events[i],
@@ -169,6 +169,7 @@ class OverworldMap {
     
     this.isCutscenePlaying = false;
     Object.values(this.gameObjects).forEach(object => object.doBehaviorEvent(this))
+    this.updateChunks(hero.x, hero.y);
   }
   
   
