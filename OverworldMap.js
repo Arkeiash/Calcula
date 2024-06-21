@@ -210,6 +210,7 @@ class OverworldMap {
   updateChunks(x, y) {
     var chunkX = Math.floor(x/16/49);
     var chunkY = Math.floor(y/16/49);
+    console.log(`${chunkX}, ${chunkY}`);
     var relXPos = x - chunkX*16*49;
     var relYPos = y - chunkY*16*49;
     console.log("update");
