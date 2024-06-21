@@ -169,6 +169,7 @@ class OverworldMap {
     
     this.isCutscenePlaying = false;
     Object.values(this.gameObjects).forEach(object => object.doBehaviorEvent(this))
+    this.inWhichChunk = null;
     this.updateChunks(hero.x, hero.y);
   }
   
