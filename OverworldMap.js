@@ -210,12 +210,12 @@ class OverworldMap {
   updateChunks(x, y) {
     var chunkX = Math.floor(x/16/49);
     var chunkY = Math.floor(y/16/49);
-    console.log(`${chunkX}, ${chunkY}`);
+    
     var relXPos = x - chunkX*16*49;
     var relYPos = y - chunkY*16*49;
-    console.log("update");
+  
     if(relXPos >= 392 && relYPos >= 392 && this.inWhichChunk !== "A") {
-      console.log("fire A");
+   
       if(this.chunks[`${chunkX}-${chunkY}`]) {
         this.inWhichChunk = "A";
         this.lowerImageA.src = this.chunks[`${chunkX}-${chunkY}`].Gsrc || null
@@ -246,7 +246,7 @@ class OverworldMap {
     }
     if(relXPos < 392 && relYPos < 392 && this.inWhichChunk !== "D") {
       this.inWhichChunk = "D";
-      console.log("fire D");
+   
       if(this.chunks[`${chunkX-1}-${chunkY-1}`]) {
         this.lowerImageA.src = this.chunks[`${chunkX-1}-${chunkY-1}`].Gsrc || null
         this.waterImageA.src = this.chunks[`${chunkX-1}-${chunkY-1}`].Wsrc || null
@@ -276,7 +276,7 @@ class OverworldMap {
     }
     if(relXPos >= 392 && relYPos < 392 && this.inWhichChunk !== "C") {
       this.inWhichChunk = "C";
-      console.log("fire C");
+   
       if(this.chunks[`${chunkX}-${chunkY-1}`]) {
         this.lowerImageA.src = this.chunks[`${chunkX}-${chunkY-1}`].Gsrc || null
         this.waterImageA.src = this.chunks[`${chunkX}-${chunkY-1}`].Wsrc || null
@@ -305,7 +305,7 @@ class OverworldMap {
       console.log(this.upperImageC.src)
     }
     if(relXPos < 392 && relYPos >= 392 && this.inWhichChunk !== "B") {
-      console.log("fire B");
+
       this.inWhichChunk = "B";
       if(this.chunks[`${chunkX-1}-${chunkY}`]) {
         this.lowerImageA.src = this.chunks[`${chunkX-1}-${chunkY}`].Gsrc || null
