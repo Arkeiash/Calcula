@@ -1732,30 +1732,7 @@ window.OverworldMaps = {
         },
       ],
       //The raider portal
-       [utils.asGridCoord(-7,-121)]: [
-        {
-          events: [
-            {type: "changeMap", map: "DemoRoom1", x: 175*16, y: -68*16, direction: "up",},
-            {who: "hero", type: "walk", direction: "up"},
-            {who: "hero", type: "walk", direction: "up"},
-            {who: "hero", type: "walk", direction: "up"},
-            {who: "hero", type: "walk", direction: "left"},
-            {who: "hero", type: "walk", direction: "left"},
-          ],
-        },
-      ],
-      [utils.asGridCoord(175,-67)]: [
-        {
-          events: [
-            {type: "changeMap", map: "DemoRoom1", x: -7*16, y: -122*16, direction: "up",},
-            {who: "hero", type: "walk", direction: "up"},
-            {who: "hero", type: "walk", direction: "up"},
-            {who: "hero", type: "walk", direction: "up"},
-            {who: "hero", type: "walk", direction: "left"},
-            {who: "hero", type: "walk", direction: "left"},
-          ],
-        },
-      ],
+       
       //Castle
       [utils.asGridCoord(22,26)]: [
         {
