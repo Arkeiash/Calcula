@@ -45,7 +45,7 @@ class Person extends GameObject {
       this.updateSprite(state);
       if(this.id === "hero") {
         console.log(state.map);
-        state.map.updateChunks(this.x, this.y);
+        //state.map.updateChunks(this.x, this.y);
       }
     
     }
