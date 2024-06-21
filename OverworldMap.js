@@ -211,6 +211,7 @@ class OverworldMap {
     var chunkY = Math.floor(y/16/49);
     var relXPos = x - chunkX*16*49;
     var relYPos = y - chunkY*16*49;
+    console.log("update");
     if(relXPos >= 392 && relYPos >= 392 && this.inWhichChunk !== "A") {
       console.log(this.chunks[`${chunkX+1}-${chunkY+1}`])
       if(this.chunks[`${chunkX}-${chunkY}`]) {
