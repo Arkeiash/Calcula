@@ -18,6 +18,7 @@ class OverworldEvent {
       if (e.detail.whoId === this.event.who) {
         document.removeEventListener("PersonStandComplete", completeHandler);
         resolve();
+        this.map.isPaused = false;
       }
     };
     
@@ -40,6 +41,7 @@ class OverworldEvent {
       if (e.detail.whoId === this.event.who) {
         document.removeEventListener("PersonWalkingComplete", completeHandler);
         resolve();
+        this.map.isPaused = false;
       }
     };
     
