@@ -40,6 +40,9 @@
 #commentForm {
   display: flex;
 }
+textarea {
+    font-family: 'Cinzel', serif;
+}
 ::placeholder {
   font-family: 'Cinzel', serif;
 }
