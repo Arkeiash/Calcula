@@ -3,6 +3,7 @@ const howToPlayButtonElement = document.getElementById("howToPlayButton");
 const spellGuideButtonElement = document.getElementById("spellGuideButton");
 const commentsButtonElement = document.getElementById("commentsButton");
 const teacherStuffButtonElement = document.getElementById("teacherStuffButton");
+const adminLoginButtonElement = document.getElementById("adminLoginButton");
 const popUpContainerElement = document.getElementById("popUpContainer");
 const exitButtonElement = document.createElement("button");
 exitButtonElement.classList.add("button");
@@ -38,7 +39,7 @@ howToPopUpElement.innerHTML = `
     <li>Press "enter" or "return" to engage with characters.</li>
 </ul>
 <h2>Leaving your Feedback</h2>
-<p>If you find bugs in the code, or think of any good improvement or cool additions for later versions, let us know in the comments!</br></br>Thank you for playing Calcula!</p>`
+<p>If you find bugs in the code, think of any good improvement or cool additions for later versions, let us know in the comments!</br></br>Thank you for playing Calcula!</p>`
 
 
 var spellGuidePopUpElement = document.createElement("div");
@@ -241,6 +242,21 @@ var commentResult = document.createElement("div");
 commentResult.id = "commentResult";
 commentPopUpElement.appendChild(commentResult);
 
+var adminLoginPopUpElement = document.createElement("div");
+adminLoginPopUpElement.classList.add("popUp");
+adminLoginPopUpElement.innerHTML = `<h2>Admin Login</h2>`
+var adminLoginForm = document.createElement("form");
+adminLoginForm.id = "adminLoginForm";
+adminLoginForm.innerHTML = `
+<textarea id="usernameText" name="Username"></textarea>
+<textarea id="passwordText" name="Password" ></textarea>
+<button class="button" type="submit">Submit</button>`;
+adminLoginPopUpElement.appendChild(adminLoginForm);
+var adminLoginResult = document.createElement("div");
+adminLoginResult.id = "adminLoginResult";
+adminLoginPopUpElement.appendChild(adminLoginResult);
+
+
 
 
 commentForm.addEventListener("submit", function(event) {
@@ -258,6 +274,27 @@ commentForm.addEventListener("submit", function(event) {
     .then(data => {
         // Update page content with the echoed comment
         commentResult.innerHTML = data;
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+});
+
+adminLoginForm.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    // Get form data
+    var formData = new FormData(this);
+
+    // Send form data to the server using Fetch API
+    fetch("process_admin_form.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text()) // Parse response as text
+    .then(data => {
+        // Update page content with the echoed comment
+        adminLoginResult.innerHTML = data;
     })
     .catch(error => {
         console.error("Error:", error);
@@ -317,6 +354,20 @@ var onHowToPlay = function() {
    }
  };
 
+ var onAdminLogin = function() {
+    if(currentPopUp !== adminLoginPopUpElement) {
+        popUpContainerElement.innerHTML = "";
+        adminLoginPopUpElement.appendChild(exitButtonElement);
+        popUpContainerElement.appendChild(adminLoginPopUpElement);
+        currentPopUp = adminLoginPopUpElement;
+    }
+   else {
+       console.log("popDown")
+       closePopUp(currentPopUp);
+       currentPopUp = false;
+   }
+ };
+
 var onTeacherStuff = function() {
     if(currentPopUp !== teacherStuffPopUpElement) {
         popUpContainerElement.innerHTML = "";
@@ -338,5 +389,6 @@ var onTeacherStuff = function() {
 howToPlayButtonElement.addEventListener("click", onHowToPlay);
 spellGuideButtonElement.addEventListener("click", onSpellGuide);
 commentsButtonElement.addEventListener("click", onComment);
+adminLoginButtonElement.addEventListener("click", onAdminLogin);
 teacherStuffButtonElement.addEventListener("click", onTeacherStuff);
 
