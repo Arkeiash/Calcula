@@ -8,8 +8,9 @@
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
-    width: 575px; /* Need a specific value to work */
+    width: 725px; /* Need a specific value to work */
   }
+
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -20,6 +21,8 @@
     text-decoration: none;
     font-size: 17px;
   }
+
+ 
   
   /* Change the color of links on hover */
   .topnav a:hover {
@@ -32,3 +35,4 @@
     background-color: #04AA6D;
     color: white;
   }
+
