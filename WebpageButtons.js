@@ -38,7 +38,7 @@ howToPopUpElement.innerHTML = `
     <li>Press "enter" or "return" to engage with characters.</li>
 </ul>
 <h2>Leaving your Feedback</h2>
-<p>If you find bugs in the code, or think of any good improvement or cool additions for later versions, lut us know in the comments!</br></br>Thank you for playing Calcula!</p>`
+<p>If you find bugs in the code, or think of any good improvement or cool additions for later versions, let us know in the comments!</br></br>Thank you for playing Calcula!</p>`
 
 
 var spellGuidePopUpElement = document.createElement("div");
@@ -47,26 +47,27 @@ spellGuidePopUpElement.innerHTML = `<h1>Spell Guide</h1>
 <h2> Kindergarten</h2>
 <ul>
   <li>Sweep 1</li>
-  <li>Sweep 2</li>
-  <li>Sweep 3</li>
-  <li>Sweep 4</li>
-  <li>Sweep 5</li>
+  <li>Aid 1</li>
+  <li>Flect 1</li>
 </ul>
 <h2> First Grade</h2>
 <ul>
   <li>Sweep 1</li>
-  <li>Sweep 2</li>
-  <li>Sweep 3</li>
-  <li>Sweep 4</li>
-  <li>Sweep 5</li>
+  <li>Aid 1</li>
+  <li>Flect 1</li>
+  <li>Flect 2</li>
+  <li>Vert 1</li>
+  <li>Vert 2</li>
 </ul>
 <h2> Second Grade</h2>
 <ul>
-  <li>Sweep 1</li>
   <li>Sweep 2</li>
   <li>Sweep 3</li>
-  <li>Sweep 4</li>
-  <li>Sweep 5</li>
+  <li>Blast 1</li>
+  <li>Flect 3</li>
+  <li>Block 1</li>
+  <li>Block 2</li>
+  <li>Vert 3</li>
 </ul>
 <h2> Third Grade</h2>
 <ul>
