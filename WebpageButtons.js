@@ -240,7 +240,6 @@ commentPopUpElement.appendChild(commentForm);
 var commentResult = document.createElement("div");
 commentResult.id = "commentResult";
 commentPopUpElement.appendChild(commentResult);
-commentResult.innerHTML = `<p>hey dude. It's right here</p>`
 
 
 
