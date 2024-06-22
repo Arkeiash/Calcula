@@ -42,6 +42,7 @@
       <a id="spellGuideButton" href="#SpellGuide">Spell Guide</a>
       <a id="commentsButton" href="#Comments">Comments</a>
       <a id="teacherStuffButton" href="#TeacherStuff">Teacher Stuff</a>
+      <a id="adminLoginButton" href="#AdminLogin">Admin Login</a>
     </div>
     <div id="popUpContainer"></div>
     
