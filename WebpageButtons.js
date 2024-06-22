@@ -248,8 +248,8 @@ adminLoginPopUpElement.innerHTML = `<h2>Admin Login</h2>`
 var adminLoginForm = document.createElement("form");
 adminLoginForm.id = "adminLoginForm";
 adminLoginForm.innerHTML = `
-<textarea id="usernameText" name="Username"></textarea>
-<textarea id="passwordText" name="Password" ></textarea>
+<textarea id="usernameText" name="Username" placeholder="username"></textarea>
+<textarea id="passwordText" name="Password" placeholder="password"></textarea>
 <button class="button" type="submit">Submit</button>`;
 adminLoginPopUpElement.appendChild(adminLoginForm);
 var adminLoginResult = document.createElement("div");
