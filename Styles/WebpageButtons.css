@@ -1,6 +1,7 @@
 #popUpContainer {
     position: relative; /* Or absolute, depending on your layout */
     z-index: 10; /* Ensure it's above other elements */
+  
   }
   
   .popUp {
@@ -11,14 +12,32 @@
     max-width: 600px;
     max-height: 600px;
     margin: 0 auto;
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -20%);
+    left: 0%;
+    transform: translate(0%, -20%);
     z-index: 11; /* Ensure it's above the container */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow-y: scroll;
   }
+  #commentDisplayContainer {
+    max-height: 250px; /* Set the maximum height */
+    overflow-y: scroll; /* Add a vertical scrollbar if the content exceeds the max height */
+    padding: 20px;
+    margin-top: 20px; /* Add space between the form and the comments */
+}
+  #adminLoginForm input {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    font-family: 'Cinzel', serif; /* Specify your desired font-family */
+  font-size: 14px;               /* Specify your desired font-size */
+  color: #333;   
+}
   .button {
     display: flex;
     align-items: center;
@@ -37,11 +56,23 @@
     z-index: 12;
     
 }
+.commentText {
+  background-color: #00105e;
+  color: white;
+  padding: 7px;
+  margin-bottom: 14px;
+}
+.name{
+  margin: 0, 0, 0, 7px;
+}
 #commentForm {
   display: flex;
 }
+
 textarea {
-    font-family: 'Cinzel', serif;
+  font-family: 'Cinzel', serif; /* Specify your desired font-family */
+  font-size: 14px;               /* Specify your desired font-size */
+  color: #333;                   /* Specify your desired font color */
 }
 ::placeholder {
   font-family: 'Cinzel', serif;
