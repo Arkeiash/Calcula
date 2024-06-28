@@ -137,6 +137,12 @@ class Battle {
           this.map.removeWall(mapEnemyObject.x-16, mapEnemyObject.y);
           this.map.removeWall(mapEnemyObject.x-16, mapEnemyObject.y-16);
           this.map.removeWall(mapEnemyObject.x, mapEnemyObject.y-16);
+        } else {
+          window.playerState.hp = this.combatants["player1"].hp;
+          window.playerState.maxBarrier = this.combatants["player1"].maxBarrier;
+          window.playerState.barrier = this.combatants["player1"].barrier;
+          window.playerState.fortification = this.combatants["player1"].fortification;
+          window.playerState.amplification = this.combatants["player1"].amplification;
         }
         this.element.remove();
         this.onComplete();
