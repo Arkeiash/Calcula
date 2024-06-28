@@ -145,7 +145,7 @@ window.Enemies = {
     rActions: ["Fleshwound", "Ouch", "Laceration"]
   },
   "peasant1": {
-    name: "Jack",
+    name: "Hugh",
     id: "peasant1",
     alive: true,
     src: "Images/Characters/Peasant Sprite Sheet.png",
@@ -158,7 +158,7 @@ window.Enemies = {
     rActions: ["Beg1", "Beg2"]
   },
   "peasant2": {
-    name: "Peasant",
+    name: "Leah",
     id: "peasant2",
     alive: true,
     src: "Images/Characters/Female Asian Peasant.png",
@@ -171,7 +171,7 @@ window.Enemies = {
     rActions: ["Beg1", "Beg2"]
   },
   "peasant3": {
-    name: "Peasant",
+    name: "Scarlett",
     id: "peasant3",
     alive: true,
     src: "Images/Characters/Female White Peasant.png",
@@ -184,7 +184,7 @@ window.Enemies = {
     rActions: ["Beg1", "Beg2"]
   },
   "peasant4": {
-    name: "Peasant",
+    name: "Ki'Maya",
     id: "peasant4",
     alive: true,
     src: "Images/Characters/Female Black Peasant.png",
@@ -197,7 +197,7 @@ window.Enemies = {
     rActions: ["Beg1", "Beg2"]
   },
   "peasant5": {
-    name: "Peasant",
+    name: "Zeke",
     id: "peasant5",
     alive: true,
     src: "Images/Characters/Male Black Peasant.png",
@@ -210,7 +210,7 @@ window.Enemies = {
     rActions: ["Beg1", "Beg2"]
   },
   "peasant6": {
-    name: "Peasant",
+    name: "Bethany",
     id: "peasant6",
     alive: true,
     src: "Images/Characters/Female White Peasant.png",
@@ -223,7 +223,7 @@ window.Enemies = {
     rActions: ["Beg1", "Beg2"]
   },
   "peasant7": {
-    name: "Peasant",
+    name: "Thao",
     id: "peasant7",
     alive: true,
     src: "Images/Characters/Female Asian Peasant.png",
@@ -236,7 +236,7 @@ window.Enemies = {
     rActions: ["Beg1", "Beg2"]
   },
   "peasant8": {
-    name: "Peasant",
+    name: "Javon",
     id: "peasant8",
     alive: true,
     src: "Images/Characters/Male Black Peasant.png",
@@ -249,7 +249,7 @@ window.Enemies = {
     rActions: ["Beg1", "Beg2"]
   },
   "peasant9": {
-    name: "Peasant",
+    name: "Lucas",
     id: "peasant9",
     alive: true,
     src: "Images/Characters/Peasant Sprite Sheet.png",
@@ -262,7 +262,7 @@ window.Enemies = {
     rActions: ["Beg1", "Beg2"]
   },
   "peasant10": {
-    name: "Peasant",
+    name: "Keren",
     id: "peasant10",
     alive: true,
     src: "Images/Characters/Female White Peasant.png",
