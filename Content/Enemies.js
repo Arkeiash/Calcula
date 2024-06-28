@@ -171,7 +171,7 @@ window.Enemies = {
     rActions: ["Beg1", "Beg2"]
   },
   "peasant3": {
-    name: "Scarlett",
+    name: "Emily",
     id: "peasant3",
     alive: true,
     src: "Images/Characters/Female White Peasant.png",
