@@ -145,7 +145,7 @@ window.Enemies = {
     rActions: ["Fleshwound", "Ouch", "Laceration"]
   },
   "peasant1": {
-    name: "Peasant",
+    name: "Jack",
     id: "peasant1",
     alive: true,
     src: "Images/Characters/Peasant Sprite Sheet.png",
