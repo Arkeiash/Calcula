@@ -38,15 +38,15 @@ class Problem {
       } else {
         
         if(barrierDiff===0) {
-          window.playerState.barrier += spell.success[2].recover;
-          window.playerState.maxHp += spell.success[2].recover;
-        } else if (barrierDiff <= spell.success[2].recover) {
-          window.playerState.barrier = window.playerState.maxBarrier;
-          
-        } else if(barrierDiff > spell.success[2].recover) {
-          window.playerState.hp += spell.success[2].recover;
-        }
-        window.playerState.barrier += spell.success[2].recover
+          window.playerState.barrier += spell.success[2].barrier;
+          window.playerState.maxBarrier += spell.success[2].barrier;
+        } else if (barrierDiff <= spell.success[2].barrier) {
+          window.playerState.barrier += spell.success[2].barrier
+          window.playerState.maxBarrier += spell.success[2].barrier - barrierDiff;
+        } else if(barrierDiff > spell.success[2].barrier) {
+          window.playerState.hp += spell.success[2].barrier;
+        } else if(barrierDiff > spell.success[2].barrier)
+        window.playerState.barrier += spell.success[2].barrier
       }
       
       this.element.remove();
@@ -58,6 +58,7 @@ class Problem {
       
       this.onComplete();
     }
+    utils.emitEvent("PlayerStateUpdated");
   }
   init(container) {
     this.createElement();
