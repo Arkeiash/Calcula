@@ -11,55 +11,48 @@ class Problem {
     
   }
   
-  submission() {
+ submission() {
     let spell = window.Spells[this.problem.reward().actionId];
-    let hpDiff = window.playerState.maxHp-window.playerState.hp;
+    let hpDiff = window.playerState.maxHp - window.playerState.hp;
     let barrierDiff = window.playerState.barrierHp - window.playerState.barrier;
     if(this.correct) {
-      console.log(this.rewardType);
-      console.log(barrierDiff);
-      console.log(hpDiff);
-      
+        console.log(this.rewardType);
+        console.log(barrierDiff);
+        console.log(hpDiff);
 
-      
-      
-      if(this.rewardType !== 'B' && this.rewardType !== 'G') {
-        window.playerState.items.push(this.problem.reward());
-      } else if(this.rewardType === 'B') {
-        console.log("it recognizes the type");
-        if (hpDiff <= spell.success[2].recover) {
-          
-          window.playerState.hp = 100;
-        } else if(hpDiff > spell.success[2].recover) {
-          
-          window.playerState.hp += spell.success[2].recover;
-        }
-       
-      } else {
-        
-        if (barrierDiff <= spell.success[2].barrier) {
-          window.playerState.barrier += spell.success[2].barrier
-          window.playerState.maxBarrier += spell.success[2].barrier - barrierDiff;
-        } else if(barrierDiff > spell.success[2].barrier) {
-          window.playerState.hp += spell.success[2].barrier;
-        } else if(barrierDiff > spell.success[2].barrier) {
-        window.playerState.barrier += spell.success[2].barrier
+        if(this.rewardType !== 'B' && this.rewardType !== 'G') {
+            window.playerState.items.push(this.problem.reward());
+        } else if(this.rewardType === 'B') {
+            console.log("it recognizes the type");
+            if (hpDiff <= spell.success[2].recover) {
+                window.playerState.hp = 100;
+            } else if(hpDiff > spell.success[2].recover) {
+                window.playerState.hp += spell.success[2].recover;
+            }
         } else {
-          window.playerState.barrier += spell.success[2].barrier;
-          window.playerState.maxBarrier += spell.success[2].barrier;
+            if (barrierDiff <= spell.success[2].barrier) {
+                window.playerState.barrier += spell.success[2].barrier;
+                window.playerState.maxBarrier += spell.success[2].barrier - barrierDiff;
+            } else if(barrierDiff > spell.success[2].barrier) {
+                window.playerState.hp += spell.success[2].barrier;
+            } else if(barrierDiff > spell.success[2].barrier) {
+                window.playerState.barrier += spell.success[2].barrier;
+            } else {
+                window.playerState.barrier += spell.success[2].barrier;
+                window.playerState.maxBarrier += spell.success[2].barrier;
+            }
         }
-      
-      this.element.remove();
-      this.onComplete();
+        this.element.remove();
+        this.onComplete();
     } else {
-      window.playerState.hp -= this.problem.penalty;
-      utils.emitEvent("PlayerStateUpdated");
-      this.element.remove();
-      
-      this.onComplete();
+        window.playerState.hp -= this.problem.penalty;
+        utils.emitEvent("PlayerStateUpdated");
+        this.element.remove();
+        this.onComplete();
     }
     utils.emitEvent("PlayerStateUpdated");
-  }
+}
+
   init(container) {
     this.createElement();
     container.appendChild(this.element);
