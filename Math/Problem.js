@@ -12,7 +12,8 @@ class Problem {
   
   submission() {
     if(this.correct) {
-      
+      console.log(this.problem);
+      console.log(this.problem.reward());
       window.playerState.items.push(this.problem.reward());
       
       this.element.remove();
