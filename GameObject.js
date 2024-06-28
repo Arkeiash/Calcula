@@ -55,7 +55,7 @@ class GameObject {
       this.message = new StatBar({
         x: this.x,
         y: this.y +32,
-        name: this.id,
+        name: this.name,
         health: window.Enemies[this.id].hp,
         shield: window.Enemies[this.id].barrier,
         amplification: window.Enemies[this.id].amplification,
