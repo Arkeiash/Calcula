@@ -37,17 +37,17 @@ class Problem {
        
       } else {
         
-        if(barrierDiff===0) {
-          window.playerState.barrier += spell.success[2].barrier;
-          window.playerState.maxBarrier += spell.success[2].barrier;
-        } else if (barrierDiff <= spell.success[2].barrier) {
+        if (barrierDiff <= spell.success[2].barrier) {
           window.playerState.barrier += spell.success[2].barrier
           window.playerState.maxBarrier += spell.success[2].barrier - barrierDiff;
         } else if(barrierDiff > spell.success[2].barrier) {
           window.playerState.hp += spell.success[2].barrier;
         } else if(barrierDiff > spell.success[2].barrier)
         window.playerState.barrier += spell.success[2].barrier
-      }
+        } else {
+          window.playerState.barrier += spell.success[2].barrier;
+          window.playerState.maxBarrier += spell.success[2].barrier;
+        }
       
       this.element.remove();
       this.onComplete();
