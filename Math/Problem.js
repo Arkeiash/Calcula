@@ -13,8 +13,8 @@ class Problem {
   
   submission() {
     if(this.correct) {
-      console.log(this.problem.reward.success[2]);
-      console.log(this.problem.reward.success[2].recover);
+      console.log(this.problem.reward.success);
+      //console.log(this.problem.reward.success[2].recover);
 
       
       
