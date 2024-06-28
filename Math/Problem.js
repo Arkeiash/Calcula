@@ -13,18 +13,27 @@ class Problem {
   
   submission() {
     let spell = window.Spells[this.problem.reward().actionId];
+    let hpDiff = window.playerState.maxHp-window.playerState.hp;
+    let barrierDiff = window.playerState.barrierHp - window.playerState.barrier;
     if(this.correct) {
       console.log(this.problem.reward());
       console.log(spell);
-      console.log(spell.success);
-      console.log(spell.success[2]);
-      console.log(spell.success[2].recover);
+      
 
       
       
-      if(this.rewardType !== 'B') {
+      if(this.rewardType !== 'B' || this.rewardType !== 'G') {
         window.playerState.items.push(this.problem.reward());
-      } else {window.playerState.hp += spell.success[2].recover}
+      } else if(this.rewardType === 'B') {
+        if (hpDiff <= spell.success[2].recover) {
+          window.playerState.hp = 100;
+        } else if(hpDiff > spell.success[2].recover) {
+          window.playerState.hp += spell.success[2].recover;
+        }
+       
+      } else {
+        window.playerState.barrier += spell.success[2].recover
+      }
       
       this.element.remove();
       this.onComplete();
