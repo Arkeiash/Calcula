@@ -32,9 +32,13 @@ class Problem {
                 window.playerState.hp += spell.success[2].recover;
             }
         } else {
-            if (barrierDiff <= spell.success[2].barrier && potentialBarrier2 <=1000) {
-                window.playerState.barrier += spell.success[2].barrier;
-                window.playerState.maxBarrier += spell.success[2].barrier - barrierDiff;
+            if (barrierDiff <= spell.success[2].barrier) {
+                if(potentialBarrier2 <=1000) {
+                  window.playerState.barrier += spell.success[2].barrier;
+                  window.playerState.maxBarrier += spell.success[2].barrier - barrierDiff;
+                } else {
+                  window.playerState.barrier = 1000; 
+                  window.playerState.maxBarrier= 1000;}
             } else if(barrierDiff > spell.success[2].barrier) {
                 window.playerState.hp += spell.success[2].barrier;
             } else if(barrierDiff > spell.success[2].barrier) {
@@ -43,6 +47,9 @@ class Problem {
                 if(potentialBarrier1 < 1000 ) {
                   window.playerState.barrier += spell.success[2].barrier;
                   window.playerState.maxBarrier += spell.success[2].barrier;
+                } else {
+                  window.playerState.barrier = 1000; 
+                  window.playerState.maxBarrier= 1000;
                 }
             }
         }
