@@ -750,8 +750,8 @@ window.OverworldMaps = {
         ],
       }),
       peasant3: new Person({
-        x: utils.withGrid(21),
-        y: utils.withGrid(-16),
+        x: utils.withGrid(51),
+        y: utils.withGrid(-13),
         useShadow: true,
         canBattle: true,
         alive: false,
