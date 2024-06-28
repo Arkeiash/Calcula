@@ -499,6 +499,7 @@ window.Spells = {
     name: "Aid 1",
     type: SpellTypes.Healing,
     description: "Restores 5 health",
+    amount: 5,
     icon: "Images/Battle/healingIcon.png",
     friendly: true,
     success: [
