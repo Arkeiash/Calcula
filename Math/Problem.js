@@ -16,8 +16,8 @@ class Problem {
     let hpDiff = window.playerState.maxHp-window.playerState.hp;
     let barrierDiff = window.playerState.barrierHp - window.playerState.barrier;
     if(this.correct) {
+      console.log(this.rewardType);
       console.log(barrierDiff);
-      
       console.log(hpDiff);
       
 
