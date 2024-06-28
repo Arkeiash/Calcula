@@ -15,6 +15,8 @@ class Problem {
     let spell = window.Spells[this.problem.reward().actionId];
     let hpDiff = window.playerState.maxHp - window.playerState.hp;
     let barrierDiff = window.playerState.barrierHp - window.playerState.barrier;
+   let potentialBarrier1 = window.playerState.maxBarrier + spell.success[2].barrier
+    let potentialBarrier2 = window.playerState.maxBarrier + spell.success[2].barrier - barrierDiff
     if(this.correct) {
         console.log(this.rewardType);
         console.log(barrierDiff);
@@ -30,7 +32,7 @@ class Problem {
                 window.playerState.hp += spell.success[2].recover;
             }
         } else {
-            if (barrierDiff <= spell.success[2].barrier) {
+            if (barrierDiff <= spell.success[2].barrier && potentialBarrier2 <=1000) {
                 window.playerState.barrier += spell.success[2].barrier;
                 window.playerState.maxBarrier += spell.success[2].barrier - barrierDiff;
             } else if(barrierDiff > spell.success[2].barrier) {
@@ -38,8 +40,10 @@ class Problem {
             } else if(barrierDiff > spell.success[2].barrier) {
                 window.playerState.barrier += spell.success[2].barrier;
             } else {
-                window.playerState.barrier += spell.success[2].barrier;
-                window.playerState.maxBarrier += spell.success[2].barrier;
+                if(potentialBarrier1 < 1000 ) {
+                  window.playerState.barrier += spell.success[2].barrier;
+                  window.playerState.maxBarrier += spell.success[2].barrier;
+                }
             }
         }
         this.element.remove();
