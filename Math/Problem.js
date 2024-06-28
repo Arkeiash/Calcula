@@ -14,7 +14,10 @@ class Problem {
   submission() {
     let spell = window.Spells[this.problem.reward().actionId];
     if(this.correct) {
-      console.log(this.problem.reward().actionId);
+      console.log(this.problem.reward());
+      console.log(spell);
+      console.log(spell.success);
+      console.log(spell.success[2]);
       console.log(spell.success[2].recover);
 
       
