@@ -12,15 +12,16 @@ class Problem {
   }
   
   submission() {
+    let spell = window.Spells[this.problem.reward().actionId];
     if(this.correct) {
-      console.log(this.problem.reward());
-      //console.log(this.problem.reward().success[2].recover);
+      console.log(this.problem.reward().actionId);
+      console.log(spell.success[2].recover);
 
       
       
       if(this.rewardType !== 'B') {
         window.playerState.items.push(this.problem.reward());
-      } else {window.playerState.hp += this.problem.reward().success[2].recover}
+      } else {window.playerState.hp += spell.success[2].recover}
       
       this.element.remove();
       this.onComplete();
