@@ -42,7 +42,7 @@ class Problem {
           window.playerState.maxBarrier += spell.success[2].barrier - barrierDiff;
         } else if(barrierDiff > spell.success[2].barrier) {
           window.playerState.hp += spell.success[2].barrier;
-        } else if(barrierDiff > spell.success[2].barrier)
+        } else if(barrierDiff > spell.success[2].barrier) {
         window.playerState.barrier += spell.success[2].barrier
         } else {
           window.playerState.barrier += spell.success[2].barrier;
