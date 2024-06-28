@@ -16,8 +16,9 @@ class Problem {
     let hpDiff = window.playerState.maxHp-window.playerState.hp;
     let barrierDiff = window.playerState.barrierHp - window.playerState.barrier;
     if(this.correct) {
-      console.log(this.problem.reward());
-      console.log(spell);
+      console.log(barrierDiff);
+      
+      console.log(hpDiff);
       
 
       
@@ -25,13 +26,26 @@ class Problem {
       if(this.rewardType !== 'B' || this.rewardType !== 'G') {
         window.playerState.items.push(this.problem.reward());
       } else if(this.rewardType === 'B') {
+        console.log("it recognizes the type");
         if (hpDiff <= spell.success[2].recover) {
+          
           window.playerState.hp = 100;
         } else if(hpDiff > spell.success[2].recover) {
+          
           window.playerState.hp += spell.success[2].recover;
         }
        
       } else {
+        
+        if(barrierDiff===0) {
+          window.playerState.barrier += spell.success[2].recover;
+          window.playerState.maxHp += spell.success[2].recover;
+        } else if (barrierDiff <= spell.success[2].recover) {
+          window.playerState.barrier = window.playerState.maxBarrier;
+          
+        } else if(barrierDiff > spell.success[2].recover) {
+          window.playerState.hp += spell.success[2].recover;
+        }
         window.playerState.barrier += spell.success[2].recover
       }
       
