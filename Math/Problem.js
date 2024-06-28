@@ -13,7 +13,7 @@ class Problem {
   submission() {
     if(this.correct) {
       console.log(this.problem);
-      console.log(this.problem.reward());
+      console.log(this.problem.reward().dakek);
       window.playerState.items.push(this.problem.reward());
       
       this.element.remove();
