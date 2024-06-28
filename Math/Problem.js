@@ -3,6 +3,7 @@ class Problem {
     this.onComplete = onComplete;
     this.problem = problem;
     this.correct = false;
+    this.rewardType = this.problem.reward().dakek;
   }
   createElement() {
     this.element = document.createElement("div");
@@ -12,9 +13,14 @@ class Problem {
   
   submission() {
     if(this.correct) {
-      console.log(this.problem);
-      console.log(this.problem.reward().dakek);
-      window.playerState.items.push(this.problem.reward());
+      console.log(this.problem.reward.success[2]);
+      console.log(this.problem.reward.success[2].recover);
+
+      
+      
+      if(this.rewardType !== 'B') {
+        window.playerState.items.push(this.problem.reward());
+      } else {window.playerState.hp += this.problem.reward.success[2].recover}
       
       this.element.remove();
       this.onComplete();
