@@ -23,7 +23,7 @@ class Problem {
 
       
       
-      if(this.rewardType !== 'B' || this.rewardType !== 'G') {
+      if(this.rewardType !== 'B' && this.rewardType !== 'G') {
         window.playerState.items.push(this.problem.reward());
       } else if(this.rewardType === 'B') {
         console.log("it recognizes the type");
