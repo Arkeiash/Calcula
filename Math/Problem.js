@@ -13,14 +13,14 @@ class Problem {
   
   submission() {
     if(this.correct) {
-      console.log(this.problem.reward.success);
-      //console.log(this.problem.reward.success[2].recover);
+      console.log(this.problem.reward().success);
+      console.log(this.problem.reward().success[2].recover);
 
       
       
       if(this.rewardType !== 'B') {
         window.playerState.items.push(this.problem.reward());
-      } else {window.playerState.hp += this.problem.reward.success[2].recover}
+      } else {window.playerState.hp += this.problem.reward().success[2].recover}
       
       this.element.remove();
       this.onComplete();
