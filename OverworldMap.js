@@ -1087,6 +1087,46 @@ window.OverworldMaps = {
           }
         ],
       }),
+      mrsooter: new Person({
+        x: utils.withGrid(138),
+        y: utils.withGrid(22),
+        useShadow: true,
+        canBattle: true,
+        alive: false,
+        src: "Images/Characters/Mr Sooter.png",
+        behaviorLoop: [
+          {type: "stand", direction: "down", time: 9000},
+          {type: "walk", direction: "left"},
+          {type: "walk", direction: "left"},
+          {type: "walk", direction: "left"},
+          {type: "walk", direction: "left"},
+          {type: "walk", direction: "left"},
+          {type: "walk", direction: "left"},
+          {type: "walk", direction: "left"},
+          {type: "stand", direction: "down", time: 9000},
+          {type: "walk", direction: "right"},
+          {type: "walk", direction: "right"},
+          {type: "walk", direction: "right"},
+          {type: "walk", direction: "right"},
+          {type: "walk", direction: "right"},
+          {type: "walk", direction: "right"},
+          {type: "walk", direction: "right"},
+          
+        ],
+        talking: [
+          {
+            events: [
+              {type: "textMessage", text: "Hey! What's up?", faceHero: "peasant9"},
+              {type: "textMessage", text: "Woah dude, are you serious right now?"},
+              {type: "textMessage", text: "Alright... Well this one's on you. I'm not about to go easy on you."},
+              {type: "battle", enemyId: "mrsooter"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+              //{who: "hero", type: "walk", direction: "up"},
+            ]
+          }
+        ],
+      }),
 
       houseRowA6: new Person({
         x: utils.withGrid(-3),
