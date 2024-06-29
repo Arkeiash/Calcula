@@ -144,6 +144,19 @@ window.Enemies = {
     amplification: 0,
     rActions: ["Fleshwound", "Ouch", "Laceration"]
   },
+  "mrsooter": {
+    name: "Mr. Sooter",
+    id: "mrsooter",
+    alive: true,
+    src: "Images/Characters/Mr Sooter.png",
+    hp: 100,
+    maxHp: 100,
+    barrier: 500,
+    maxBarrier: 500,
+    fortification: 50,
+    amplification: 0,
+    rActions: ["Maim1", "Gore3", "Scald2", "Scorch3", "Raze1", "Raze2"]
+  },
   "peasant1": {
     name: "Hugh",
     id: "peasant1",
