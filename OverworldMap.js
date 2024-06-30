@@ -1989,7 +1989,7 @@ window.OverworldMaps = {
       [utils.asGridCoord(267,-31)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle", x: 22*16, y: 48*16, direction: "up",},
+            {type: "changeMap", map: "Castle2", x: 22*16, y: 48*16, direction: "up",},
           ],
         },
       ],
