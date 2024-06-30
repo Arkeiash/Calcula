@@ -2420,28 +2420,28 @@ window.OverworldMaps = {
       [utils.asGridCoord(21,0)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 22*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 25*16, y: 25*16, direction: "up",},
           ],
         },
       ],
       [utils.asGridCoord(20,0)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 23*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 24*16, y: 25*16, direction: "up",},
           ],
         },
       ],
       [utils.asGridCoord(19,0)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 24*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 23*16, y: 25*16, direction: "up",},
           ],
         },
       ],
       [utils.asGridCoord(18,0)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 25*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 22*16, y: 25*16, direction: "up",},
           ],
         },
       ],
