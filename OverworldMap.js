@@ -1096,21 +1096,7 @@ window.OverworldMaps = {
         src: "Images/Characters/Mr Sooter.png",
         behaviorLoop: [
           {type: "stand", direction: "down", time: 9000},
-         /* {type: "walk", direction: "left"},
-          {type: "walk", direction: "left"},
-          {type: "walk", direction: "left"},
-          {type: "walk", direction: "left"},
-          {type: "walk", direction: "left"},
-          {type: "walk", direction: "left"},
-          {type: "walk", direction: "left"},
-          {type: "stand", direction: "down", time: 9000},
-          {type: "walk", direction: "right"},
-          {type: "walk", direction: "right"},
-          {type: "walk", direction: "right"},
-          {type: "walk", direction: "right"},
-          {type: "walk", direction: "right"},
-          {type: "walk", direction: "right"},
-          {type: "walk", direction: "right"},*/
+          {type: "stand", direction: "left", time: 4000},
           
         ],
         talking: [
