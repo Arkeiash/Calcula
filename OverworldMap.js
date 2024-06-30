@@ -1225,7 +1225,7 @@ window.OverworldMaps = {
         x: utils.withGrid(101),
         y: utils.withGrid(-5),
         class: "object",
-        //type: "RaiderRow",
+        type: "RaiderRow",
         useShadow: false,
         size: 96,
         src: "Images/Objects/Raider House 1.png",
