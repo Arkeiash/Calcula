@@ -1221,6 +1221,15 @@ window.OverworldMaps = {
         size: 256,
         src: "Images/Objects/Raider Row 1.png",
       }),
+      randomHouse1: new Person({
+        x: utils.withGrid(101),
+        y: utils.withGrid(-5),
+        class: "object",
+        //type: "RaiderRow",
+        useShadow: false,
+        size: 96,
+        src: "Images/Objects/Raider House 1.png",
+      }),
 
 
       
