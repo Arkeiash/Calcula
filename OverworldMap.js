@@ -2030,6 +2030,13 @@ window.OverworldMaps = {
       ],
 
         //Castle
+      [utils.asGridCoord(21,26)]: [
+        {
+          events: [
+            {type: "changeMap", map: "Castle", x: 18*16, y: 0, direction: "down",},
+          ],
+        },
+      ],
       [utils.asGridCoord(22,26)]: [
         {
           events: [
@@ -2065,13 +2072,7 @@ window.OverworldMaps = {
           ],
         },
       ],
-      [utils.asGridCoord(31,-14)]: [
-        {
-          events: [
-            {type: "changeMap", map: "HouseTest", x: 21*16, y: 0, direction: "down",},
-          ],
-        },
-      ],
+      
       /*[utils.asGridCoord(24,16)]: [
         {
           events: [
