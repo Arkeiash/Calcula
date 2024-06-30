@@ -1985,14 +1985,52 @@ window.OverworldMaps = {
       ],
       //for when you nee to change maps
       
-      [utils.asGridCoord(21,26)]: [
+      [utils.asGridCoord(267,-31)]: [
         {
           events: [
             {type: "changeMap", map: "Castle", x: 18*16, y: 0, direction: "down",},
           ],
         },
       ],
-      //Castle
+      //(267-272, -31) Castle 2
+  
+      [utils.asGridCoord(268,-31)]: [
+        {
+          events: [
+            {type: "changeMap", map: "Castle2", x: 267*16, y: -31*16, direction: "down",},
+          ],
+        },
+      ],
+      [utils.asGridCoord(269,-31)]: [
+        {
+          events: [
+            {type: "changeMap", map: "Castle2", x: 267*16, y: -31*16, direction: "down",},
+          ],
+        },
+      ],
+      [utils.asGridCoord(270,-31)]: [
+        {
+          events: [
+            {type: "changeMap", map: "Castle2", x: 267*16, y: -31*16, direction: "down",},
+          ],
+        },
+      ],
+      [utils.asGridCoord(271,-31)]: [
+        {
+          events: [
+            {type: "changeMap", map: "Castle2", x: 267*16, y: -31*16, direction: "down",},
+          ],
+        },
+      ],
+      [utils.asGridCoord(272,-31)]: [
+        {
+          events: [
+            {type: "changeMap", map: "Castle2", x: 267*16, y: -31*16, direction: "down",},
+          ],
+        },
+      ],
+
+        //Castle
       [utils.asGridCoord(22,26)]: [
         {
           events: [
@@ -2410,6 +2448,145 @@ window.OverworldMaps = {
       ],
     },
   },
+//CASTLE 2
+
+  Castle2: {
+    id: "Castle2",
+    lowerASrc: "Images/Maps/Castle 2 Ground.png",
+    lowerBSrc: "Images/Maps/emptyChunk.png",
+    lowerCSrc: "Images/Maps/emptyChunk.png",
+    lowerDSrc: "Images/Maps/emptyChunk.png",
+    waterASrc: "Images/Maps/Castle 2 Ground.png",
+    waterBSrc: "Images/Maps/emptyChunk.png",
+    waterCSrc: "Images/Maps/emptyChunk.png",
+    waterDSrc: "Images/Maps/emptyChunk.png",
+    upperASrc: "Images/Maps/emptyChunk.png",
+    upperBSrc: "Images/Maps/emptyChunk.png",
+    upperCSrc: "Images/Maps/emptyChunk.png",
+    upperDSrc: "Images/Maps/emptyChunk.png",
+    gameObjects: {
+      hero: new Person({
+        isPlayerControlled: true,
+      }),    
+    },
+    chunks: {
+      "0-0": {
+        coords: [utils.withChunk(0), utils.withChunk(0)],
+        Gsrc: "Images/Maps/Castle 2 Ground.png",
+        Wsrc: "Images/Maps/Castle 2 Ground.png",
+        Usrc: "Images/Maps/emptyChunk.png",
+      },
+      "1-0": {
+        coords: [utils.withChunk(1), utils.withChunk(0)],
+        Gsrc: "Images/Maps/emptyChunk.png",
+        Wsrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/emptyChunk.png",
+      },
+      "0-1": {
+        coords: [utils.withChunk(0), utils.withChunk(1)],
+        Gsrc: "Images/Maps/emptyChunk.png",
+        Wsrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/emptyChunk.png",
+      },
+      "1-1": {
+        coords: [utils.withChunk(1), utils.withChunk(1)],
+        Gsrc: "Images/Maps/emptyChunk.png",
+        Wsrc: "Images/Maps/emptyChunk.png",
+        Usrc: "Images/Maps/emptyChunk.png",
+      },
+      
+    },
+    AChunk: {
+        coords: [utils.withChunk(0), utils.withChunk(0)],
+        Gsrc: "Images/Maps/C3-5-G.png",
+        Wsrc: "Images/Maps/C3-5-W.png",
+        Usrc: "Images/Maps/C3-5-U.png",
+      },
+    BChunk: {
+        coords: [utils.withChunk(1), utils.withChunk(0)],
+        Gsrc: "Images/Maps/C3-5-G.png",
+        Wsrc: "Images/Maps/C3-5-W.png",
+        Usrc: "Images/Maps/C3-5-U.png",
+      },
+    CChunk: {
+        coords: [utils.withChunk(0), utils.withChunk(1)],
+        Gsrc: "Images/Maps/C3-5-G.png",
+        Wsrc: "Images/Maps/C3-5-W.png",
+        Usrc: "Images/Maps/C3-5-U.png",
+      },
+    DChunk: {
+        coords: [utils.withChunk(1), utils.withChunk(1)],
+        Gsrc: "Images/Maps/C3-5-G.png",
+        Wsrc: "Images/Maps/C3-5-W.png",
+        Usrc: "Images/Maps/C3-5-U.png",
+      },
+
+
+    walls: function() {
+      let walls = {};
+      ["4,9", "5,8", "6,9", "7,9", "8,9", "9,9", "10,9", "11,9", "12,9", "13,8", "14,8", "15,7",
+        "16,7", "17,7", "18,7", "19,7", "20,7", "21,7", "22,7", "23,7", "24,7", "24,6", "24,5", "26,5", "26,6", "26,7", "27,7", "28,8", "28,9", "29,8", "30,9", "31,9", "32,9", "33,9",
+        "16,9", "17,9", "25,9", "26,9", "16,10", "17,10", "25,10", "26,10", "16,11", "17,11", "25,11", "26,11",
+        "18,11","19,11",
+        "4,14", "5,14", "6,14", "7,14", "8,14", "9,14", "10,14", "11,14", "12,14", "13,14", "14,14", "15,14", "16,14", "17,14", "18,14", "19,14", "20,14", "21,14", "22,14", "23,14",
+        "24,14", "25,14", "26,14", "27,14", "28,14", "29,14", "30,14", "31,14", "32,14", "33,14",
+        "3,10", "3,11", "3,12", "3,13", "34,10", "34,11", "34,12", "34,13",
+          "29,8","25,4",
+      ].forEach(coord => {
+        let [x,y] = coord.split(",");
+        walls[utils.asGridCoord(x,y)] = true;
+      })
+      return walls;
+    }(),
+
+    cutsceneSpaces: {
+      [utils.asGridCoord(1,1)]: [
+        {
+          events: [
+            {who: "hero", type: "walk", direction: "down",},
+            {who: "hero", type: "walk", direction: "down",},
+            {who: "hero", type: "walk", direction: "down",},
+          ],
+        },
+      ],
+      [utils.asGridCoord(21,0)]: [
+        {
+          events: [
+            {type: "changeMap", map: "DemoRoom1", x: 21*16, y: 25*16, direction: "up",},
+          ],
+        },
+      ],
+      [utils.asGridCoord(20,0)]: [
+        {
+          events: [
+            {type: "changeMap", map: "DemoRoom1", x: 20*16, y: 25*16, direction: "up",},
+          ],
+        },
+      ],
+      [utils.asGridCoord(19,0)]: [
+        {
+          events: [
+            {type: "changeMap", map: "DemoRoom1", x: 19*16, y: 25*16, direction: "up",},
+          ],
+        },
+      ],
+      [utils.asGridCoord(18,0)]: [
+        {
+          events: [
+            {type: "changeMap", map: "DemoRoom1", x: 18*16, y: 25*16, direction: "up",},
+          ],
+        },
+      ],
+    },
+  },
+
+
+
+
+
+
+
+  
   HouseTest: {
     id: "Castle",
     lowerASrc: "Images/Maps/castleLower.png",
