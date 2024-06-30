@@ -8,7 +8,7 @@
     <audio id="correctAnswerAudio" src="/Music/Correct Answer Hit.mp3"></audio>
     <audio id="wrongAnswerAudio" src="/Music/Wrong Answer Tuba.mp3"></audio>
     <audio id="battleMusicAudio" src="/Music/Battle.mp3"></audio>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
