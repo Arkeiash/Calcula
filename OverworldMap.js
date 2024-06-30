@@ -1985,47 +1985,46 @@ window.OverworldMaps = {
       ],
       //for when you nee to change maps
       
+      //(267-272, -31) Castle 2
       [utils.asGridCoord(267,-31)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle", x: 18*16, y: 0, direction: "down",},
+            {type: "changeMap", map: "Castle", x: 22*16, y: 48*16, direction: "up",},
           ],
         },
       ],
-      //(267-272, -31) Castle 2
-  
       [utils.asGridCoord(268,-31)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle2", x: 267*16, y: -31*16, direction: "down",},
+            {type: "changeMap", map: "Castle2", x: 23*16, y: 48*16, direction: "up",},
           ],
         },
       ],
       [utils.asGridCoord(269,-31)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle2", x: 267*16, y: -31*16, direction: "down",},
+            {type: "changeMap", map: "Castle2", x: 24*16, y: 48*16, direction: "up",},
           ],
         },
       ],
       [utils.asGridCoord(270,-31)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle2", x: 267*16, y: -31*16, direction: "down",},
+            {type: "changeMap", map: "Castle2", x: 24*16, y: 48*16, direction: "up",},
           ],
         },
       ],
       [utils.asGridCoord(271,-31)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle2", x: 267*16, y: -31*16, direction: "down",},
+            {type: "changeMap", map: "Castle2", x: 25*16, y: 48*16, direction: "up",},
           ],
         },
       ],
       [utils.asGridCoord(272,-31)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle2", x: 267*16, y: -31*16, direction: "down",},
+            {type: "changeMap", map: "Castle2", x: 26*16, y: 48*16, direction: "up",},
           ],
         },
       ],
@@ -2421,28 +2420,28 @@ window.OverworldMaps = {
       [utils.asGridCoord(21,0)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 21*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 22*16, y: 25*16, direction: "up",},
           ],
         },
       ],
       [utils.asGridCoord(20,0)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 20*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 23*16, y: 25*16, direction: "up",},
           ],
         },
       ],
       [utils.asGridCoord(19,0)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 19*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 24*16, y: 25*16, direction: "up",},
           ],
         },
       ],
       [utils.asGridCoord(18,0)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 18*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 25*16, y: 25*16, direction: "up",},
           ],
         },
       ],
@@ -2540,40 +2539,39 @@ window.OverworldMaps = {
     }(),
 
     cutsceneSpaces: {
-      [utils.asGridCoord(1,1)]: [
+      
+      [utils.asGridCoord(22,48)]: [
         {
           events: [
-            {who: "hero", type: "walk", direction: "down",},
-            {who: "hero", type: "walk", direction: "down",},
-            {who: "hero", type: "walk", direction: "down",},
+            {type: "changeMap", map: "DemoRoom1", x: 267*16, y: -30*16, direction: "down",},
           ],
         },
       ],
-      [utils.asGridCoord(21,0)]: [
+      [utils.asGridCoord(23,48)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 21*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 269*16, y: -30*16, direction: "down",},
           ],
         },
       ],
-      [utils.asGridCoord(20,0)]: [
+      [utils.asGridCoord(24,48)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 20*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 270*16, y: -30*16, direction: "down",},
           ],
         },
       ],
-      [utils.asGridCoord(19,0)]: [
+      [utils.asGridCoord(25,48)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 19*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 271*16, y: -30*16, direction: "down",},
           ],
         },
       ],
-      [utils.asGridCoord(18,0)]: [
+      [utils.asGridCoord(26,48)]: [
         {
           events: [
-            {type: "changeMap", map: "DemoRoom1", x: 18*16, y: 25*16, direction: "up",},
+            {type: "changeMap", map: "DemoRoom1", x: 272*16, y: -30*16, direction: "down",},
           ],
         },
       ],
@@ -2587,188 +2585,7 @@ window.OverworldMaps = {
 
 
   
-  HouseTest: {
-    id: "Castle",
-    lowerASrc: "Images/Maps/castleLower.png",
-    lowerBSrc: "Images/Maps/emptyChunk.png",
-    lowerCSrc: "Images/Maps/emptyChunk.png",
-    lowerDSrc: "Images/Maps/emptyChunk.png",
-    waterASrc: "Images/Maps/castleLower.png",
-    waterBSrc: "Images/Maps/emptyChunk.png",
-    waterCSrc: "Images/Maps/emptyChunk.png",
-    waterDSrc: "Images/Maps/emptyChunk.png",
-    upperASrc: "Images/Maps/emptyChunk.png",
-    upperBSrc: "Images/Maps/emptyChunk.png",
-    upperCSrc: "Images/Maps/emptyChunk.png",
-    upperDSrc: "Images/Maps/emptyChunk.png",
-    gameObjects: {
-      hero: new Person({
-        isPlayerControlled: true,
-      }),
-      raider1: new Person({
-        x: utils.withGrid(7),
-        y: utils.withGrid(7),
-        src: "Images/Characters/Raider Sprite Sheet.png",
-        behaviorLoop: [
-          {type: "stand", direction: "down", time: 2000},
-          {type: "stand", direction: "left", time: 2100},
-          {type: "walk", direction: "left",},
-          {type: "stand", direction: "left", time: 2100},
-          {type: "stand", direction: "right", time: 3000},
-          {type: "stand", direction: "up", time: 3000},
-          {type: "walk", direction: "right",},
-          {type: "stand", direction: "right", time: 3000},
-        ],
-        talking: [
-          {
-            events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider1"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME MOTHERFUCKER!?!?!?."},
-              {type: "battle", enemyId: "raider1"},
-              //{who: "hero", type: "walk", direction: "up"},
-              //{who: "hero", type: "walk", direction: "up"},
-              //{who: "hero", type: "walk", direction: "up"},
-            ]
-          }
-        ],
-      }),
-      vikki: new Person({
-        x: utils.withGrid(20),
-        y: utils.withGrid(30),
-        useShadow: true,
-        canBattle: true,
-        alive: false,
-        src: "Images/Characters/Vikki Sprite Sheet.png",
-        behaviorLoop: [
-          {type: "stand", direction: "down", time: 4000},
-          {type: "stand", direction: "left", time: 4300},
-          {type: "walk", direction: "up",},
-          {type: "stand", direction: "left", time: 4100},
-          {type: "stand", direction: "right", time: 4200},
-          {type: "stand", direction: "up", time: 4000},
-          {type: "walk", direction: "down",},
-          {type: "stand", direction: "right", time: 4100},
-        ],
-        talking: [
-          {
-            events: [
-              {type: "textMessage", text: "Yes?", faceHero: "raider1"},
-              {type: "textMessage", text: "Who said you could talk to me?!"},
-              {type: "textMessage", text: "Do I have something on my face, shithead??"},
-              {type: "battle", enemyId: "vikki"},
-              //{who: "hero", type: "walk", direction: "up"},
-              //{who: "hero", type: "walk", direction: "up"},
-              //{who: "hero", type: "walk", direction: "up"},
-            ]
-          }
-        ],
-      }),
-    },
-    chunks: {
-      "0-0": {
-        coords: [utils.withChunk(0), utils.withChunk(0)],
-        Gsrc: "Images/Maps/castleLower.png",
-        Wsrc: "Images/Maps/castleLower.png",
-        Usrc: "Images/Maps/emptyChunk.png",
-      },
-      "1-0": {
-        coords: [utils.withChunk(1), utils.withChunk(0)],
-        Gsrc: "Images/Maps/emptyChunk.png",
-        Wsrc: "Images/Maps/emptyChunk.png",
-        Usrc: "Images/Maps/emptyChunk.png",
-      },
-      "0-1": {
-        coords: [utils.withChunk(0), utils.withChunk(1)],
-        Gsrc: "Images/Maps/emptyChunk.png",
-        Wsrc: "Images/Maps/emptyChunk.png",
-        Usrc: "Images/Maps/emptyChunk.png",
-      },
-      "1-1": {
-        coords: [utils.withChunk(1), utils.withChunk(1)],
-        Gsrc: "Images/Maps/emptyChunk.png",
-        Wsrc: "Images/Maps/emptyChunk.png",
-        Usrc: "Images/Maps/emptyChunk.png",
-      },
-      
-    },
-    AChunk: {
-        coords: [utils.withChunk(0), utils.withChunk(0)],
-        Gsrc: "Images/Maps/C3-5-G.png",
-        Wsrc: "Images/Maps/C3-5-W.png",
-        Usrc: "Images/Maps/C3-5-U.png",
-      },
-    BChunk: {
-        coords: [utils.withChunk(1), utils.withChunk(0)],
-        Gsrc: "Images/Maps/C3-5-G.png",
-        Wsrc: "Images/Maps/C3-5-W.png",
-        Usrc: "Images/Maps/C3-5-U.png",
-      },
-    CChunk: {
-        coords: [utils.withChunk(0), utils.withChunk(1)],
-        Gsrc: "Images/Maps/C3-5-G.png",
-        Wsrc: "Images/Maps/C3-5-W.png",
-        Usrc: "Images/Maps/C3-5-U.png",
-      },
-    DChunk: {
-        coords: [utils.withChunk(1), utils.withChunk(1)],
-        Gsrc: "Images/Maps/C3-5-G.png",
-        Wsrc: "Images/Maps/C3-5-W.png",
-        Usrc: "Images/Maps/C3-5-U.png",
-      },
-    /*walls: {
-      [utils.asGridCoord(0,0)] : true,
-      [utils.asGridCoord(0,1)] : true,
-      [utils.asGridCoord(0,2)] : true,
-      [utils.asGridCoord(0,3)] : true,
-      [utils.asGridCoord(0,4)] : true,
-      [utils.asGridCoord(0,5)] : true,
-      [utils.asGridCoord(0,6)] : true,
-      [utils.asGridCoord(0,7)] : true,
-      [utils.asGridCoord(0,8)] : true,
-      [utils.asGridCoord(0,9)] : true,
-      [utils.asGridCoord(0,10)] : true,
-      [utils.asGridCoord(0,11)] : true,
-      [utils.asGridCoord(0,12)] : true,
-      [utils.asGridCoord(0,13)] : true,
-      [utils.asGridCoord(0,14)] : true,
-      [utils.asGridCoord(0,15)] : true,
-      [utils.asGridCoord(0,16)] : true,
-      [utils.asGridCoord(0,17)] : true,
-      [utils.asGridCoord(0,18)] : true,
-      [utils.asGridCoord(0,19)] : true,
-      
-    },*/
-
-    walls: function() {
-      let walls = {};
-      ["4,9", "5,8", "6,9", "7,9", "8,9", "9,9", "10,9", "11,9", "12,9", "13,8", "14,8", "15,7",
-        "16,7", "17,7", "18,7", "19,7", "20,7", "21,7", "22,7", "23,7", "24,7", "24,6", "24,5", "26,5", "26,6", "26,7", "27,7", "28,8", "28,9", "29,8", "30,9", "31,9", "32,9", "33,9",
-        "16,9", "17,9", "25,9", "26,9", "16,10", "17,10", "25,10", "26,10", "16,11", "17,11", "25,11", "26,11",
-        "18,11","19,11",
-        "4,14", "5,14", "6,14", "7,14", "8,14", "9,14", "10,14", "11,14", "12,14", "13,14", "14,14", "15,14", "16,14", "17,14", "18,14", "19,14", "20,14", "21,14", "22,14", "23,14",
-        "24,14", "25,14", "26,14", "27,14", "28,14", "29,14", "30,14", "31,14", "32,14", "33,14",
-        "3,10", "3,11", "3,12", "3,13", "34,10", "34,11", "34,12", "34,13",
-          "29,8","25,4",
-      ].forEach(coord => {
-        let [x,y] = coord.split(",");
-        walls[utils.asGridCoord(x,y)] = true;
-      })
-      return walls;
-    }(),
-
-    cutsceneSpaces: {
-      [utils.asGridCoord(1,1)]: [
-        {
-          events: [
-            {who: "hero", type: "walk", direction: "down",},
-            {who: "hero", type: "walk", direction: "down",},
-            {who: "hero", type: "walk", direction: "down",},
-          ],
-        },
-      ],
-      
-    },
-  },
+ 
   
   
 };
