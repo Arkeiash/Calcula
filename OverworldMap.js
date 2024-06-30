@@ -2033,42 +2033,42 @@ window.OverworldMaps = {
       [utils.asGridCoord(21,26)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle", x: 18*16, y: 0, direction: "down",},
+            {type: "changeMap", map: "Castle", x: 22*16, y: 0, direction: "down",},
           ],
         },
       ],
       [utils.asGridCoord(22,26)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle", x: 18*16, y: 0, direction: "down",},
+            {type: "changeMap", map: "Castle", x: 23*16, y: 0, direction: "down",},
           ],
         },
       ],
       [utils.asGridCoord(23,26)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle", x: 19*16, y: 0, direction: "down",},
+            {type: "changeMap", map: "Castle", x: 23*16, y: 0, direction: "down",},
           ],
         },
       ],
       [utils.asGridCoord(24,26)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle", x: 20*16, y: 0, direction: "down",},
+            {type: "changeMap", map: "Castle", x: 24*16, y: 0, direction: "down",},
           ],
         },
       ],
       [utils.asGridCoord(25,26)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle", x: 21*16, y: 0, direction: "down",},
+            {type: "changeMap", map: "Castle", x: 24*16, y: 0, direction: "down",},
           ],
         },
       ],
       [utils.asGridCoord(26,26)]: [
         {
           events: [
-            {type: "changeMap", map: "Castle", x: 21*16, y: 0, direction: "down",},
+            {type: "changeMap", map: "Castle", x: 25*16, y: 0, direction: "down",},
           ],
         },
       ],
@@ -2393,14 +2393,14 @@ window.OverworldMaps = {
 
     walls: function() {
       let walls = {};
-      ["4,9", "5,8", "6,9", "7,9", "8,9", "9,9", "10,9", "11,9", "12,9", "13,8", "14,8", "15,7",
-        "16,7", "17,7", "18,7", "19,7", "20,7", "21,7", "22,7", "23,7", "24,7", "24,6", "24,5", "26,5", "26,6", "26,7", "27,7", "28,8", "28,9", "29,8", "30,9", "31,9", "32,9", "33,9",
-        "16,9", "17,9", "25,9", "26,9", "16,10", "17,10", "25,10", "26,10", "16,11", "17,11", "25,11", "26,11",
-        "18,11","19,11",
-        "4,14", "5,14", "6,14", "7,14", "8,14", "9,14", "10,14", "11,14", "12,14", "13,14", "14,14", "15,14", "16,14", "17,14", "18,14", "19,14", "20,14", "21,14", "22,14", "23,14",
-        "24,14", "25,14", "26,14", "27,14", "28,14", "29,14", "30,14", "31,14", "32,14", "33,14",
-        "3,10", "3,11", "3,12", "3,13", "34,10", "34,11", "34,12", "34,13",
-          "29,8","25,4",
+      ["","","","","","","","","","","","","","",
+       "","","","","","","","","","","","","","",
+       "","","","","","","","","","","","","","",
+       "","","","","","","","","","","","","","",
+       "","","","","","","","","","","","","","",
+       "","","","","","","","","","","","","","",
+
+       
       ].forEach(coord => {
         let [x,y] = coord.split(",");
         walls[utils.asGridCoord(x,y)] = true;
@@ -2418,28 +2418,28 @@ window.OverworldMaps = {
           ],
         },
       ],
-      [utils.asGridCoord(21,0)]: [
+      [utils.asGridCoord(25,0)]: [
         {
           events: [
             {type: "changeMap", map: "DemoRoom1", x: 25*16, y: 25*16, direction: "up",},
           ],
         },
       ],
-      [utils.asGridCoord(20,0)]: [
+      [utils.asGridCoord(24,0)]: [
         {
           events: [
             {type: "changeMap", map: "DemoRoom1", x: 24*16, y: 25*16, direction: "up",},
           ],
         },
       ],
-      [utils.asGridCoord(19,0)]: [
+      [utils.asGridCoord(23,0)]: [
         {
           events: [
             {type: "changeMap", map: "DemoRoom1", x: 23*16, y: 25*16, direction: "up",},
           ],
         },
       ],
-      [utils.asGridCoord(18,0)]: [
+      [utils.asGridCoord(22,0)]: [
         {
           events: [
             {type: "changeMap", map: "DemoRoom1", x: 22*16, y: 25*16, direction: "up",},
