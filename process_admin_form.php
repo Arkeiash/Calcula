@@ -6,12 +6,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $input = json_decode(file_get_contents('php://input'), true);
     // Database connection settings
-    $servername = "localhost";
+    $servername = "127.0.0.1:3306";
     $username = isset($_POST['username']) ? htmlspecialchars($_POST['username']) : '';
     $password = isset($_POST['password']) ? htmlspecialchars($_POST['password']) : '';
-   // $username = "calcula_admin";
-   // $password = "Vorgrastao6:12";
-    $dbname = "calcula_database";
+    $username = "u651343035_" . $username;
+    $dbname = "u651343035_Calcula_DB";
 
     // Attempt to connect to MySQL database
     $conn = new mysqli($servername, $username, $password, $dbname);
