@@ -4,10 +4,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
     $comment = isset($_POST['comment']) ? htmlspecialchars($_POST['comment']) : '';
 
-    $servername = "localhost";
-    $username = "calcula_admin";
+    $servername = "127.0.0.1:3306";
+    $username = "u651343035_calcula_admin";
     $password = "Vorgrastao6:12";
-    $dbname = "calcula_database";
+    $dbname = "u651343035_Calcula_DB";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
     if ($conn->connect_error) {
