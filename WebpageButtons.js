@@ -65,19 +65,88 @@ spellGuidePopUpElement.innerHTML = `<h1>Spell Guide</h1>
   <li>Sweep 2</li>
   <li>Sweep 3</li>
   <li>Blast 1</li>
-  <li>Flect 3</li>
-  <li>Block 1</li>
-  <li>Block 2</li>
   <li>Vert 3</li>
 </ul>
 <h2> Third Grade</h2>
 <ul>
-  <li>Sweep 1</li>
-  <li>Sweep 2</li>
-  <li>Sweep 3</li>
   <li>Sweep 4</li>
+  <li>Blast 2</li>
+  <li>Aid 3</li>
+  <li>Flect 5</li>
+  <li>Vert 4</li>
+</ul>
+<h2> Fourth Grade</h2>
+<ul>
+  <li>Aid 4</li>
+  <li>Vive 1</li>
+  <li>Fract 1</li>
+</ul>
+<h2> Fifth Grade</h2>
+<ul>
   <li>Sweep 5</li>
-</ul>`;
+  <li>Scar 1</li>
+  <li>Heal 2</li>
+  <li>Fract 2</li>
+</ul>
+<h2> Sixth Grade</h2>
+<ul>
+  <li>Blast 3</li>
+  <li>Flare 1</li>
+  <li>Flare 2</li>
+  <li>Flare 3</li>
+  <li>Singe 1</li>
+  <li>Singe 2</li>
+  <li>Fract 3</li>
+  <li>Guard 2</li>
+</ul>
+<h2> Seventh Grade</h2>
+<ul>
+  <li>Sweep 6</li>
+  <li>Blast 4</li>
+  <li>Vive 2</li>
+  <li>Heal</li>
+  <li>Guard 1</li>
+  <li>Shield 7</li>
+</ul>
+<h2> Eighth Grade</h2>
+<ul>
+  <li>Vive 3</li>
+  <li>Flect 4</li>
+  <li>Guard 3</li>
+</ul>
+<h2>Algebra 1 & 2</h2>
+<ul>
+  <li>Flare 4</li>
+  <li>Flare 5</li>
+  <li>Flare 6</li>
+  <li>Scar 2</li>
+  <li>Scar 3</li>
+  <li>Scar 4</li>
+  <li>Singe 3</li>
+  <li>Singe 4</li>
+  <li>Singe 5</li>
+  <li>Scorch 1</li>
+   <li>Scorch 2</li>
+   <li>Scorch 3</li>
+    <li>Scorch 4</li>
+     <li>Raze 1</li>
+      <li>Raze 2</li>
+       <li>Raze 3</li>
+        <li>Guard 4</li>
+         <li>Shield 1</li>
+</ul>
+<h2>Geometry</h2>
+<ul>
+  <li>Aid 5</li>
+  <li>Aid 6</li>
+  <li>Heal 4</li>
+  <li>Heal 5</li>
+  <li>Rush 1</li>
+   <li>Rush 2</li>
+    <li>Rush 3</li>
+</ul>
+
+`;
 
 var teacherStuffPopUpElement = document.createElement("div");
 teacherStuffPopUpElement.classList.add("popUp");
