@@ -25,6 +25,9 @@ class DirectionInput {
     this.doubleTapDelay = 300; // Maximum delay between taps to consider as a double tap
     this.lastTapTime = 0;
     this.tapCount = 0;
+    
+    // Flag to track if default behavior should be prevented
+    this.preventDoubleTapDefault = true;
   }
   
   get direction() {
@@ -64,7 +67,9 @@ class DirectionInput {
       this.lastTapTime = currentTime;
       
       // Check if it's a double tap
-      if (this.tapCount === 2) {
+      if (this.tapCount === 2 && this.preventDoubleTapDefault) {
+        event.preventDefault(); // Prevent default double tap behavior
+        
         this.handleDoubleTap();
         this.tapCount = 0; // Reset tap count after handling double tap
       }
@@ -116,12 +121,23 @@ class DirectionInput {
     if (index > -1) {
       this.heldDirections.splice(index, 1);
     }
+    
+    // Perform custom action here
+    console.log("Double tap detected and handled.");
+  }
+  
+  // Method to enable or disable preventing default double tap behavior
+  setPreventDoubleTapDefault(value) {
+    this.preventDoubleTapDefault = value;
   }
 }
 
 // Usage example:
 const directionInput = new DirectionInput();
 directionInput.init();
+
+// Optionally disable preventing default double tap behavior
+// directionInput.setPreventDoubleTapDefault(false);
 
 // Now you can access the current direction:
 // directionInput.direction will give you the current held direction
