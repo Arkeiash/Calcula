@@ -20,6 +20,11 @@ class DirectionInput {
     
     // Minimum distance threshold for swipe detection
     this.swipeThreshold = 50; // Adjust as needed
+    
+    // Double tap variables
+    this.doubleTapDelay = 300; // Maximum delay between taps to consider as a double tap
+    this.lastTapTime = 0;
+    this.tapCount = 0;
   }
   
   get direction() {
@@ -46,6 +51,23 @@ class DirectionInput {
     document.addEventListener('touchstart', event => {
       this.touchStartX = event.touches[0].clientX;
       this.touchStartY = event.touches[0].clientY;
+      
+      // Handle double tap logic
+      const currentTime = new Date().getTime();
+      if (currentTime - this.lastTapTime <= this.doubleTapDelay) {
+        this.tapCount++;
+      } else {
+        this.tapCount = 1;
+      }
+      
+      // Store the last tap time
+      this.lastTapTime = currentTime;
+      
+      // Check if it's a double tap
+      if (this.tapCount === 2) {
+        this.handleDoubleTap();
+        this.tapCount = 0; // Reset tap count after handling double tap
+      }
     });
     
     // Listen for touch move (to determine direction)
@@ -84,6 +106,16 @@ class DirectionInput {
         this.touchEndY = null;
       }
     });
+  }
+  
+  // Function to handle the action on double tap
+  handleDoubleTap() {
+    // Simulate keyup action
+    const dir = this.heldDirections[0];
+    const index = this.heldDirections.indexOf(dir);
+    if (index > -1) {
+      this.heldDirections.splice(index, 1);
+    }
   }
 }
 
