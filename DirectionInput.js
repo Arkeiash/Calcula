@@ -1,7 +1,6 @@
 class DirectionInput {
   constructor() {
     this.heldDirections = [];
-    
     this.map = {
       "ArrowUp": "up",
       "ArrowDown": "down",
@@ -12,6 +11,15 @@ class DirectionInput {
       "KeyA": "left",
       "KeyD": "right",
     };
+    
+    // Touch swipe variables
+    this.touchStartX = null;
+    this.touchStartY = null;
+    this.touchEndX = null;
+    this.touchEndY = null;
+    
+    // Minimum distance threshold for swipe detection
+    this.swipeThreshold = 50; // Adjust as needed
   }
   
   get direction() {
@@ -23,16 +31,65 @@ class DirectionInput {
       const dir = this.map[e.code];
       if (dir && this.heldDirections.indexOf(dir) === -1) {
         this.heldDirections.unshift(dir);
-        
       }
     });
+    
     document.addEventListener("keyup", e => {
       const dir = this.map[e.code];
       const index = this.heldDirections.indexOf(dir);
       if (index > -1) {
         this.heldDirections.splice(index, 1);
       }
-    })
+    });
     
+    // Listen for touch start
+    document.addEventListener('touchstart', event => {
+      this.touchStartX = event.touches[0].clientX;
+      this.touchStartY = event.touches[0].clientY;
+    });
+    
+    // Listen for touch move (to determine direction)
+    document.addEventListener('touchmove', event => {
+      this.touchEndX = event.touches[0].clientX;
+      this.touchEndY = event.touches[0].clientY;
+    });
+    
+    // Listen for touch end
+    document.addEventListener('touchend', () => {
+      if (this.touchStartX !== null && this.touchEndX !== null && this.touchStartY !== null && this.touchEndY !== null) {
+        let deltaX = this.touchEndX - this.touchStartX;
+        let deltaY = this.touchEndY - this.touchStartY;
+        
+        // Determine predominant direction
+        if (Math.abs(deltaX) > Math.abs(deltaY)) {
+          // Horizontal swipe
+          if (deltaX > this.swipeThreshold) {
+            this.heldDirections.unshift("right");
+          } else if (deltaX < -this.swipeThreshold) {
+            this.heldDirections.unshift("left");
+          }
+        } else {
+          // Vertical swipe
+          if (deltaY > this.swipeThreshold) {
+            this.heldDirections.unshift("down");
+          } else if (deltaY < -this.swipeThreshold) {
+            this.heldDirections.unshift("up");
+          }
+        }
+        
+        // Reset touch variables
+        this.touchStartX = null;
+        this.touchStartY = null;
+        this.touchEndX = null;
+        this.touchEndY = null;
+      }
+    });
   }
 }
+
+// Usage example:
+const directionInput = new DirectionInput();
+directionInput.init();
+
+// Now you can access the current direction:
+// directionInput.direction will give you the current held direction
