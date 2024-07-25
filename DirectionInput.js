@@ -103,6 +103,7 @@ document.addEventListener('touchstart', function(event) {
   // Check if touch started inside the game container
   if (gameContainer.contains(event.target)) {
     event.preventDefault(); // Prevent default action for swipe inside game container
+    event.stopPropagation();
   }
 });
 
@@ -110,6 +111,7 @@ document.addEventListener('touchmove', function(event) {
   // Check if touch move is inside the game container
   if (gameContainer.contains(event.target)) {
     event.preventDefault(); // Prevent default action for swipe inside game container
+    event.stopPropagation();
   }
 });
 
@@ -117,6 +119,7 @@ document.addEventListener('touchend', function(event) {
   // Check if touch end is inside the game container
   if (gameContainer.contains(event.target)) {
     event.preventDefault(); // Prevent default action for swipe inside game container
+    event.stopPropagation();
   }
 });
 
