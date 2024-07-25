@@ -20,14 +20,6 @@ class DirectionInput {
     
     // Minimum distance threshold for swipe detection
     this.swipeThreshold = 50; // Adjust as needed
-    
-    // Double tap variables
-    this.doubleTapDelay = 300; // Maximum delay between taps to consider as a double tap
-    this.lastTapTime = 0;
-    this.tapCount = 0;
-    
-    // Flag to track if default behavior should be prevented
-    this.preventDoubleTapDefault = true;
   }
   
   get direction() {
@@ -54,25 +46,6 @@ class DirectionInput {
     document.addEventListener('touchstart', event => {
       this.touchStartX = event.touches[0].clientX;
       this.touchStartY = event.touches[0].clientY;
-      
-      // Handle double tap logic
-      const currentTime = new Date().getTime();
-      if (currentTime - this.lastTapTime <= this.doubleTapDelay) {
-        this.tapCount++;
-      } else {
-        this.tapCount = 1;
-      }
-      
-      // Store the last tap time
-      this.lastTapTime = currentTime;
-      
-      // Check if it's a double tap
-      if (this.tapCount === 2 && this.preventDoubleTapDefault) {
-        event.preventDefault(); // Prevent default double tap behavior
-        
-        this.handleDoubleTap();
-        this.tapCount = 0; // Reset tap count after handling double tap
-      }
     });
     
     // Listen for touch move (to determine direction)
@@ -112,32 +85,11 @@ class DirectionInput {
       }
     });
   }
-  
-  // Function to handle the action on double tap
-  handleDoubleTap() {
-    // Simulate keyup action
-    const dir = this.heldDirections[0];
-    const index = this.heldDirections.indexOf(dir);
-    if (index > -1) {
-      this.heldDirections.splice(index, 1);
-    }
-    
-    // Perform custom action here
-    console.log("Double tap detected and handled.");
-  }
-  
-  // Method to enable or disable preventing default double tap behavior
-  setPreventDoubleTapDefault(value) {
-    this.preventDoubleTapDefault = value;
-  }
 }
 
 // Usage example:
 const directionInput = new DirectionInput();
 directionInput.init();
-
-// Optionally disable preventing default double tap behavior
-// directionInput.setPreventDoubleTapDefault(false);
 
 // Now you can access the current direction:
 // directionInput.direction will give you the current held direction
