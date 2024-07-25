@@ -1,3 +1,8 @@
+
+
+
+
+
 class DirectionInput {
   constructor() {
     this.heldDirections = [];
@@ -90,6 +95,30 @@ class DirectionInput {
 // Usage example:
 const directionInput = new DirectionInput();
 directionInput.init();
+
+const gameContainer = document.getElementById('game-container');
+
+// Add event listeners for touch events
+document.addEventListener('touchstart', function(event) {
+  // Check if touch started inside the game container
+  if (gameContainer.contains(event.target)) {
+    event.preventDefault(); // Prevent default action for swipe inside game container
+  }
+});
+
+document.addEventListener('touchmove', function(event) {
+  // Check if touch move is inside the game container
+  if (gameContainer.contains(event.target)) {
+    event.preventDefault(); // Prevent default action for swipe inside game container
+  }
+});
+
+document.addEventListener('touchend', function(event) {
+  // Check if touch end is inside the game container
+  if (gameContainer.contains(event.target)) {
+    event.preventDefault(); // Prevent default action for swipe inside game container
+  }
+});
 
 // Now you can access the current direction:
 // directionInput.direction will give you the current held direction
