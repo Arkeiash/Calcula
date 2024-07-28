@@ -65,11 +65,11 @@ class Overworld {
       }
     })
     new KeyPressListener("KeyC", () => {
-      
+       if (!this.map.isCutscenePlaying) {
         this.map.startCutscene([
           {type: "calculator"}
         ])
-      
+       }
     })
   }
   bindHeroPositionCheck() {
