@@ -173,17 +173,20 @@ class OverworldEvent {
     menu.init(document.querySelector(".game-container"));
   }
   calculator(resolve) {
-    console.log("Call!");
+    
     this.map.isCalculator = true;
+    console.log("True from OVW event 1");
     const calculator = new Calculator({
       onComplete: () => {
         resolve();
-        console.log("Make it false"):
+        
         this.map.isCalculator = false;
+        console.log("False from OVW event 2");
       },
     });
     calculator.init(document.getElementById("popUpContainer"));
     this.map.isCalculator = true;
+    console.log("True from OVW event 3");
   }
   
   problem(resolve) {
