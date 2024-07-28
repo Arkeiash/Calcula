@@ -65,7 +65,7 @@ class Overworld {
       }
     })
     new KeyPressListener("KeyC", () => {
-       if (!this.map.isCutscenePlaying) {
+       if (!this.map.isCalculator) {
         this.map.startCutscene([
           {type: "calculator"}
         ])
