@@ -185,7 +185,7 @@ class OverworldEvent {
   }
   
   problem(resolve) {
-    this.map.isCutscenePlaying = false;
+    this.map.isPaused = true;
     const problem = new Problem({
       problem: Problems[this.event.problem],
       onComplete: () => {
