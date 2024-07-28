@@ -182,6 +182,7 @@ class OverworldEvent {
       },
     });
     calculator.init(document.getElementById("popUpContainer"));
+    this.map.isCalculator = true;
   }
   
   problem(resolve) {
