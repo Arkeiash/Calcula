@@ -323,6 +323,7 @@ class Calculator {
     
       close() {
         this.calculatorElement.remove();
+        this.esc?.unbind();
         this.onComplete();
       }
 
