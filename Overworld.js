@@ -92,11 +92,13 @@ class Overworld {
       hero.y = heroInitialState.y;
       hero.direction = heroInitialState.direction;
       this.map.addWall(hero.x, hero.y)
+      this.map.updateChunks(hero.x, hero.y);
     }
     this.progress.mapId = mapConfig.id;
     this.progress.startingHeroX = this.map.gameObjects.hero.x;
     this.progress.startingHeroY = this.map.gameObjects.hero.y;
     this.progress.startingHeroDirection = this.map.gameObjects.hero.direction;
+    
   }
   
   async init() {
