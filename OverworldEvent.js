@@ -174,11 +174,11 @@ class OverworldEvent {
   }
   calculator(resolve) {
     console.log("calculator now");
-    this.map.isPaused = true;
+    this.map.isCalculator = true;
     const calculator = new Calculator({
       onComplete: () => {
         resolve();
-        this.map.isPaused = false;
+        this.map.isCalculator = false;
       },
     });
     calculator.init(document.getElementById("popUpContainer"));
