@@ -42,7 +42,7 @@ class Overworld {
       });
       
       this.map.drawUpperImage(this.ctx, cameraPerson);
-      console.log(`${this.map.gameObjects.hero.x/16}, ${this.map.gameObjects.hero.y/16}`);
+      //console.log(`${this.map.gameObjects.hero.x/16}, ${this.map.gameObjects.hero.y/16}`);
       console.log(this.map.isCalculator);
       
       
