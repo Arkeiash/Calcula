@@ -182,7 +182,6 @@ class OverworldEvent {
         
         this.map.isCalculator = false;
         console.log("False from OVW event 2");
-        this.map.isPaused = false;
       },
     });
     calculator.init(document.getElementById("popUpContainer"));
