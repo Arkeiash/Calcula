@@ -178,6 +178,7 @@ class OverworldEvent {
     const calculator = new Calculator({
       onComplete: () => {
         resolve();
+        console.log("Make it false"):
         this.map.isCalculator = false;
       },
     });
