@@ -173,7 +173,7 @@ class OverworldEvent {
     menu.init(document.querySelector(".game-container"));
   }
   calculator(resolve) {
-    //console.log(this.map.isCalculator);
+    console.log("Call!";
     this.map.isCalculator = true;
     const calculator = new Calculator({
       onComplete: () => {
