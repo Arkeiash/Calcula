@@ -147,13 +147,12 @@ class OverworldMap {
       object.id = key;
       let instance;
       if (object.anark === "Person") {
-        console.log("person running");
         instance = new Person(object);
       }
-      console.log(this.configObjects);
-      this.gameObjects[key] = instance;
-      this.gameObjects[key].id = key;
-      instance.mount(this);
+      console.log(key);
+      //this.gameObjects[key] = instance;
+      //this.gameObjects[key].id = key;
+      //instance.mount(this);
     })
   }
   dismountObjects() {
