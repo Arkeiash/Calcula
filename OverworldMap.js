@@ -146,7 +146,7 @@ class OverworldMap {
       let object = this.gameObjects[key];
       object.id = key;
       let instance;
-      if (object.type === "Person") {
+      if (object.anark === "Person") {
         instance = new Person(object);
       }
       this.gameObjects[key] = instance;
@@ -365,21 +365,23 @@ window.OverworldMaps = {
     upperCSrc: "Images/Maps/C3-5-U.png",
     upperDSrc: "Images/Maps/C3-5-U.png",
     gameObjects: {
-      hero: new Person({
+      hero: {
+        anark: "Person",
         isPlayerControlled: true,
         x: utils.withGrid(20),
         y: utils.withGrid(15),
         useShadow: true,
-      }),
-      gate: new Person({
+      },
+      gate: {
         x: utils.withGrid(20),
         y: utils.withGrid(22),
         size: 128,
         useShadow: false,
         currentAnimation: "gateOpen",
         src: "Images/Objects/Castle Gate.png",
-      }),
-      raider1: new Person({
+      },
+      raider1: {
+        anark: "Person",
         x: utils.withGrid(7),
         y: utils.withGrid(7),
         canBattle: true,
@@ -408,8 +410,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      raider2: new Person({
+      },
+      raider2: {
+        anark: "Person",
         x: utils.withGrid(18),
         y: utils.withGrid(14),
         useShadow: true,
@@ -438,8 +441,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      raider3: new Person({
+      },
+      raider3: {
+        anark: "Person",
         x: utils.withGrid(162),
         y: utils.withGrid(-73),
         useShadow: true,
@@ -468,8 +472,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      raider4: new Person({
+      },
+      raider4: {
+        anark: "Person",
         x: utils.withGrid(166),
         y: utils.withGrid(-70),
         useShadow: true,
@@ -498,8 +503,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      raider5: new Person({
+      },
+      raider5: {
+        anark: "Person",
         x: utils.withGrid(167),
         y: utils.withGrid(-78),
         useShadow: true,
@@ -528,8 +534,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      raider6: new Person({
+      },
+      raider6: {
+        anark: "Person",
         x: utils.withGrid(170),
         y: utils.withGrid(-78),
         useShadow: true,
@@ -558,8 +565,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      raider7: new Person({
+      },
+      raider7: {
+        anark: "Person",
         x: utils.withGrid(178),
         y: utils.withGrid(-74),
         useShadow: true,
@@ -588,8 +596,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      raider8: new Person({
+      },
+      raider8: {
+        anark: "Person",
         x: utils.withGrid(173),
         y: utils.withGrid(-61),
         useShadow: true,
@@ -618,8 +627,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      raider9: new Person({
+      },
+      raider9: {
+        anark: "Person",
         x: utils.withGrid(169),
         y: utils.withGrid(-61),
         useShadow: true,
@@ -648,8 +658,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      raider10: new Person({
+      },
+      raider10: {
+        anark: "Person",
         x: utils.withGrid(168),
         y: utils.withGrid(-69),
         useShadow: true,
@@ -678,8 +689,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      peasant1: new Person({
+      },
+      peasant1: {
+        anark: "Person",
         x: utils.withGrid(25),
         y: utils.withGrid(6),
         useShadow: true,
@@ -705,8 +717,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      peasant2: new Person({
+      },
+      peasant2: {
+        anark: "Person",
         x: utils.withGrid(19),
         y: utils.withGrid(-13),
         useShadow: true,
@@ -753,8 +766,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      peasant3: new Person({
+      },
+      peasant3: {
+        anark: "Person",
         x: utils.withGrid(51),
         y: utils.withGrid(-13),
         useShadow: true,
@@ -784,8 +798,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      peasant4: new Person({
+      },
+      peasant4: {
+        anark: "Person",
         x: utils.withGrid(21),
         y: utils.withGrid(-31),
         useShadow: true,
@@ -822,8 +837,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      peasant5: new Person({
+      },
+      peasant5: {
+        anark: "Person",
         x: utils.withGrid(21),
         y: utils.withGrid(-16),
         useShadow: true,
@@ -853,8 +869,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      peasant6: new Person({
+      },
+      peasant6: {
+         anark: "Person",
         x: utils.withGrid(6),
         y: utils.withGrid(-56),
         useShadow: true,
@@ -901,8 +918,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      peasant7: new Person({
+      },
+      peasant7: {
+        anark: "Person",
         x: utils.withGrid(4),
         y: utils.withGrid(-50),
         useShadow: true,
@@ -949,8 +967,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      peasant8: new Person({
+      }, 
+      peasant8: {
+        anark: "Person",
         x: utils.withGrid(41),
         y: utils.withGrid(-48),
         useShadow: true,
@@ -996,8 +1015,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      peasant9: new Person({
+      },
+      peasant9: {
+        anark: "Person",
         x: utils.withGrid(34),
         y: utils.withGrid(-32),
         useShadow: true,
@@ -1044,8 +1064,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      peasant10: new Person({
+      },
+      peasant10: {
+        anark: "Person",
         x: utils.withGrid(34),
         y: utils.withGrid(-32),
         useShadow: true,
@@ -1091,8 +1112,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      mrsooter: new Person({
+      },
+      mrsooter: {
+        anark: "Person",
         x: utils.withGrid(138),
         y: utils.withGrid(22),
         useShadow: true,
@@ -1117,89 +1139,100 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
+      },
 
-      houseRowA6: new Person({
+      houseRowA6: {
+        anark: "Person",
         x: utils.withGrid(-3),
         y: utils.withGrid(-15),
         class: "object",
         useShadow: false,
         size: 896,
         src: "Images/Objects/Village Row.png",
-      }),
-      houseRowA5: new Person({
+      },
+      houseRowA5: {
+        anark: "Person",
         x: utils.withGrid(-3),
         y: utils.withGrid(-24),
         class: "object",
         useShadow: false,
         size: 896,
         src: "Images/Objects/Village Row.png",
-      }),
-      houseRowA4: new Person({
+      },
+      houseRowA4: {
+        anark: "Person",
         x: utils.withGrid(-3),
         y: utils.withGrid(-33),
         class: "object",
         useShadow: false,
         size: 896,
         src: "Images/Objects/Village Row.png",
-      }),
-      houseRowA3: new Person({
+      },
+      houseRowA3: {
+        anark: "Person",
         x: utils.withGrid(-3),
         y: utils.withGrid(-42),
         class: "object",
         useShadow: false,
         size: 896,
         src: "Images/Objects/Village Row.png",
-      }),
-      houseRowA2: new Person({
+      },
+      houseRowA2: {
+        anark: "Person",
         x: utils.withGrid(-3),
         y: utils.withGrid(-58),
         class: "object",
         useShadow: false,
         size: 896,
         src: "Images/Objects/Village Row.png",
-      }),
-      houseRowA1: new Person({
+      },
+      houseRowA1: {
+        anark: "Person",
         x: utils.withGrid(-3),
         y: utils.withGrid(-67),
         class: "object",
         useShadow: false,
         size: 896,
         src: "Images/Objects/Village Row.png",
-      }),
-      houseRowB1: new Person({
+      },
+      houseRowB1: {
+        anark: "Person",
         x: utils.withGrid(254),
         y: utils.withGrid(26),
         class: "object",
         useShadow: false,
         size: 960,
         src: "Images/Objects/Villiage Row 2.png",
-      }),
-      houseRowB2: new Person({
+      },
+      houseRowB2: {
+        anark: "Person",
         x: utils.withGrid(254),
         y: utils.withGrid(35),
         class: "object",
         useShadow: false,
         size: 960,
         src: "Images/Objects/Villiage Row 2.png",
-      }),
-      houseRowB3: new Person({
+      },
+      houseRowB3: {
+        anark: "Person",
         x: utils.withGrid(254),
         y: utils.withGrid(50),
         class: "object",
         useShadow: false,
         size: 960,
         src: "Images/Objects/Villiage Row 2.png",
-      }),
-      houseRowB4: new Person({
+      },
+      houseRowB4: {
+        anark: "Person",
         x: utils.withGrid(254),
         y: utils.withGrid(59),
         class: "object",
         useShadow: false,
         size: 960,
         src: "Images/Objects/Villiage Row 2.png",
-      }),
-      raiderHouseRow1: new Person({
+      },
+      raiderHouseRow1: {
+        anark: "Person",
         x: utils.withGrid(162),
         y: utils.withGrid(-74),
         class: "object",
@@ -1207,8 +1240,9 @@ window.OverworldMaps = {
         useShadow: false,
         size: 256,
         src: "Images/Objects/Raider Row 1.png",
-      }),
-      raiderHouseRow2: new Person({
+      },
+      raiderHouseRow2: {
+        anark: "Person",
         x: utils.withGrid(158),
         y: utils.withGrid(-68),
         class: "object",
@@ -1216,8 +1250,9 @@ window.OverworldMaps = {
         useShadow: false,
         size: 896,
         src: "Images/Objects/Raider Row 2.png",
-      }),
-      raiderHouseRow3: new Person({
+      },
+      raiderHouseRow3: {
+        anark: "Person",
         x: utils.withGrid(161),
         y: utils.withGrid(-63),
         class: "object",
@@ -1225,8 +1260,9 @@ window.OverworldMaps = {
         useShadow: false,
         size: 256,
         src: "Images/Objects/Raider Row 1.png",
-      }),
-      randomHouse1: new Person({
+      },
+      randomHouse1: {
+        anark: "Person",
         x: utils.withGrid(101),
         y: utils.withGrid(-5),
         class: "object",
@@ -1234,8 +1270,9 @@ window.OverworldMaps = {
         useShadow: false,
         size: 96,
         src: "Images/Objects/Raider House 1.png",
-      }),
-      randomHouse2: new Person({
+      },
+      randomHouse2: {
+        anark: "Person",
         x: utils.withGrid(273),
         y: utils.withGrid(118),
         class: "object",
@@ -1243,7 +1280,7 @@ window.OverworldMaps = {
         useShadow: false,
         size: 96,
         src: "Images/Objects/Raider House 1.png",
-      }),
+      },
 
       
     },
