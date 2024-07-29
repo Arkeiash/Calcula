@@ -364,7 +364,7 @@ window.OverworldMaps = {
     upperBSrc: "Images/Maps/C3-5-U.png",
     upperCSrc: "Images/Maps/C3-5-U.png",
     upperDSrc: "Images/Maps/C3-5-U.png",
-    gameObjects: {
+    configObjects: {
       hero: {
         anark: "Person",
         isPlayerControlled: true,
