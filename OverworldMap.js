@@ -151,7 +151,8 @@ class OverworldMap {
       }
       //console.log(key);
       this.gameObjects[key] = instance;
-      this.gameObjects[key].id = key;
+      console.log(this.gameObjects[key].id);
+      //this.gameObjects[key].id = key;
       instance.mount(this);
     })
     console.log(this.gameObjects);
