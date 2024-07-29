@@ -142,8 +142,8 @@ class OverworldMap {
   }
   
   mountObjects() {
-    Object.keys(this.gameObjects).forEach(key => {
-      let object = this.gameObjects[key];
+    Object.keys(this.configObjects).forEach(key => {
+      let object = this.configObjects[key];
       object.id = key;
       let instance;
       if (object.anark === "Person") {
