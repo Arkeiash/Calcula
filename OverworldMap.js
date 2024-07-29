@@ -1,7 +1,8 @@
 class OverworldMap {
   constructor(config) {
     this.overworld = null;
-    this.gameObjects = config.gameObjects;
+    this.gameObjects = {}; // Live objects are in here
+    this.configObjects = config.configObjects; // Configuration content
     this.cutsceneSpaces = config.cutsceneSpaces || {};
     this.walls = config.walls || {};
     
@@ -144,9 +145,13 @@ class OverworldMap {
     Object.keys(this.gameObjects).forEach(key => {
       let object = this.gameObjects[key];
       object.id = key;
-      object.mount(this);
-      
-      
+      let instance;
+      if (object.type === "Person") {
+        instance = new Person(object);
+      }
+      this.gameObjects[key] = instance;
+      this.gameObjects[key].id = key;
+      instance.mount(this);
     })
   }
   dismountObjects() {
