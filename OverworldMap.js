@@ -149,11 +149,12 @@ class OverworldMap {
       if (object.anark === "Person") {
         instance = new Person(object);
       }
-      console.log(key);
-      //this.gameObjects[key] = instance;
+      //console.log(key);
+      this.gameObjects[key] = instance;
       //this.gameObjects[key].id = key;
       //instance.mount(this);
     })
+    console.log(this.gameObjects);
   }
   dismountObjects() {
     Object.keys(this.gameObjects).filter(object => object.alive === true).forEach(key => {
