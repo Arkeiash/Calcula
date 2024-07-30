@@ -171,13 +171,7 @@ class OverworldMap {
     })
     console.log(this.gameObjects);
   }
-  dismountObjects() {
-    Object.keys(this.gameObjects).filter(object => object.alive === true).forEach(key => {
-      let object = this.gameObjects[key];
-      object.id = key;
-      object.dismount(this);
-    })
-  }
+
   
   async startCutscene(events) {
     this.isCutscenePlaying = true;
@@ -215,6 +209,7 @@ class OverworldMap {
       this.startCutscene(match[0].events);
     }
   }
+  updateChunks(x, y) {
     var chunkX = Math.floor(x/16/49);
     var chunkY = Math.floor(y/16/49);
     
