@@ -30,17 +30,13 @@ class GameObject {
   
   mount(map) {
     this.isMounted = true;
-    map.addWall(this.x, this.y);
     console.log("mount");
     
     setTimeout(() => {
       this.doBehaviorEvent(map);
     }, 10);
   }
-  dismount(map) {
-    this.isMounted = false;
-    map.removeWall(this.x, this.y);
-  }
+
   
   update() {
     
