@@ -40,7 +40,7 @@ class Person extends GameObject {
         }, 10)
         return;
       }
-      state.map.moveWall(this.x, this.y, this.direction);
+      
       this.movingProgressRemaining = 16;
       this.updateSprite(state);
       if(this.id === "hero") {
