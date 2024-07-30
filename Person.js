@@ -8,6 +8,7 @@ class Person extends GameObject {
     this.isPlayerControlled = config.isPlayerControlled || false;
     this.canBattle = config.canBattle || false;
     this.alive = true;
+    this.intentPosition = null;
     this.directionUpdate = {
       "up": ["y", -1],
       "down": ["y", 1],
@@ -42,6 +43,12 @@ class Person extends GameObject {
       }
       
       this.movingProgressRemaining = 16;
+      //Add next position intent
+      const intentPosition = utils.nextPosition(this.x,this.y, this.direction)
+      this.intentPosition = [
+        intentPosition.x,
+        intentPosition.y,
+      ]
       this.updateSprite(state);
       if(this.id === "hero") {
         console.log(state.map);
@@ -73,6 +80,7 @@ class Person extends GameObject {
       this.movingProgressRemaining -= 1;
       
       if(this.movingProgressRemaining === 0) {
+        this.intentPosition = null;
         utils.emitEvent("PersonWalkingComplete", {
           whoId: this.id
         });
