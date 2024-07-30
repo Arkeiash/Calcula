@@ -398,8 +398,9 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider1"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+             {type: "textMessage", text: "Who are you?", faceHero: "raider1"},
+              {type: "textMessage", text: "Hey! You gonna answer my question or what??"},
+              {type: "textMessage", text: "Oh, I'll show you, wizard! Get over here!"},
               {type: "battle", enemyId: "raider1", map: this},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
@@ -429,8 +430,9 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider2"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "textMessage", text: "What are you doing here?", faceHero: "raider2"},
+              {type: "textMessage", text: "Get moving!"},
+              {type: "textMessage", text: "Hey! You listening to me?!"},
               {type: "battle", enemyId: "raider2"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
@@ -460,8 +462,9 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider3"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "textMessage", text: "What are you doing here?", faceHero: "raider3"},
+              {type: "textMessage", text: "Get moving!"},
+              {type: "textMessage", text: "Hey! You listening to me?!"},
               {type: "battle", enemyId: "raider3"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
@@ -491,8 +494,9 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider4"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "textMessage", text: "What are you doing here?", faceHero: "raider4"},
+              {type: "textMessage", text: "Get moving!"},
+              {type: "textMessage", text: "Hey! You listening to me?!"},
               {type: "battle", enemyId: "raider4"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
@@ -522,8 +526,9 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider5"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "textMessage", text: "What are you doing here?", faceHero: "raider5"},
+              {type: "textMessage", text: "Get moving!"},
+              {type: "textMessage", text: "Hey! You listening to me?!"},
               {type: "battle", enemyId: "raider5"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
@@ -553,8 +558,9 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider6"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "textMessage", text: "What are you doing here?", faceHero: "raider6"},
+              {type: "textMessage", text: "Get moving!"},
+              {type: "textMessage", text: "Hey! You listening to me?!"},
               {type: "battle", enemyId: "raider6"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
@@ -584,8 +590,9 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider7"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "textMessage", text: "What are you doing here?", faceHero: "raider7"},
+              {type: "textMessage", text: "Get moving!"},
+              {type: "textMessage", text: "Hey! You listening to me?!"},
               {type: "battle", enemyId: "raider7"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
@@ -615,8 +622,9 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider8"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "textMessage", text: "What are you doing here?", faceHero: "raider8"},
+              {type: "textMessage", text: "Get moving!"},
+              {type: "textMessage", text: "Hey! You listening to me?!"},
               {type: "battle", enemyId: "raider8"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
@@ -646,8 +654,9 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider9"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "textMessage", text: "What are you doing here?", faceHero: "raider9"},
+              {type: "textMessage", text: "Get moving!"},
+              {type: "textMessage", text: "Hey! You listening to me?!"},
               {type: "battle", enemyId: "raider9"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
@@ -677,8 +686,9 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider10"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME, MOTHERFUCKER!?!?"},
+              {type: "textMessage", text: "What are you doing here?", faceHero: "raider10"},
+              {type: "textMessage", text: "Get moving!"},
+              {type: "textMessage", text: "Hey! You listening to me?!"},
               {type: "battle", enemyId: "raider10"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
@@ -2297,34 +2307,7 @@ window.OverworldMaps = {
         anark: "Person",
         isPlayerControlled: true,
       },
-      raider1: {
-        anark: "Person",
-        x: utils.withGrid(7),
-        y: utils.withGrid(7),
-        src: "Images/Characters/Raider Sprite Sheet.png",
-        behaviorLoop: [
-          {type: "stand", direction: "down", time: 2000},
-          {type: "stand", direction: "left", time: 2100},
-          {type: "walk", direction: "left",},
-          {type: "stand", direction: "left", time: 2100},
-          {type: "stand", direction: "right", time: 3000},
-          {type: "stand", direction: "up", time: 3000},
-          {type: "walk", direction: "right",},
-          {type: "stand", direction: "right", time: 3000},
-        ],
-        talking: [
-          {
-            events: [
-              {type: "textMessage", text: "Who are you?", faceHero: "raider1"},
-              {type: "textMessage", text: "YOU WANT A PIECE OF ME MOTHERFUCKER!?!?!?."},
-              {type: "battle", enemyId: "raider1"},
-              //{who: "hero", type: "walk", direction: "up"},
-              //{who: "hero", type: "walk", direction: "up"},
-              //{who: "hero", type: "walk", direction: "up"},
-            ]
-          }
-        ],
-      },
+      
       vikki: {
         anark: "Person",
         x: utils.withGrid(20),
@@ -2348,7 +2331,7 @@ window.OverworldMaps = {
             events: [
               {type: "textMessage", text: "Yes?", faceHero: "raider1"},
               {type: "textMessage", text: "Who said you could talk to me?!"},
-              {type: "textMessage", text: "Do I have something on my face, shithead??"},
+              {type: "textMessage", text: "Do I have something on my face??"},
               {type: "battle", enemyId: "vikki"},
               //{who: "hero", type: "walk", direction: "up"},
               //{who: "hero", type: "walk", direction: "up"},
