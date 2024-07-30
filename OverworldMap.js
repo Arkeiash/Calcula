@@ -204,22 +204,6 @@ class OverworldMap {
       this.startCutscene(match[0].events);
     }
   }
-  
-  addWall(x,y) {
-    this.walls[`${x},${y}`] = true;
-    
-  }
-  removeWall(x,y) {
-    delete this.walls[`${x},${y}`]
-    //console.log(`moving! ${x} ${y}`);
-  }
-  moveWall(wasX, wasY, direction) {
-    this.removeWall(wasX, wasY);
-    const {x,y} = utils.nextPosition(wasX, wasY, direction);
-    this.addWall(x,y);
-    //console.log(`moving! ${x} ${y}`);
-  }
-  updateChunks(x, y) {
     var chunkX = Math.floor(x/16/49);
     var chunkY = Math.floor(y/16/49);
     
