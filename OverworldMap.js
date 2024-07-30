@@ -379,6 +379,7 @@ window.OverworldMaps = {
         useShadow: true,
       },
       gate: {
+        anark: "Person",
         x: utils.withGrid(20),
         y: utils.withGrid(22),
         size: 128,
