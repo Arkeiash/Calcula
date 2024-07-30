@@ -130,13 +130,6 @@ class Battle {
           mapEnemyObject.message.done();
           console.log(`${this.enemy.x}, ${this.enemy.y}`);
           
-          this.map.removeWall(mapEnemyObject.x, mapEnemyObject.y);
-          this.map.removeWall(mapEnemyObject.x+16, mapEnemyObject.y);
-          this.map.removeWall(mapEnemyObject.x+16, mapEnemyObject.y+16);
-          this.map.removeWall(mapEnemyObject.x, mapEnemyObject.y+16);
-          this.map.removeWall(mapEnemyObject.x-16, mapEnemyObject.y);
-          this.map.removeWall(mapEnemyObject.x-16, mapEnemyObject.y-16);
-          this.map.removeWall(mapEnemyObject.x, mapEnemyObject.y-16);
         } else {
           window.playerState.hp = this.combatants["player1"].hp;
           window.playerState.maxBarrier = this.combatants["player1"].maxBarrier;
