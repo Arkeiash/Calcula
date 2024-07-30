@@ -2329,7 +2329,7 @@ window.OverworldMaps = {
         talking: [
           {
             events: [
-              {type: "textMessage", text: "Yes?", faceHero: "raider1"},
+              {type: "textMessage", text: "Yes?", faceHero: "vikki"},
               {type: "textMessage", text: "Who said you could talk to me?!"},
               {type: "textMessage", text: "Do I have something on my face??"},
               {type: "battle", enemyId: "vikki"},
