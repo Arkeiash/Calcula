@@ -2302,11 +2302,13 @@ window.OverworldMaps = {
     upperBSrc: "Images/Maps/emptyChunk.png",
     upperCSrc: "Images/Maps/emptyChunk.png",
     upperDSrc: "Images/Maps/emptyChunk.png",
-    gameObjects: {
-      hero: new Person({
+    configObjects: {
+      hero: {
+        anark: "Person",
         isPlayerControlled: true,
-      }),
-      raider1: new Person({
+      },
+      raider1: {
+        anark: "Person",
         x: utils.withGrid(7),
         y: utils.withGrid(7),
         src: "Images/Characters/Raider Sprite Sheet.png",
@@ -2332,8 +2334,9 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
-      vikki: new Person({
+      },
+      vikki: {
+        anark: "Person",
         x: utils.withGrid(20),
         y: utils.withGrid(30),
         useShadow: true,
@@ -2363,7 +2366,7 @@ window.OverworldMaps = {
             ]
           }
         ],
-      }),
+      },
     },
     chunks: {
       "0-0": {
@@ -2520,10 +2523,11 @@ window.OverworldMaps = {
     upperBSrc: "Images/Maps/emptyChunk.png",
     upperCSrc: "Images/Maps/emptyChunk.png",
     upperDSrc: "Images/Maps/emptyChunk.png",
-    gameObjects: {
-      hero: new Person({
+    configObjects: {
+      hero: {
+        anark: "Person",
         isPlayerControlled: true,
-      }),    
+      },    
     },
     chunks: {
       "0-0": {
