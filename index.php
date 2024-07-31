@@ -32,6 +32,8 @@
     <link href="/Styles/TitleScreen.css" type="text/css" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7967379929247521"
+     crossorigin="anonymous"></script>
 <?php include 'process_form.php'; ?>
   </head>
   <body>
@@ -89,32 +91,6 @@
     
     
     <script src="/init.js"></script>
-    <script>
-
-      function isMobileDevice() {
-  return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
-
-// Function to be executed for mobile devices
-function mobileFunction() {
-  console.log("This function runs on a mobile device.");
-  // Add your mobile-specific logic here
-}
-
-// Function to be executed for non-mobile devices
-function desktopFunction() {
-  console.log("This function runs on a desktop device.");
-  // Add your desktop-specific logic here
-}
-
-// Check if the user is on a mobile device
-if (isMobileDevice()) {
-  mobileFunction();
-} else {
-  desktopFunction();
-}
-    
-    </script>
     
   </body>
 </html>
