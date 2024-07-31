@@ -1,11 +1,7 @@
-
-
-
-
-
 class DirectionInput {
   constructor() {
     this.heldDirections = [];
+    
     this.map = {
       "ArrowUp": "up",
       "ArrowDown": "down",
@@ -17,28 +13,27 @@ class DirectionInput {
       "KeyD": "right",
     };
     
-    // Touch swipe variables
-    this.touchStartX = null;
-    this.touchStartY = null;
-    this.touchEndX = null;
-    this.touchEndY = null;
-    
-    // Minimum distance threshold for swipe detection
-    this.swipeThreshold = 50; // Adjust as needed
+    // For swipe detection
+    this.touchStartX = 0;
+    this.touchStartY = 0;
+    this.touchEndX = 0;
+    this.touchEndY = 0;
+    this.swipeThreshold = 50; // Adjust this value based on sensitivity
   }
-  
+
   get direction() {
     return this.heldDirections[0];
   }
-  
+
   init() {
+    // Keyboard events
     document.addEventListener("keydown", e => {
       const dir = this.map[e.code];
       if (dir && this.heldDirections.indexOf(dir) === -1) {
         this.heldDirections.unshift(dir);
       }
     });
-    
+
     document.addEventListener("keyup", e => {
       const dir = this.map[e.code];
       const index = this.heldDirections.indexOf(dir);
@@ -46,82 +41,51 @@ class DirectionInput {
         this.heldDirections.splice(index, 1);
       }
     });
-    
-    // Listen for touch start
-    document.addEventListener('touchstart', event => {
-      this.touchStartX = event.touches[0].clientX;
-      this.touchStartY = event.touches[0].clientY;
+
+    // Touch events for swipe detection
+    document.addEventListener("touchstart", e => {
+      this.touchStartX = e.touches[0].clientX;
+      this.touchStartY = e.touches[0].clientY;
     });
-    
-    // Listen for touch move (to determine direction)
-    document.addEventListener('touchmove', event => {
-      this.touchEndX = event.touches[0].clientX;
-      this.touchEndY = event.touches[0].clientY;
+
+    document.addEventListener("touchend", e => {
+      this.touchEndX = e.changedTouches[0].clientX;
+      this.touchEndY = e.changedTouches[0].clientY;
+      this.handleSwipe();
     });
-    
-    // Listen for touch end
-    document.addEventListener('touchend', () => {
-      if (this.touchStartX !== null && this.touchEndX !== null && this.touchStartY !== null && this.touchEndY !== null) {
-        let deltaX = this.touchEndX - this.touchStartX;
-        let deltaY = this.touchEndY - this.touchStartY;
-        
-        // Determine predominant direction
-        if (Math.abs(deltaX) > Math.abs(deltaY)) {
-          // Horizontal swipe
-          if (deltaX > this.swipeThreshold) {
-            this.heldDirections.unshift("right");
-          } else if (deltaX < -this.swipeThreshold) {
-            this.heldDirections.unshift("left");
-          }
+
+    // Touch event for tap detection
+    document.addEventListener("click", () => {
+      this.heldDirections = []; // Clear held directions on tap
+    });
+  }
+
+  handleSwipe() {
+    const xDiff = this.touchEndX - this.touchStartX;
+    const yDiff = this.touchEndY - this.touchStartY;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) { // Horizontal swipe
+      if (Math.abs(xDiff) > this.swipeThreshold) {
+        if (xDiff > 0) {
+          this.addDirection("right");
         } else {
-          // Vertical swipe
-          if (deltaY > this.swipeThreshold) {
-            this.heldDirections.unshift("down");
-          } else if (deltaY < -this.swipeThreshold) {
-            this.heldDirections.unshift("up");
-          }
+          this.addDirection("left");
         }
-        
-        // Reset touch variables
-        this.touchStartX = null;
-        this.touchStartY = null;
-        this.touchEndX = null;
-        this.touchEndY = null;
       }
-    });
+    } else { // Vertical swipe
+      if (Math.abs(yDiff) > this.swipeThreshold) {
+        if (yDiff > 0) {
+          this.addDirection("down");
+        } else {
+          this.addDirection("up");
+        }
+      }
+    }
+  }
+
+  addDirection(dir) {
+    if (this.heldDirections.indexOf(dir) === -1) {
+      this.heldDirections.unshift(dir);
+    }
   }
 }
-
-// Usage example:
-const directionInput = new DirectionInput();
-directionInput.init();
-
-const gameContainer = document.getElementById('game-container');
-
-// Add event listeners for touch events
-document.addEventListener('touchstart', function(event) {
-  // Check if touch started inside the game container
-  if (gameContainer.contains(event.target)) {
-    event.preventDefault(); // Prevent default action for swipe inside game container
-    event.stopPropagation();
-  }
-});
-
-document.addEventListener('touchmove', function(event) {
-  // Check if touch move is inside the game container
-  if (gameContainer.contains(event.target)) {
-    event.preventDefault(); // Prevent default action for swipe inside game container
-    event.stopPropagation();
-  }
-});
-
-document.addEventListener('touchend', function(event) {
-  // Check if touch end is inside the game container
-  if (gameContainer.contains(event.target)) {
-    event.preventDefault(); // Prevent default action for swipe inside game container
-    event.stopPropagation();
-  }
-});
-
-// Now you can access the current direction:
-// directionInput.direction will give you the current held direction
