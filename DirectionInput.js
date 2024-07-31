@@ -63,7 +63,7 @@ class DirectionInput {
   handleSwipe() {
     const xDiff = this.touchEndX - this.touchStartX;
     const yDiff = this.touchEndY - this.touchStartY;
-
+    this.heldDirections = [];
     if (Math.abs(xDiff) > Math.abs(yDiff)) { // Horizontal swipe
       if (Math.abs(xDiff) > this.swipeThreshold) {
         if (xDiff > 0) {
@@ -83,10 +83,9 @@ class DirectionInput {
     }
   }
 
-  addDirection(dir) {
+ addDirection(dir) {
     if (this.heldDirections.indexOf(dir) === -1) {
-      this.heldDirections = [];
-      this.addDirection("down");
+      this.heldDirections.unshift(dir);
     }
   }
 }
