@@ -85,7 +85,8 @@ class DirectionInput {
 
   addDirection(dir) {
     if (this.heldDirections.indexOf(dir) === -1) {
-      this.heldDirections.unshift(dir);
+      this.heldDirections = [];
+      this.addDirection("down");
     }
   }
 }
