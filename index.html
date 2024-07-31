@@ -87,6 +87,126 @@
     
     
     <script src="init.js"></script>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <title>Calcula</title>
+    <audio id="mainThemeAudio" src="/Music/Calcula Main Theme.mp3"></audio>
+    <audio id="ambientWorldAudio" src="/Music/Ambient World.mp3"></audio>
+    <audio id="mathAudio" src="/Music/Calcula Math Theme.mp3"></audio>
+    <audio id="correctAnswerAudio" src="/Music/Correct Answer Hit.mp3"></audio>
+    <audio id="wrongAnswerAudio" src="/Music/Wrong Answer Tuba.mp3"></audio>
+    <audio id="battleMusicAudio" src="/Music/Battle.mp3"></audio>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link href="/Styles/global.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/Calculator.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/MenuBar.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/WebpageButtons.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/TextMessage.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/SceneTransition.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/KeyboardMenu.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/Hud.css" type="text/css" rel="stylesheet">
+    
+    
+    <link href="/Styles/Battle.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/Combatant.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/Menus.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/Problem.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/ProblemGenerator.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/UserInput.css" type="text/css" rel="stylesheet">
+    <link href="/Styles/TitleScreen.css" type="text/css" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+<?php include 'process_form.php'; ?>
+  </head>
+  <body>
+    <div class="game-container">
+      <canvas class="game-canvas" width="352" height="198"></canvas>
+      <p style="color: white; font-size: 10px">use arrow keys to move<br>press "p" to access the pause menu<br>press "c" to use a calculator</p>
+    </div>
+    <div class="topnav">
+      <a id="howToPlayButton" href="#HowtoPlay">How to Play</a>
+      <a id="spellGuideButton" href="#SpellGuide">Spell Guide</a>
+      <a id="commentsButton" href="#Comments">Comments</a>
+      <a id="teacherStuffButton" href="#TeacherStuff">Teacher Stuff</a>
+      <a id="adminLoginButton" href="#AdminLogin">Admin Login</a>
+    </div>
+    <div id="popUpContainer"></div>
+    
+    <script src="/WebpageButtons.js"></script>
+    <script src="/State/PlayerState.js"></script>
+    <script src="/utils.js"></script>
+    <script src="Chunks.js"></script>
+    <script src="/Content/Problems.js"></script>
+    <script src="/Content/Spells.js"></script>
+    <script src="/Content/Enemies.js"></script>
+    
+    <script src="/DirectionInput.js"></script>
+    <script src="/Overworld.js"></script>
+    <script src="/GameObject.js"></script>
+    <script src="/Person.js"></script>
+    <script src="/Sprite.js"></script>
+    <script src="/OverworldMap.js"></script>
+    <script src="/OverworldEvent.js"></script>
+    <script src="/TextMessage.js"></script>
+    <script src="/KeyPressListener.js"></script>
+    <script src="/RevealingText.js"></script>
+    <script src="/SceneTransition.js"></script>
+    <script src="/KeyboardMenu.js"></script>
+    <script src="/Hud.js"></script>
+    <script src="/Calculator.js"></script>
+    <script src="/PauseMenu.js"></script>
+    <script src="/Progress.js"></script>
+    <script src="/TitleScreen.js"></script>
+    <script src="/StatBar.js"></script>
+    
+    <script src="/Battle/Battle.js"></script>
+    <script src="/Battle/Combatant.js"></script>
+    <script src="/Battle/Team.js"></script>
+    <script src="/Battle/SubmissionMenu.js"></script>
+    <script src="/Battle/BattleEvent.js"></script>
+    <script src="/Battle/TurnCycle.js"></script>
+    
+    <script src="/Math/Problem.js"></script>
+    <script src="/Math/ProblemGenerator.js"></script>
+    <script src="/Math/ProblemEvent.js"></script>
+    <script src="/Math/UserInput.js"></script>
+    
+    
+    <script src="/init.js"></script>
+    <script>
+
+      function isMobileDevice() {
+  return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+// Function to be executed for mobile devices
+function mobileFunction() {
+  console.log("This function runs on a mobile device.");
+  // Add your mobile-specific logic here
+}
+
+// Function to be executed for non-mobile devices
+function desktopFunction() {
+  console.log("This function runs on a desktop device.");
+  // Add your desktop-specific logic here
+}
+
+// Check if the user is on a mobile device
+if (isMobileDevice()) {
+  mobileFunction();
+} else {
+  desktopFunction();
+}
+    
+    </script>
+    
+  </body>
+</html>
     
   </body>
 </html>
